@@ -1,4 +1,4 @@
-import {createLocationGate,placeForChapter} from './location-gate.js';
+import {createLocationGate,placeForChapter,PLACES} from './location-gate.js';
 import {mountParticipation,TRACE_KEY} from './participation.js';
 import {renderInk} from './paper-ink.js';
 const $=s=>document.querySelector(s);
@@ -21,7 +21,7 @@ function prepareImage(file){
 new ResizeObserver(()=>{if(started)renderInk($('#overlays'),$('#image'),cuts[index].overlay);}).observe($('#art'));
 function persist(){saved.index=index;saved.cutId=cuts[index].id;try{localStorage.setItem(progressKey,JSON.stringify(saved));}catch{}}
 const gate=createLocationGate({onPause:()=>{stop();bgm?.pause();}});
-const ensurePlace=async n=>previewId?true:gate.request(placeForChapter(cuts[n].chapter.id));
+const ensurePlace=async n=>{const place=placeForChapter(cuts[n].chapter.id);return previewId||!place?true:gate.request(place);};
 const duration=c=>c.dur??Math.max(3,Math.min(9,([...c.lines.map(l=>l.text),c.narration||'',c.caption||''].join('').length*.12+2)));
 function schedule(){clearTimeout(timer);if(auto&&started&&!document.hidden&&index<cuts.length-1&&participation?.autoAllowed)timer=setTimeout(()=>advance(1),duration(cuts[index])*1000);}
 function duck(on){if(bgm)bgm.volume=music?(on?.18*.355:.18):0;}
@@ -75,10 +75,8 @@ async function advance(delta,forced=false,flash=false){
  if(delta>0&&cuts[next].chapter.id!==c.chapter.id){saved.unlocked=Math.max(saved.unlocked,chapters.findIndex(x=>x.id===c.chapter.id));}
  index=next;show();if(flash&&c.mission==='shutter'&&c.lines[0]?.voice){const v=new Audio('assets/audio/voices/'+c.lines[0].voice);voices.push(v);v.play().catch(()=>{});}if(oldPicture){await oldPicture.animate([{opacity:1},{opacity:0}],{duration:800,fill:'forwards'}).finished;oldPicture.remove();}else await fade(1,0,type==='black-hard'||type==='flash'?0:ms/2);curtain.getAnimations().forEach(a=>a.cancel());curtain.style.opacity=0;busy=false;
 }
-async function begin(n){if(busy)return;busy=true;const allowed=await ensurePlace(n);if(!allowed){busy=false;return;}await prepareImage(cuts[n].img);busy=false;saved.onsite=true;started=true;index=n;$('#home').hidden=true;$('#reader').hidden=false;show();}
-$('#altar-start').onclick=()=>begin(cuts.findIndex(c=>c.chapter.id==='CH10'));
+async function begin(n){if(busy)return;if(!previewId){const target=placeForChapter(cuts[n].chapter.id);if(target){const needed=gate.required(target);if(!gate.has(needed))n=cuts.findIndex(c=>c.chapter.id===PLACES[needed].chapter);}}busy=true;const allowed=await ensurePlace(n);if(!allowed){busy=false;return;}await prepareImage(cuts[n].img);busy=false;saved.onsite=true;started=true;index=n;$('#home').hidden=true;$('#reader').hidden=false;show();}
 $('#start').onclick=()=>begin(Math.max(0,cuts.findIndex(c=>c.id===previewId)));$('#resume').onclick=()=>begin(saved.index);$('#resume').disabled=saved.index===0;
-$('#pick').onclick=()=>{const list=$('#chapters');list.hidden=!list.hidden;list.replaceChildren();chapters.forEach((c,n)=>{const b=document.createElement('button');b.textContent=`${n+1}. ${c.title}${n>saved.unlocked?' · 아직 열리지 않음':''}`;b.disabled=n>saved.unlocked;b.onclick=()=>begin(cuts.findIndex(k=>k.chapter.id===c.id));list.append(b);});};
 $('#homeButton').onclick=()=>{stop();participation?.cleanup();participation=null;epoch++;bgm?.pause();bgm=null;started=false;$('#home').hidden=false;$('#reader').hidden=true;$('#resume').disabled=false;};
 $('#auto').onclick=()=>{auto=!auto;$('#auto').textContent=`자동 ${auto?'켜짐':'꺼짐'}`;$('#auto').setAttribute('aria-pressed',auto);if(cuts[index].mission==='shutter')show();else schedule();};
 $('#music').onclick=()=>{music=!music;$('#music').textContent=`음악 ${music?'켜짐':'꺼짐'}`;$('#music').setAttribute('aria-pressed',music);duck(voices.some(v=>!v.paused));};
