@@ -17,36 +17,36 @@ MODEL = os.environ.get('GEMINI_TTS_MODEL', 'gemini-3.8-flash-tts')
 KID_VOICE = os.environ.get('KID_VOICE', 'Leda')
 NARRATOR_VOICE = os.environ.get('NARRATOR_VOICE', 'Sulafat')
 
+# 연기 지시는 영어로 적는다(한국어 지시는 모델이 소리 내어 읽는 일이 잦았다).
 KID_STYLE = {
-    8: '여덟 살 한국 남자아이 역할의 애니메이션 아역 성우. 높고 맑고 귀여운 아이 목소리, 또랑또랑한 발음',
-    9: '아홉 살 한국 남자아이 역할의 애니메이션 아역 성우. 높고 맑은 아이 목소리',
-    10: '열 살 한국 남자아이 역할의 애니메이션 아역 성우. 아이 목소리, 씩씩하지만 여린 느낌',
-    12: '열두 살 한국 남자아이 역할의 애니메이션 아역 성우. 변성기 전의 소년 목소리',
+    8: 'an 8-year-old Korean boy, voiced by a professional anime child voice actor: high, clear, cute, crisp diction',
+    9: 'a 9-year-old Korean boy, voiced by a professional anime child voice actor: high, clear child voice',
+    10: 'a 10-year-old Korean boy, anime child voice actor: a child voice, brave but fragile',
+    12: 'a 12-year-old Korean boy before his voice changes, anime child voice actor',
 }
-NARRATOR_STYLE = ('잠들기 전 아이에게 그림책을 읽어 주는 따뜻한 여성 동화 구연 성우. '
-                  '나긋나긋하고 부드럽게, 서두르지 않고, 문장 끝을 살며시 내려 읽는다. 슬픈 대목은 조용히 낮춰 읽는다')
+NARRATOR_STYLE = ('A warm female Korean picture-book narrator reading to a child at bedtime: gentle, soft, unhurried, '
+                  'softly lowering at the end of each sentence; quiet and tender on sad lines.')
 
-# 대사별 감정(연기 지시). 대본 글자는 바꾸지 않는다.
 ACTING = {
-    'CH02-L01': '오래 기다린 형을 발견하고 반가워서 달려가며 크게 부른다',
-    'CH02-L03': '공책의 한자를 신기하게 들여다보며 혼잣말처럼',
-    'CH02-L05': '형을 올려다보며 궁금하고 들뜬 목소리로',
-    'CH02-L08': '사진 속 굳은 자기 얼굴을 보고 쑥스러워 투덜대듯 웃으며',
-    'CH03-L02': '사람들 틈에서 엄마 손을 놓치고 공포에 질려 울음 섞어 비명처럼 외친다',
-    'CH04-P01-L01': '추위에 떨고 울음을 참으며 낯선 사람에게 조심스럽게 도움을 청한다',
-    'CH04-P02-O02-v2': '실망해서 고개를 떨구고 아주 작게',
-    'CH04-P03-L01': '엄마 모습을 떠올리려 애쓰다 말끝이 흐려지고, 마지막에 사진이 생각나 희망에 차서 급하게',
-    'CH04-L03': '보따리를 다 뒤졌는데 없어서 목이 메어 울먹이며',
-    'CH04-L05': '엄마 말을 붙잡듯 떨리는 목소리로 또박또박',
-    'CH04-P06-O01': '끌려가면서 뒤돌아 고개 숙여 인사하며 크게',
-    'CH04-P06-O02': '끌려가면서 뒤돌아 고개 숙여 인사하며 크게',
-    'CH05-L01': '장터에서 손님을 부르는 씩씩한 외침, 지친 기색은 감추고',
-    'CH05-P01-L01': '반가움 반, 기대 반으로 조심스럽게 묻는다. 글을 모르는 게 조금 부끄럽다',
-    'CH05-P02-O01': '실망을 감추고 다시 힘을 내서',
-    'CH06-L01': '해 질 녘 빈 다리에서 혼잣말로, 자신을 달래듯 조용히',
-    'CH06-P01-L01': '지쳤지만 담담하게, 마지막 말에서 불안이 묻어난다',
-    'CH06-P03-L01': '망설이다가 간절하게, 작은 목소리로',
-    'CH06-P04-O01': '처음으로 작게 웃으며 안심한 목소리로',
+    'CH02-L01': 'spots his long-awaited big brother and shouts happily while running to him',
+    'CH02-L03': 'marveling at the Chinese characters in the notebook, almost to himself',
+    'CH02-L05': 'looking up at his brother, curious and excited',
+    'CH02-L08': 'embarrassed at his stiff face in the photo, grumbling with a laugh',
+    'CH03-L02': 'loses his mother\'s hand in a crowd; screams in terror, about to cry',
+    'CH04-P01-L01': 'shivering, holding back tears, carefully asking a stranger for help',
+    'CH04-P02-O02-v2': 'disappointed, head down, very small voice',
+    'CH04-P03-L01': 'struggling to recall his mother\'s face, trailing off; then suddenly remembers the photo and speaks fast with hope',
+    'CH04-L03': 'searched the whole bundle and found nothing; choked up, on the verge of tears',
+    'CH04-L05': 'trembling, clinging to his mother\'s words, speaking each word carefully',
+    'CH04-P06-O01': 'being pulled away, turns back and bows, saying it loudly',
+    'CH04-P06-O02': 'being pulled away, turns back and bows, saying it loudly',
+    'CH05-L01': 'a shoeshine boy calling out to customers in a market, cheerful, hiding his tiredness',
+    'CH05-P01-L01': 'half glad, half hopeful, asking carefully; a little ashamed he cannot read',
+    'CH05-P02-O01': 'hiding disappointment and finding courage again',
+    'CH06-L01': 'alone on an empty bridge at dusk, quietly to himself, comforting himself',
+    'CH06-P01-L01': 'tired but calm; anxiety shows in the last sentence',
+    'CH06-P03-L01': 'hesitates, then asks earnestly in a small voice',
+    'CH06-P04-O01': 'smiling a little for the first time, relieved',
 }
 
 AGE = {'CH01': 8, 'CH02': 9, 'CH03': 9, 'CH04': 9, 'CH05': 10, 'CH06': 12}
@@ -61,8 +61,8 @@ def spoken(t):
 
 
 def prompt(style, text):
-    return (f'[연출 메모 — 이 메모는 절대 소리 내어 읽지 마세요]\n{style}\n\n'
-            f'[아래 따옴표 안의 한국어 문장만, 한 글자도 더하거나 빼지 말고 읽으세요]\n"{spoken(text)}"')
+    return (f"# AUDIO PROFILE\n{style}\n## DIRECTOR'S NOTES\nSpeak only the transcript, in Korean. "
+            f"Do not read these notes.\n## TRANSCRIPT\n{spoken(text)}")
 
 
 def call(text_prompt, voice):
@@ -150,7 +150,7 @@ def main():
         out = os.path.join(ROOT, 'samples'); os.makedirs(out, exist_ok=True)
         for v in sys.argv[2:] or ['Leda', 'Puck', 'Zephyr', 'Aoede']:
             record('저기… 안녕하세요. 저 민우예요. 엄마를 잃어버렸어요. 같이 찾아 줄 수 있어요?',
-                   KID_STYLE[9] + '. ' + ACTING['CH04-P01-L01'], v, f'{out}/kid-{v}.mp3', 2)
+                   KID_STYLE[9] + '. Scene: ' + ACTING['CH04-P01-L01'], v, f'{out}/kid-{v}.mp3', 2)
         for v in ['Sulafat', 'Achernar', 'Vindemiatrix', 'Leda']:
             record('그날 밤, 기차를 놓친 어머니는 끝내 다리까지 가지 못했어요. 어머니는 무너진 개성 집으로 돌아왔어요.',
                    NARRATOR_STYLE, v, f'{out}/narrator-{v}.mp3', 2)
@@ -160,7 +160,7 @@ def main():
             base = re.sub(r'(-acted-v3|-fix|-kid)?\.mp3$', '', l['voice'])
             name = f'{base}-gem.mp3'
             if name not in done:
-                style = KID_STYLE[age] + '. ' + ACTING.get(base, '')
+                style = KID_STYLE[age] + '. Scene: ' + ACTING.get(base, 'natural')
                 done[name] = record(l['text'], style, KID_VOICE, os.path.join(vdir, name))
                 if not done[name]: failed.append(name)
             if done[name]: l['voice'] = name
