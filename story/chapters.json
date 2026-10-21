@@ -419,7 +419,7 @@
             {
               "who": "민우",
               "text": "형아!",
-              "voice": "CH02-L01-fix.mp3",
+              "voice": "CH02-L01-kid.mp3",
               "offscreen": false
             }
           ],
@@ -548,7 +548,7 @@
             {
               "who": "민우",
               "text": "그림 같다.",
-              "voice": "CH02-L03-acted-v3.mp3",
+              "voice": "CH02-L03-kid.mp3",
               "offscreen": false
             }
           ],
@@ -556,7 +556,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 3.0,
+          "dur": 3.04,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -596,7 +596,7 @@
             {
               "who": "민우",
               "text": "형은 군대 끝나면 뭐 할 거야?",
-              "voice": "CH02-L05-acted-v3.mp3",
+              "voice": "CH02-L05-kid.mp3",
               "offscreen": false
             }
           ],
@@ -604,7 +604,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 4.91,
+          "dur": 4.94,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -739,7 +739,7 @@
             {
               "who": "민우",
               "text": "나 왜 이렇게 굳었어?",
-              "voice": "CH02-L08-acted-v3.mp3",
+              "voice": "CH02-L08-kid.mp3",
               "offscreen": false
             }
           ],
@@ -747,7 +747,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 3.28,
+          "dur": 3.32,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -990,7 +990,7 @@
             {
               "who": "민우",
               "text": "엄마!",
-              "voice": "CH03-L02-acted-v3.mp3",
+              "voice": "CH03-L02-kid.mp3",
               "offscreen": false
             }
           ],
@@ -998,7 +998,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 3.64,
+          "dur": 3.69,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -1170,14 +1170,14 @@
             {
               "who": "민우",
               "text": "저기… 안녕하세요. 저 민우예요. 엄마를 잃어버렸어요. 같이 찾아 줄 수 있어요?",
-              "voice": "CH04-P01-L01-acted-v3.mp3",
+              "voice": "CH04-P01-L01-kid.mp3",
               "offscreen": false
             }
           ],
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 14.46,
+          "dur": 14.5,
           "overlay": null,
           "effect": null
         },
@@ -1209,7 +1209,7 @@
                 "text": "…네.",
                 "img": "CH04-P02x.webp",
                 "narration": "이 기억 속에는 민우를 도와준 사람이 있었어요. 다시 말을 걸어 볼까요?",
-                "voice": "CH04-P02-O02-v2-acted-v3.mp3",
+                "voice": "CH04-P02-O02-v2-kid.mp3",
                 "narrationVoice": "CH04-P02x.mp3"
               }
             }
@@ -1226,14 +1226,14 @@
             {
               "who": "민우",
               "text": "머리에 흰 수건 쓰셨고요, 검정 치마 입으셨어요. 얼굴은… 얼굴은… …아, 맞다! 사진! 보따리에 사진 있어요!",
-              "voice": "CH04-P03-L01-acted-v3.mp3",
+              "voice": "CH04-P03-L01-kid.mp3",
               "offscreen": false
             }
           ],
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 16.91,
+          "dur": 16.96,
           "overlay": null,
           "effect": null
         },
@@ -1263,7 +1263,7 @@
             {
               "who": "민우",
               "text": "사진이… 없어요.",
-              "voice": "CH04-L03-acted-v3.mp3",
+              "voice": "CH04-L03-kid.mp3",
               "offscreen": false
             }
           ],
@@ -1271,7 +1271,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 4.43,
+          "dur": 4.47,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -1314,7 +1314,7 @@
             {
               "who": "민우",
               "text": "엄마가… 다리에서 만나자고 했어요.",
-              "voice": "CH04-L05-acted-v3.mp3",
+              "voice": "CH04-L05-kid.mp3",
               "offscreen": false
             }
           ],
@@ -1322,7 +1322,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 4.91,
+          "dur": 4.94,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -1374,7 +1374,7 @@
                 "who": "민우",
                 "text": "고맙습니다!",
                 "img": null,
-                "voice": "CH04-P06-O01-acted-v3.mp3"
+                "voice": "CH04-P06-O01-kid.mp3"
               }
             },
             {
@@ -1384,7 +1384,7 @@
                 "who": "민우",
                 "text": "고맙습니다!",
                 "img": null,
-                "voice": "CH04-P06-O02-acted-v3.mp3"
+                "voice": "CH04-P06-O02-kid.mp3"
               }
             }
           ]
@@ -1476,7 +1476,7 @@
             {
               "who": "민우",
               "text": "구두 닦아요! 구두!",
-              "voice": "CH05-L01-acted-v3.mp3",
+              "voice": "CH05-L01-kid.mp3",
               "offscreen": false
             }
           ],
@@ -1484,7 +1484,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 4.36,
+          "dur": 4.4,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -1698,14 +1698,14 @@
             {
               "who": "민우",
               "text": "어… 또 왔네요? 이거… 우리 형 이름 맞아요? 저는 글을 몰라서, 모양만 맞춰 보거든요.",
-              "voice": "CH05-P01-L01-acted-v3.mp3",
+              "voice": "CH05-P01-L01-kid.mp3",
               "offscreen": false
             }
           ],
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 12.11,
+          "dur": 12.15,
           "overlay": null,
           "effect": null
         },
@@ -1731,7 +1731,7 @@
                 "who": "민우",
                 "text": "그럼… 다른 데 있을지도 몰라요. 같이 봐 줄래요?",
                 "img": null,
-                "voice": "CH05-P02-O01-acted-v3.mp3"
+                "voice": "CH05-P02-O01-kid.mp3"
               }
             },
             {
@@ -2008,14 +2008,14 @@
             {
               "who": "민우",
               "text": "또 왔네요. …오늘도 없어요. 형이 써 준 글씨, 저는 못 읽어도 모양은 다 외웠어요. 근데 자꾸 흐려져요.",
-              "voice": "CH06-P01-L01-acted-v3.mp3",
+              "voice": "CH06-P01-L01-kid.mp3",
               "offscreen": false
             }
           ],
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 12.3,
+          "dur": 12.34,
           "overlay": null,
           "effect": null
         },
@@ -2030,14 +2030,14 @@
             {
               "who": "민우",
               "text": "…대신 기억해 줄래요?",
-              "voice": "CH06-P03-L01-acted-v3.mp3",
+              "voice": "CH06-P03-L01-kid.mp3",
               "offscreen": false
             }
           ],
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 4.0,
+          "dur": 4.03,
           "overlay": null,
           "effect": null
         },
@@ -2063,7 +2063,7 @@
                 "who": "민우",
                 "text": "고마워요. 내일 또 올 거예요.",
                 "img": null,
-                "voice": "CH06-P04-O01-acted-v3.mp3"
+                "voice": "CH06-P04-O01-kid.mp3"
               }
             }
           ]
@@ -2078,7 +2078,7 @@
             {
               "who": "민우",
               "text": " 엄마가 다리에서 만나자고 했어.",
-              "voice": "CH06-L01-acted-v3.mp3",
+              "voice": "CH06-L01-kid.mp3",
               "offscreen": false,
               "aside": true
             }
@@ -2089,7 +2089,7 @@
           "soundDirection": "강물",
           "move": "none",
           "transition": "dissolve",
-          "dur": 4.24,
+          "dur": 4.29,
           "overlay": null,
           "effect": null,
           "direction": "디졸브",
@@ -3422,14 +3422,14 @@
         {
           "who": "민우",
           "text": "…네.",
-          "voice": "CH04-P02-O02-v2-acted-v3.mp3",
+          "voice": "CH04-P02-O02-v2-kid.mp3",
           "offscreen": false
         }
       ],
       "sfx": [],
       "move": "none",
       "transition": "cut",
-      "dur": 10.38,
+      "dur": 10.43,
       "overlay": null,
       "effect": null,
       "branchOnly": true,
