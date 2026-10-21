@@ -1,5 +1,6 @@
 const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text)n.textContent=text;if(cls)n.className=cls;return n;};
 export const TRACE_KEY='landscape-memory-strokes-v1';
+export const SELFIE_KEY='landscape-selfie-v1';
 export function readTrace(key=TRACE_KEY){try{const value=JSON.parse(localStorage.getItem(key)||'null');return Array.isArray(value)&&value.length&&value.some(s=>s.length>1)&&value.every(s=>Array.isArray(s)&&s.every(p=>Number.isFinite(p.x)&&Number.isFinite(p.y)&&p.x>=0&&p.x<=1&&p.y>=0&&p.y<=1))?value:null;}catch{return null;}}
 
 export function mountParticipation(c,ctx){
@@ -78,9 +79,22 @@ export function mountParticipation(c,ctx){
   document.fonts.load('220px "Nanum Pen Script"',c.text).catch(()=>[]).then(()=>document.fonts.ready).then(()=>{if(disposed)return;g.font='220px "Nanum Pen Script", "Gowun Batang", serif';g.textAlign='center';g.textBaseline='middle';[...c.text].forEach((ch,i)=>g.fillText(ch,150+i*300,157));mask=g.getImageData(0,0,900,300).data;for(let i=0;i<900*300;i++)if(mask[i*4+3]>80)totals[Math.floor((i%900)/300)]++;ready=true;paint();say('각 글자의 흐린 획을 60% 이상 따라 쓰면 진해집니다.');});
  }
  if(c.kind==='mission'&&c.mission==='shutter'){
-  let fired=false;const fire=()=>{if(fired||disposed)return;fired=true;reply({who:'구 작가',text:'셋!'});go(c.next,true);};
-  const b=button('●',fire);b.className='shutter-button';b.setAttribute('aria-label','셔터 누르기');
-  if(auto)later(fire,(c.autoAfter||3)*1000);
+  let fired=false,stream=null;const video=el('video',null,'selfie-view');video.muted=true;video.playsInline=true;video.autoplay=true;
+  const stopCam=()=>{stream?.getTracks().forEach(t=>t.stop());stream=null;};handles.push({remove:stopCam});
+  const fire=()=>{if(fired||disposed)return;fired=true;
+   if(stream&&video.videoWidth){try{const vw=video.videoWidth,vh=video.videoHeight,r=1/1.15,sw=vw/vh>r?vh*r:vw,sh=vw/vh>r?vh:vw/r,cv=document.createElement('canvas');cv.width=360;cv.height=414;const g=cv.getContext('2d');g.translate(360,0);g.scale(-1,1);g.drawImage(video,(vw-sw)/2,(vh-sh)/2,sw,sh,0,0,360,414);sessionStorage.setItem(SELFIE_KEY,cv.toDataURL('image/jpeg',.82));}catch{}}
+   stopCam();reply({who:'구 작가',text:'셋!'});go(c.next,true);};
+  if(c.selfie&&navigator.mediaDevices?.getUserMedia&&window.isSecureContext){
+   const frame=el('div',null,'selfie-frame');frame.append(video,el('span','너의 자리','selfie-label'));art.append(frame);handles.push(frame);
+   navigator.mediaDevices.getUserMedia({video:{facingMode:'user',width:{ideal:640}},audio:false}).then(s=>{if(disposed||fired){s.getTracks().forEach(t=>t.stop());return;}stream=s;video.srcObject=s;video.play().catch(()=>{});}).catch(()=>{frame.remove();say('카메라 없이도 셔터를 눌러 함께할 수 있어요.');});
+   root.append(el('p','사진은 이 휴대폰 안에만 잠깐 남고, 어디에도 보내지 않아요.','selfie-privacy'));
+  }
+  const b=button('●',fire);b.className='shutter-button';b.setAttribute('aria-label','셔터 누르기');root.append(feedback);
+  if(auto)later(fire,(c.selfie?8:(c.autoAfter||3))*1000);
+ }
+ if(c.effect==='with-selfie'){
+  let src=null;try{src=sessionStorage.getItem(SELFIE_KEY);}catch{}
+  if(src){const card=el('figure',null,'selfie-print');const im=el('img');im.src=src;im.alt='함께 찍은 내 얼굴';card.append(im,el('figcaption','그날의 풍경 속의 나'));art.append(card);handles.push(card);}
  }
  if(c.kind==='record'&&onsite&&c.question){
   allowed=false;const words=ctx.dialogue;words.hidden=true;ctx.caption.textContent='현장 질문';const q=c.question;root.append(el('p',q.prompt));const list=el('div',null,'choices');root.append(list,feedback);

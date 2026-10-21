@@ -31,8 +31,8 @@ function audioFor(c,e){
  if(c.silentBgm||c.soundDirection?.includes('무음')||c.id==='CH12-T06'||c.id==='CH12-T07')bgm.pause();
  else if(c.id==='CH12-B04'){bgm.pause();musicGap=setTimeout(()=>{if(e===epoch)bgm?.play().catch(()=>{});},3000);}
  else bgm.play().catch(()=>{});
- let n=0;if(c.mission==='shutter')return;
- function next(){if(e!==epoch)return;const l=c.lines[n++];if(!l){duck(false);return;}const v=new Audio(`assets/audio/voices/${l.voice}`);voices.push(v);duck(true);let ended=false;const finish=()=>{if(ended)return;ended=true;next();};v.onended=finish;v.onerror=finish;v.play().catch(finish);}next();
+ const queue=[...(c.narrationVoice?[`assets/audio/narration/${c.narrationVoice}`]:[]),...(c.mission==='shutter'?[]:c.lines.filter(l=>l.voice).map(l=>`assets/audio/voices/${l.voice}`))];let n=0;
+ function next(){if(e!==epoch)return;const src=queue[n++];if(!src){duck(false);return;}const v=new Audio(src);voices.push(v);duck(true);let ended=false;const finish=()=>{if(ended)return;ended=true;next();};v.onended=finish;v.onerror=finish;v.play().catch(finish);}if(c.voiceDelay)musicGap=setTimeout(next,c.voiceDelay*1000);else next();
  for(const name of c.sfx){const s=new Audio(`assets/audio/sfx/${name}.wav`);voices.push(s);s.volume=.35;s.play().catch(()=>{});}
 }
 function show(){
@@ -47,14 +47,14 @@ function show(){
  if(cuts[index+1]?.img)prepareImage(cuts[index+1].img);
  $('#caption').textContent=c.caption||'';const box=$('#dialogue');box.replaceChildren();
  const entries=[...(c.narration?[{text:c.narration}]:[]),...(c.mission==='shutter'?[]:c.lines)];let spans=[];
- for(const line of entries){const para=document.createElement('p');para.className='line';if(line.who){const who=document.createElement('span');who.className='speaker';who.textContent=line.who+(line.offscreen?' · 화면 밖':'');para.append(who);}const span=document.createElement('span');para.append(span);box.append(para);spans.push({span,text:line.text});}
+ for(const line of entries){const para=document.createElement('p');para.className=line.who?'line':'line narration';if(line.who){const who=document.createElement('span');who.className='speaker';who.textContent=line.who+(line.offscreen?' · 화면 밖':'')+(line.aside?' · 혼잣말':'');para.append(who);}const span=document.createElement('span');para.append(span);box.append(para);spans.push({span,text:line.text});}
  let count=0,total=spans.reduce((s,t)=>s+t.text.length,0);full=total===0;
  const reveal=()=>{let left=count;for(const s of spans){s.span.textContent=s.text.slice(0,Math.max(0,left));left-=s.text.length;}};
  typing=setInterval(()=>{count++;reveal();if(count>=total){full=true;clearInterval(typing);}},50);
  show.finish=()=>{count=total;reveal();full=true;clearInterval(typing);};
  if(c.id==='CH12-T07'){$('#dialogue').textContent=c.narration;clearInterval(typing);full=true;}
- const update=()=>{$('#next').disabled=index===cuts.length-1||!participation?.canAdvance;$('.hint').textContent=index===cuts.length-1?'':participation?.canAdvance?'화면을 눌러 넘기세요':c.mission==='remember'?'기억을 하나씩 확인해 주세요':'민우에게 말을 건네 주세요';schedule();};
- const reply=answer=>{show.finish();$('#dialogue').textContent=answer.who+': '+answer.text;if(answer.narration){const n=document.createElement('p');n.className='line';n.textContent=answer.narration;$('#dialogue').append(n);}if(answer.img){$('#placeholder').hidden=false;$('#image').src='assets/images/'+answer.img;}if(answer.voice){const v=new Audio('assets/audio/voices/'+answer.voice);voices.push(v);duck(true);const restore=()=>{if(e===epoch)duck(false);};v.onended=restore;v.onerror=restore;v.play().catch(restore);}};
+ const update=()=>{$('#next').disabled=index===cuts.length-1||!participation?.canAdvance;$('.hint').textContent=index===cuts.length-1?'':participation?.canAdvance?'화면을 눌러 넘기세요':c.mission==='shutter'?'셔터를 눌러 함께 찍어요':c.mission==='find-name'?'명단에서 형 이름을 찾아보세요':'민우에게 말을 건네 주세요';schedule();};
+ const reply=answer=>{show.finish();$('#dialogue').textContent=answer.who+': '+answer.text;if(answer.narration){const n=document.createElement('p');n.className='line';n.textContent=answer.narration;$('#dialogue').append(n);}if(answer.img){$('#placeholder').hidden=false;$('#image').src='assets/images/'+answer.img;}const q=[...(answer.voice?['assets/audio/voices/'+answer.voice]:[]),...(answer.narrationVoice?['assets/audio/narration/'+answer.narrationVoice]:[])];let k=0;const play=()=>{if(e!==epoch)return;const src=q[k++];if(!src){duck(false);return;}const v=new Audio(src);voices.push(v);duck(true);let once=false;const go=()=>{if(once)return;once=true;setTimeout(play,350);};v.onended=go;v.onerror=go;v.play().catch(go);};play();};
  participation=mountParticipation(c,{root:$('#participation'),art:$('#art'),onsite:saved.onsite,auto,traceKey,go:(id,flash=false)=>jump(id,flash),forward:()=>advance(1),changed:()=>queueMicrotask(update),reply,dialogue:$('#dialogue'),caption:$('#caption')});
  audioFor(c,e);update();
 }
