@@ -21,6 +21,22 @@ export function mountParticipation(c,ctx){
  }
 
  if(c.kind==='choice')choices();
+ if(c.kind==='mission'&&c.mission==='remember'){
+  const list=el('div',null,'memory-fields');root.append(list,feedback);
+  let step=0;
+  function draw(){
+   list.replaceChildren();const field=c.fields[step];
+   const title=el('p',`${step+1} / ${c.fields.length} · ${field.label}`);list.append(title);
+   const options=el('div',null,'choices');list.append(options);
+   field.options.forEach((text,i)=>button(text,()=>{
+    if(i!==field.answer){say('민우가 들려준 기억을 한 번 더 떠올려 주세요.');return;}
+    step++;
+    if(step===c.fields.length){list.replaceChildren();say(c.completion);done('기억을 이어 가기');}
+    else{say('');draw();list.querySelector('button')?.focus();}
+   },options));
+  }
+  draw();
+ }
  if(c.kind==='mission'&&c.mission==='tap-items'){
   const seen=new Set(),targets=el('div',null,'item-targets');art.append(targets);handles.push(targets);
   c.items.forEach((item,i)=>{
@@ -32,9 +48,18 @@ export function mountParticipation(c,ctx){
  if(c.kind==='mission'&&c.mission==='find-name'){
   root.append(el('p',`공책의 이름: ${c.target}`,'name-sample'));
   const zoomLabel=el('label','명단 확대 '),zoom=el('input');zoom.type='range';zoom.min='100';zoom.max='200';zoom.value='100';zoom.setAttribute('aria-label','명단 확대');zoomLabel.append(zoom);root.append(zoomLabel);
-  const scroll=el('div',null,'name-scroll mission-name-panel'),panel=el('div',null,'name-grid');scroll.tabIndex=0;scroll.setAttribute('aria-label','지어낸 이름 48개, 확대하고 스크롤할 수 있습니다');scroll.append(panel);art.append(scroll);handles.push(scroll);
+  const scroll=el('div',null,'name-scroll mission-name-panel'),stage=el('div',null,'name-stage'),paper=el('div',null,'name-paper'),panel=el('div',null,'name-grid');scroll.tabIndex=0;scroll.setAttribute('aria-label','포로 명단, 확대하고 스크롤할 수 있습니다');
+  paper.append(el('h3','國軍捕虜名簿','name-masthead'),el('p','국군포로 명단','name-subtitle'),panel);stage.append(paper);scroll.append(stage);art.append(scroll);handles.push(scroll);
   c.names.forEach(name=>button(name,()=>say(c.decoys[name]||'이 이름도 형 이름과 달라요. 형 이름은 김민석이에요.'),panel));
-  zoom.oninput=()=>{panel.style.width=zoom.value+'%';panel.style.fontSize=(Number(zoom.value)/100)+'em';};
+  let currentScale=1;
+  const baseWidth=660,baseHeight=1020;
+  function setZoom(){
+   const centerX=(scroll.scrollLeft+scroll.clientWidth/2)/currentScale,centerY=(scroll.scrollTop+scroll.clientHeight/2)/currentScale;
+   const fit=Math.min(1,Math.max(240,scroll.clientWidth-24)/baseWidth),nextScale=fit*Number(zoom.value)/100;
+   paper.style.transform=`scale(${nextScale})`;stage.style.width=baseWidth*nextScale+'px';stage.style.height=baseHeight*nextScale+'px';
+   scroll.scrollLeft=Math.max(0,centerX*nextScale-scroll.clientWidth/2);scroll.scrollTop=Math.max(0,centerY*nextScale-scroll.clientHeight/2);currentScale=nextScale;
+  }
+  zoom.oninput=setZoom;const sizeObserver=new ResizeObserver(setZoom);sizeObserver.observe(scroll);handles.push({remove(){sizeObserver.disconnect();}});setZoom();
   root.append(feedback);const b=button('이 명단에는 없어',()=>go('CH05-P04'));b.disabled=true;
   let left=c.doneDelay||10;const status=el('span',`${left}초 뒤에 말할 수 있어요.`,'delay-status');root.append(status);
   const tick=()=>{left--;status.textContent=left?`${left}초 뒤에 말할 수 있어요.`:'명단을 살펴봤다면 민우에게 말해 주세요.';if(left>0)later(tick,1000);else b.disabled=false;};later(tick,1000);
