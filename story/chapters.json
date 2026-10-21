@@ -3070,7 +3070,7 @@
             {
               "who": "민우",
               "text": "…형아.",
-              "voice": "CH11-L02-acted-v3.mp3",
+              "voice": "CH11-L02-fix.mp3",
               "offscreen": false
             }
           ],
@@ -3078,7 +3078,7 @@
           "soundDirection": "늙은 목소리에 아홉 살 목소리가 겹친다",
           "move": "none",
           "transition": "cut",
-          "dur": 3.0,
+          "dur": 3.06,
           "overlay": null,
           "effect": null,
           "direction": "컷",
