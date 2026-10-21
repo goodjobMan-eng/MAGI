@@ -7,7 +7,11 @@ export function validVisits(raw){
 }
 export function requiredStop(visits,requested){return ROUTE.slice(0,ROUTE.indexOf(requested)+1).find(k=>!visits[k])||requested;}
 const KEY='landscape-linear-visits-v2';
-export function createLocationGate({onPause,storageKey=KEY}){
+// Temporary public rehearsal mode. Set false for the on-site release.
+export const PHOTO_TEST_MODE=true;
+export function createLocationGate({onPause,storageKey=KEY,testMode=PHOTO_TEST_MODE}){
+ // Do not write rehearsal progress into real GPS/photo visit records.
+ if(testMode)return {has:key=>Boolean(PLACES[key]),required:requested=>requested,request:async requested=>Boolean(PLACES[requested])};
  let visits={};try{visits=validVisits(JSON.parse(localStorage.getItem(storageKey)||'{}'));}catch{}
  const dialog=document.createElement('dialog');dialog.className='location-dialog';
  dialog.innerHTML='<button class="gate-close" aria-label="닫기">×</button><p class="eyebrow gate-step"></p><h2></h2><p class="gate-hint"></p><div class="gate-view"><video autoplay muted playsinline hidden></video><img class="gate-photo" alt="촬영한 현장 사진" hidden><div class="gate-outline"></div><span class="gate-guide-label">이 윤곽에 맞춰 주세요</span></div><p class="gate-status" role="status" aria-live="polite"></p><meter class="gate-meter" min="0" max="100" value="0" aria-label="실루엣 맞춤 정도"></meter><button class="gate-locate">위치 확인하고 카메라 열기</button><button class="gate-shutter" hidden disabled>윤곽을 맞춰 주세요</button><button class="gate-retake" hidden>다시 촬영하기</button><p class="gate-privacy">사진은 휴대폰 안에서 윤곽을 비교한 뒤 폐기합니다. 사진·좌표를 서버로 보내지 않으며, 통과한 지점만 이 기기에 기억합니다.</p>';
@@ -70,7 +74,7 @@ export function createLocationGate({onPause,storageKey=KEY}){
    if(visits[requested])return true;
    if(requiredStop(visits,requested)!==requested)return false;
    onPause();key=requested;place=PLACES[key];$('h2').textContent=place.name;
-   const titles={train:'내려야 했던 곳',bridge:'돌아오지 못한 다리',altar:'어디 있는지 모르니까'};
+   const titles={train:'내려야 했던 곳',bridge:'비어가는 다리',altar:'형은 아직 모르니까'};
    $('.gate-step').textContent=`${ROUTE.indexOf(key)+1} / 3 · ${titles[key]}`;
    $('.gate-hint').textContent=place.hint;status.textContent='현장에 도착하면 카메라를 열어 실루엣에 맞춰 주세요.';
    $('.gate-outline').innerHTML=guideMarkup(key);view.classList.remove('aligned');$('.gate-meter').value=0;
