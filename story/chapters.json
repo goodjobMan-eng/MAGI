@@ -1845,25 +1845,18 @@
           "img": "CH05-B08.webp",
           "alt": "민우 바스트. 끝까지 짚고 신문을 접는다",
           "caption": null,
-          "narration": null,
-          "lines": [
-            {
-              "who": "민우",
-              "text": " 없다. …없으면 살아 있는 거야.",
-              "voice": "CH05-L02-acted-v3.mp3",
-              "offscreen": false,
-              "aside": true
-            }
-          ],
+          "narration": "민우는 신문을 꼭꼭 접었어요. \"오늘은 없네. 내일 신문엔 있을지도 몰라.\"",
+          "lines": [],
           "sfx": [],
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 8.32,
+          "dur": 10.26,
           "overlay": null,
           "effect": null,
           "direction": "컷",
-          "kind": "story"
+          "kind": "story",
+          "narrationVoice": "CH05-B08.mp3"
         },
         {
           "id": "CH05-B09",
@@ -2845,10 +2838,10 @@
         },
         {
           "id": "CH10-B08",
-          "img": "CH10-B08-continuity-v3.webp",
-          "alt": "망배단 한쪽 천막. 민우가 의자에 앉고 직원이 면봉을 건넨다",
-          "caption": "6·25 전사자 유가족 유전자 시료 채취",
-          "narration": "망배단 한쪽에는, 전쟁 때 돌아가신 군인을 가족 품으로 돌려보내려고 가족의 유전자를 모으는 천막이 있었어요.",
+          "img": "CH10-P04-clinic.webp",
+          "alt": "보건소 접수처. 직원 앞에 앉은 예순아홉 살 민우",
+          "caption": "며칠 뒤, 파주 보건소",
+          "narration": "며칠 뒤, 민우는 보건소를 찾아갔어요. 전쟁 때 돌아가신 군인의 가족이 유전자를 남겨 두면, 나중에 유해를 찾았을 때 가족인지 확인할 수 있거든요.",
           "lines": [
             {
               "who": "직원",
@@ -2861,7 +2854,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 13.69,
+          "dur": 18.18,
           "overlay": [],
           "effect": null,
           "direction": "컷. overlay: 천막 글씨",
@@ -2871,7 +2864,7 @@
         {
           "id": "CH10-P04",
           "kind": "choice",
-          "img": "CH10-P04.webp",
+          "img": "CH10-P04-clinic.webp",
           "alt": "천막 의자에서 목이 메어 입을 열지 못하는 민우. 앞에 면봉을 든 직원의 손.",
           "caption": null,
           "narration": null,
@@ -2892,7 +2885,7 @@
         },
         {
           "id": "CH10-B09",
-          "img": "CH10-B09.webp",
+          "img": "CH10-P04-clinic.webp",
           "alt": "민우 클로즈업",
           "caption": null,
           "narration": null,
@@ -2906,7 +2899,7 @@
           ],
           "sfx": [],
           "soundDirection": "",
-          "move": "none",
+          "move": "push",
           "transition": "slow-black",
           "dur": 13.98,
           "overlay": null,
@@ -2920,12 +2913,12 @@
           "img": null,
           "alt": "",
           "caption": "기록 카드 4 · 그곳에 남은 기록",
-          "narration": "실향민들은 설날과 추석이면 임진각 망배단에 모여 고향 쪽으로 차례를 지냅니다. 나라는 6·25 전사자 유해를 가족에게 돌려보내려고 유가족의 유전자 시료를 모으고 있습니다(2025년 말 약 11만 9천 개).",
+          "narration": "실향민들은 설날과 추석이면 임진각 망배단에 모여 고향 쪽으로 차례를 지냅니다. 6·25 전사자 유가족은 가까운 보건소에서 유전자 시료를 남길 수 있고, 나라는 이를 발굴한 유해와 맞춰 보며 가족을 찾아 주고 있습니다(2025년 말 약 11만 9천 개).",
           "lines": [],
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 19.34,
+          "dur": 22.89,
           "overlay": null,
           "effect": null,
           "narrationVoice": "CH10-R4.mp3"
@@ -2997,12 +2990,12 @@
           "img": "CH11-F01.webp",
           "alt": "감식실의 전문요원들이 기록과 유전자 분석 결과를 대조한다. 민우는 이곳에 없다.",
           "caption": "감식과 신원 확인",
-          "narration": "발굴 기록과 유품, 유전자 검사 결과를 하나하나 맞춰 보았어요. 6년 전 망배단에서 민우가 남긴 유전자가, 마침내 한 사람과 맞았어요.",
+          "narration": "발굴 기록과 유품, 유전자 검사 결과를 하나하나 맞춰 보았어요. 6년 전 민우가 보건소에서 남긴 유전자가, 마침내 한 사람과 맞았어요.",
           "lines": [],
           "sfx": [],
           "move": "none",
           "transition": "dissolve",
-          "dur": 14.32,
+          "dur": 14.34,
           "overlay": null,
           "effect": null,
           "narrationVoice": "CH11-F01.mp3"
