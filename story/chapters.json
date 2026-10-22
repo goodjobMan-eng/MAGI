@@ -227,7 +227,7 @@
             {
               "who": "구 작가",
               "text": "자네가 한번 들여다보게.",
-              "voice": "CH01-L06-acted-v3.mp3",
+              "voice": "CH01-L06.mp3",
               "offscreen": false
             }
           ],
@@ -288,7 +288,25 @@
               "text": "야… 다 거꾸로 보이네요.",
               "voice": "CH01-L07-fix.mp3",
               "offscreen": false
-            },
+            }
+          ],
+          "sfx": [],
+          "soundDirection": "",
+          "move": "none",
+          "transition": "cut",
+          "dur": null,
+          "overlay": null,
+          "effect": null,
+          "direction": "컷",
+          "kind": "story"
+        },
+        {
+          "id": "CH01-B14b",
+          "img": "CH01-B07.webp",
+          "alt": "사진기를 처음 들여다본 민석을 흐뭇하게 바라보는 구 작가",
+          "caption": null,
+          "narration": null,
+          "lines": [
             {
               "who": "구 작가",
               "text": "그래서 사진이 재밌는 거야.",
@@ -300,7 +318,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 7.69,
+          "dur": null,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -420,7 +438,7 @@
             {
               "who": "민우",
               "text": "형아!",
-              "voice": "CH02-L01-gem.mp3",
+              "voice": "CH02-L01-gem2.mp3",
               "offscreen": false
             }
           ],
@@ -428,7 +446,7 @@
           "soundDirection": "발소리",
           "move": "none",
           "transition": "cut",
-          "dur": 3.32,
+          "dur": 2.5,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -436,7 +454,7 @@
         },
         {
           "id": "CH02-B05",
-          "img": "CH02-B05-era-v4.webp",
+          "img": "CH02-B05-shoe.webp",
           "alt": "투숏. 형이 민우를 번쩍 안아 올린다",
           "caption": null,
           "narration": null,
@@ -665,7 +683,14 @@
           "alt": "인서트. 뜯은 봉투에서 쪽지 한 장과 빳빳한 사진 두 장이 나온다(사진은 뒷면만 보인다)",
           "caption": null,
           "narration": "봉투 안에는 지난가을 구 작가가 찍어 준 가족사진이 두 장 들어 있었어요.",
-          "lines": [],
+          "lines": [
+            {
+              "who": "구 작가",
+              "text": "늦어서 미안하오. 두 장 넣소.",
+              "voice": null,
+              "offscreen": true
+            }
+          ],
           "sfx": [],
           "soundDirection": "종이 소리",
           "move": "none",
@@ -1075,7 +1100,7 @@
         },
         {
           "id": "CH03-B11",
-          "img": "CH03-B11-continuity-v3.webp",
+          "img": "CH03-B11-open.webp",
           "alt": "민우 바스트. 손을 그쪽으로 뻗는다. 품의 보따리 아래쪽이 찢어져 있다",
           "caption": null,
           "narration": "민우는 몰랐어요. 품에 안은 보따리 밑이 찢어져 있다는 것을.",
@@ -1662,34 +1687,7 @@
           "move": "none",
           "transition": "cut",
           "dur": null,
-          "overlay": [
-            {
-              "text": "김민식",
-              "quad": [
-                [
-                  60,
-                  61
-                ],
-                [
-                  65,
-                  58
-                ],
-                [
-                  66,
-                  80
-                ],
-                [
-                  60,
-                  82
-                ]
-              ],
-              "paperWidth": 90,
-              "paperHeight": 300,
-              "size": 64,
-              "font": "",
-              "vertical": true
-            }
-          ],
+          "overlay": null,
           "effect": null,
           "direction": "고정. overlay: '김민식' 강조",
           "kind": "story"
@@ -1852,18 +1850,25 @@
           "img": "CH05-B08.webp",
           "alt": "민우 바스트. 끝까지 짚고 신문을 접는다",
           "caption": null,
-          "narration": "민우는 신문을 꼭꼭 접었어요. \"오늘은 없네. 내일 신문엔 있을지도 몰라.\"",
-          "lines": [],
+          "narration": null,
+          "lines": [
+            {
+              "who": "민우",
+              "text": "오늘은 없네. 내일 신문에는 있을지도 몰라.",
+              "voice": null,
+              "offscreen": false,
+              "aside": true
+            }
+          ],
           "sfx": [],
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 10.69,
+          "dur": 4,
           "overlay": null,
           "effect": null,
           "direction": "컷",
-          "kind": "story",
-          "narrationVoice": "CH05-B08-gem.mp3"
+          "kind": "story"
         },
         {
           "id": "CH05-B09",
@@ -1936,34 +1941,7 @@
           "move": "none",
           "transition": "cut",
           "dur": 8.52,
-          "overlay": [
-            {
-              "text": "김민석 (개성)",
-              "quad": [
-                [
-                  32,
-                  10
-                ],
-                [
-                  68,
-                  12
-                ],
-                [
-                  68,
-                  24
-                ],
-                [
-                  32,
-                  22
-                ]
-              ],
-              "paperWidth": 700,
-              "paperHeight": 130,
-              "size": 68,
-              "font": "hand",
-              "vertical": false
-            }
-          ],
+          "overlay": null,
           "effect": null,
           "direction": "컷. overlay: 판자",
           "kind": "story",
@@ -2667,20 +2645,20 @@
               "text": "金敏錫",
               "quad": [
                 [
-                  44,
-                  85
-                ],
-                [
-                  51,
-                  84.7
-                ],
-                [
                   54,
                   89.5
                 ],
                 [
                   45,
                   90
+                ],
+                [
+                  44,
+                  85
+                ],
+                [
+                  51,
+                  84.7
                 ]
               ],
               "paperWidth": 300,
@@ -3255,7 +3233,8 @@
           "dur": 3,
           "overlay": null,
           "effect": null,
-          "silentBgm": true
+          "silentBgm": false,
+          "bgmOverride": "one-photograph-suno-v1.mp3"
         },
         {
           "id": "CH12-EPV",
@@ -3274,25 +3253,11 @@
           "epilogue": true,
           "video": "CH12-epilogue.mp4",
           "videoDelay": 0.01,
-          "videoSound": true,
-          "videoAdvance": true,
-          "silentBgm": true
-        },
-        {
-          "id": "CH12-D01",
-          "kind": "story",
-          "img": null,
-          "alt": "헌사",
-          "caption": null,
-          "narration": "아물지 않은 상처를 품고 시대를 건너온 모든 분들의 넋과 삶에,\n그리고 더 이상 전쟁 없는 세상을 꿈꾸는 모든 아이들에게 바칩니다.",
-          "lines": [],
-          "sfx": [],
-          "move": "none",
-          "transition": "slow-black",
-          "dur": null,
-          "overlay": null,
-          "effect": null,
-          "silentBgm": true
+          "videoSound": false,
+          "videoAdvance": false,
+          "silentBgm": false,
+          "bgmOverride": "one-photograph-suno-v1.mp3",
+          "endText": "아물지 않은 상처를 품고 시대를 건너온 모든 분들의 넋과 삶에,\n그리고 더 이상 전쟁 없는 세상을 꿈꾸는 모든 아이들에게 바칩니다."
         }
       ],
       "bgmFile": "one-photograph-suno-v1.mp3"

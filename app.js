@@ -30,7 +30,7 @@ const hasPhases=c=>Boolean(c.narration&&c.narrationVoice&&c.lines.length&&c.miss
 const lineSrcs=c=>c.lines.filter(l=>l.voice).map(l=>`assets/audio/voices/${l.voice}`);
 function playQueue(queue,e,done,delay){let n=0;function next(){if(e!==epoch)return;const src=queue[n++];if(!src){duck(false);done?.();return;}const v=new Audio(src);voices.push(v);duck(true);let ended=false;const finish=()=>{if(ended)return;ended=true;next();};v.onended=finish;v.onerror=finish;v.play().catch(finish);}if(delay)musicGap=setTimeout(next,delay*1000);else next();}
 function audioFor(c,e){
- const url=`assets/audio/bgm/${c.chapter.bgmFile||c.chapter.bgm+'.wav'}`;
+ const url=`assets/audio/bgm/${c.bgmOverride||c.chapter.bgmFile||c.chapter.bgm+'.wav'}`;
  if(!bgm||!bgm.src.endsWith(url)){bgm?.pause();bgm=new Audio(url);bgm.loop=true;bgm.volume=music?.18:0;bgm.play().catch(()=>{});}
  if(c.silentBgm||c.soundDirection?.includes('무음')||c.id==='CH12-T06'||c.id==='CH12-T07')bgm.pause();
  else if(c.id==='CH12-B04'){bgm.pause();musicGap=setTimeout(()=>{if(e===epoch)bgm?.play().catch(()=>{});},3000);}
@@ -44,8 +44,8 @@ function show(){
  $('#reader').classList.toggle('text-page',!c.img);$('#reader').classList.toggle('white-page',c.id==='CH12-T06'||c.id==='CH12-T06a');$('#reader').classList.toggle('interactive',['talk','choice','mission'].includes(c.kind));$('#reader').classList.toggle('record-page',c.kind==='record');
  $('#reader').classList.toggle('epilogue',Boolean(c.epilogue));
  $('#chapterLabel').textContent=c.epilogue?'그 집에 남은 시간':`${c.chapter.id.slice(2)} · ${c.chapter.title}`;$('#progress').textContent=`${index+1} / ${cuts.length}`;$('#prev').disabled=index===0;$('#next').disabled=index===cuts.length-1;
- const clip=$('#clip');clip.pause();clip.hidden=true;clip.classList.remove('on');clip.removeAttribute('src');
- const playClip=()=>{if(e!==epoch||!c.video)return;clip.src=`assets/video/${c.video}`;clip.muted=!(c.videoSound&&music);clip.onended=c.videoAdvance?()=>{if(e===epoch)advance(1,true);}:null;clip.onerror=c.videoAdvance?()=>{clearTimeout(phaseTimer);phaseTimer=setTimeout(()=>{if(e===epoch)advance(1,true);},(c.dur||8)*1000);}:null;clip.hidden=false;clip.currentTime=0;clip.play().then(()=>requestAnimationFrame(()=>clip.classList.add('on'))).catch(()=>{});};
+ document.querySelectorAll('.end-text').forEach(n=>n.remove());const clip=$('#clip');clip.pause();clip.hidden=true;clip.classList.remove('on');clip.removeAttribute('src');
+ const playClip=()=>{if(e!==epoch||!c.video)return;clip.src=`assets/video/${c.video}`;clip.muted=!(c.videoSound&&music);clip.onended=c.videoAdvance?()=>{if(e===epoch)advance(1,true);}:c.endText?()=>{if(e!==epoch)return;const t=document.createElement('div');t.className='end-text';t.textContent=c.endText;$('#picture').append(t);requestAnimationFrame(()=>t.classList.add('on'));}:null;clip.onerror=c.videoAdvance?()=>{clearTimeout(phaseTimer);phaseTimer=setTimeout(()=>{if(e===epoch)advance(1,true);},(c.dur||8)*1000);}:null;clip.hidden=false;clip.currentTime=0;clip.play().then(()=>requestAnimationFrame(()=>clip.classList.add('on'))).catch(()=>{});};
  const image=$('#image'),p=$('#picture');p.className=[c.effect,c.move].filter(Boolean).join(' ');image.className='';image.alt=c.alt;image.style.visibility='hidden';$('#placeholder').textContent='';$('#placeholder').hidden=true;$('#overlays').replaceChildren();
  image.onload=()=>{if(e===epoch){image.style.visibility='visible';$('#placeholder').hidden=true;renderInk($('#overlays'),image,c.overlay);}};
  image.onerror=()=>{if(e===epoch){$('#placeholder').textContent='그림을 불러오지 못했습니다. 연결을 확인한 뒤 다시 열어 주세요.';$('#placeholder').hidden=false;}};
