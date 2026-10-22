@@ -15,3 +15,4 @@
 #reader.title-card #dialogue{max-width:none!important}#reader.title-card .card-text{width:100%;display:block}
 #reader[data-card=credits] .card-text{font-size:clamp(11px,1.6vw,15px)!important;line-height:1.55!important}
 #reader[data-card=title] .card-text{font-family:'Hahmlet',serif;font-weight:200;letter-spacing:.12em;color:#f3ede0;text-shadow:0 0 18px #ffffff55,0 0 2px #fff6;transition-duration:3.5s}#reader[data-card=dedication] .card-text{font-family:'Nanum Myeongjo',serif;font-weight:400}
+#reader[data-card=title] .card-text{font-family:'Nanum Pen Script','Gaegu',cursive;font-weight:300;letter-spacing:.06em;font-size:clamp(40px,8.5vw,80px);line-height:1.35}#reader[data-card=dedication] .card-text{font-size:clamp(12px,1.9vw,17px)!important;line-height:2.2}
