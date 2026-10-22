@@ -928,7 +928,7 @@
         },
         {
           "id": "CH03-B05",
-          "img": "CH03-B05.webp",
+          "img": "CH03-B05-nogu.webp",
           "alt": "와이드. 기적이 울리고 사람들이 한꺼번에 화차로 밀려든다",
           "caption": null,
           "narration": "기적이 울리자, 사람들이 한꺼번에 기차로 밀려들었어요.",
@@ -957,12 +957,14 @@
           "soundDirection": "소리가 멀어진다",
           "move": "none",
           "transition": "cut",
-          "dur": 6.56,
+          "dur": 7.5,
           "overlay": null,
           "effect": null,
           "direction": "고정",
           "kind": "story",
-          "narrationVoice": "CH03-B06-gem.mp3"
+          "narrationVoice": "CH03-B06-gem.mp3",
+          "video": "CH03-hands-slip.mp4",
+          "videoDelay": 0.1
         },
         {
           "id": "CH03-B07",
@@ -1007,7 +1009,7 @@
         },
         {
           "id": "CH03-B09",
-          "img": "CH03-B09-hands.webp",
+          "img": "CH03-B09-fix.webp",
           "alt": "미디엄. 성구 어머니가 민우 허리를 번쩍 안아 올리고, 화차 위의 성구가 손을 내민다",
           "caption": null,
           "narration": "그때 옆집 성구 어머니가 민우를 번쩍 들어 기차 위로 올려 주었어요.",
@@ -2142,7 +2144,7 @@
         {
           "id": "CH07-Y01",
           "kind": "story",
-          "img": "CH07-Y01.webp",
+          "img": "CH07-Y01-young.webp",
           "alt": "스물두 살 민우가 작은 셋방에서 일을 마친 뒤 공책에 글씨를 익힌다. 혼자다.",
           "caption": "1963년 · 스물두 살",
           "narration": "세월이 흘러 민우는 어른이 되었어요. 이제는 형의 이름을 읽을 수 있었지만, 그 이름을 불러 줄 사람이 없었어요.",
@@ -2158,7 +2160,7 @@
         {
           "id": "CH07-Y02",
           "kind": "story",
-          "img": "CH07-Y02.webp",
+          "img": "CH07-Y02-young.webp",
           "alt": "서른 살 민우가 라디오에 귀를 기울이며 어머니와 형의 정보를 종이에 적는다. 가족사진은 없다.",
           "caption": "1971년 · 서른 살",
           "narration": "가족을 찾는다는 소식이 들릴 때마다, 민우는 어머니와 형의 이름을 처음부터 다시 적었어요.",
@@ -2173,7 +2175,7 @@
         },
         {
           "id": "CH07-B01",
-          "img": "CH07-B01-continuity-v3.webp",
+          "img": "CH07-B01-young.webp",
           "alt": "와이드. 벽이란 벽, 게시판마다 사람 찾는 종이가 붙어 있고 사람들이 빽빽하다",
           "caption": "1983년 여름, 여의도 · 마흔두 살",
           "narration": "1983년 여름, 방송국이 헤어진 가족을 찾아 주는 방송을 했어요. 여의도 광장은 가족을 찾는 사람들로 가득 찼어요.",
@@ -2272,7 +2274,7 @@
         },
         {
           "id": "CH07-B05",
-          "img": "CH07-B05-era-v4.webp",
+          "img": "CH07-B05-fix.webp",
           "alt": "밤. 민우가 벽에 팻말을 붙이고 돌아선다. 수천 장 가운데 한 장",
           "caption": null,
           "narration": "그해 방송으로 만 가족 넘게 다시 만났어요. 하지만 민우의 종이는, 수천 장 가운데 한 장으로 남았어요.",
@@ -2839,8 +2841,8 @@
         },
         {
           "id": "CH10-B08",
-          "img": "CH10-P04-clinic.webp",
-          "alt": "보건소 접수처. 직원 앞에 앉은 예순아홉 살 민우",
+          "img": "CH10-B08-clinic.webp",
+          "alt": "보건소 접수 창구. 예순아홉 살 민우가 직원 앞에 앉았다",
           "caption": "며칠 뒤, 파주 보건소",
           "narration": "며칠 뒤, 민우는 보건소를 찾아갔어요. 전쟁 때 돌아가신 군인의 가족이 유전자를 남겨 두면, 나중에 유해를 찾았을 때 가족인지 확인할 수 있거든요.",
           "lines": [
