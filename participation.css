@@ -12,3 +12,5 @@
 
 #reader.title-card #art{display:none!important}#reader.title-card #words{position:absolute!important;inset:0!important;height:auto!important;background:#000!important;display:grid!important;place-items:center;padding:0 8%!important}#reader.title-card #caption{display:none}#reader.title-card #dialogue{margin:0!important;width:100%}.card-text{color:#fff;text-align:center;white-space:pre-line;opacity:0;transition:opacity 2.5s ease}.card-text.on{opacity:1}#reader[data-card=title] .card-text{font-size:clamp(28px,6vw,56px);line-height:1.6;letter-spacing:-.02em}#reader[data-card=dedication] .card-text{font-size:clamp(15px,2.6vw,24px);line-height:2.1;transition-duration:4s}#reader.title-card #page{position:relative;background:#000}
 #reader[data-card=credits] .card-text{font-size:clamp(13px,2vw,18px);line-height:1.9}
+#reader.title-card #dialogue{max-width:none!important}#reader.title-card .card-text{width:100%;display:block}
+#reader[data-card=credits] .card-text{font-size:clamp(11px,1.6vw,15px)!important;line-height:1.55!important}
