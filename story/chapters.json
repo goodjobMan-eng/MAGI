@@ -336,7 +336,7 @@
           "img": null,
           "alt": "검은 화면",
           "caption": null,
-          "narration": "제목 「너와 마주한 그날의 풍경」",
+          "narration": "너와 마주한\n그날의 풍경",
           "lines": [],
           "sfx": [],
           "soundDirection": "무음",
@@ -524,8 +524,8 @@
           "lines": [
             {
               "who": "민석",
-              "text": "이건 니 이름. 이건 형 이름. …군대선 이렇게도 쓴다.",
-              "voice": "CH02-L02-fix.mp3",
+              "text": "이건 니 이름. 이건 형 이름.",
+              "voice": "CH02-L02-cut.mp3",
               "offscreen": false
             }
           ],
@@ -1402,31 +1402,13 @@
           "sfx": [],
           "soundDirection": "등 뒤에서 기관총 소리가 길게",
           "move": "none",
-          "transition": "cut",
+          "transition": "slow-black",
           "dur": 12.49,
           "overlay": null,
           "effect": null,
           "direction": "고정",
           "kind": "story",
           "narrationVoice": "CH04-B08-gem.mp3"
-        },
-        {
-          "id": "CH04-B09",
-          "img": "CH04-B09.webp",
-          "alt": "민우가 돌아본다. 멀리 멈춘 기관차의 김이 흩어진다",
-          "caption": null,
-          "narration": "민우는 몇 번이나 뒤를 돌아보았어요. 엄마가 금방이라도 따라올 것만 같았거든요.",
-          "lines": [],
-          "sfx": [],
-          "soundDirection": "총소리가 그친 정적",
-          "move": "none",
-          "transition": "slow-black",
-          "dur": 11.13,
-          "overlay": null,
-          "effect": null,
-          "direction": "느린 암전",
-          "kind": "story",
-          "narrationVoice": "CH04-B09-gem.mp3"
         },
         {
           "id": "CH04-R1",
@@ -2175,7 +2157,7 @@
         },
         {
           "id": "CH07-B01",
-          "img": "CH07-B01-young.webp",
+          "img": "CH07-B01-match.webp",
           "alt": "와이드. 벽이란 벽, 게시판마다 사람 찾는 종이가 붙어 있고 사람들이 빽빽하다",
           "caption": "1983년 여름, 여의도 · 마흔두 살",
           "narration": "1983년 여름, 방송국이 헤어진 가족을 찾아 주는 방송을 했어요. 여의도 광장은 가족을 찾는 사람들로 가득 찼어요.",
@@ -2617,7 +2599,7 @@
           "img": "CH10-B02.webp",
           "alt": "미디엄. 예순아홉 살 민우가 붓으로 어머니 지방을 쓴다(종이는 비스듬해 글씨가 안 보인다)",
           "caption": null,
-          "narration": "민우는 어머니의 이름을 종이에 썼어요. 돌아가신 분을 모실 때 쓰는 지방이에요.",
+          "narration": "민우는 붓을 들어 어머니의 이름을 종이에 썼어요.",
           "lines": [],
           "sfx": [],
           "soundDirection": "붓 소리",
@@ -2627,8 +2609,7 @@
           "overlay": null,
           "effect": null,
           "direction": "컷",
-          "kind": "story",
-          "narrationVoice": "CH10-B02-gem.mp3"
+          "kind": "story"
         },
         {
           "id": "CH10-B03",
@@ -2697,7 +2678,7 @@
           "img": "CH10-B05.webp",
           "alt": "민우가 종이를 접어 상에 올리지 않고 안주머니에 넣는다",
           "caption": null,
-          "narration": "하지만 형의 이름은 상에 올리지 않았어요.",
+          "narration": "하지만 두 종이 모두 상에 올리지 않고, 안주머니에 넣었어요.",
           "lines": [],
           "sfx": [],
           "soundDirection": "",
@@ -2707,30 +2688,34 @@
           "overlay": null,
           "effect": null,
           "direction": "컷",
-          "kind": "story",
-          "narrationVoice": "CH10-B05-gem.mp3"
+          "kind": "story"
         },
         {
           "id": "CH10-P01",
-          "kind": "talk",
+          "kind": "choice",
           "img": "CH10-P01.webp",
           "alt": "눈 내리는 망배단에서 고개를 들어 눈높이의 렌즈를 바라보는 예순아홉 살 민우.",
           "caption": null,
           "narration": null,
-          "lines": [
-            {
-              "who": "민우",
-              "text": "어서 오게. 이 추운 날 멀리서들 왔구먼.",
-              "voice": "CH10-P01-L01-acted-v3.mp3",
-              "offscreen": false
-            }
-          ],
+          "lines": [],
           "sfx": [],
           "move": "none",
           "transition": "cut",
           "dur": 6.11,
           "overlay": null,
-          "effect": null
+          "effect": null,
+          "options": [
+            {
+              "text": "할아버지, 안녕하세요!",
+              "next": "CH10-P02",
+              "reply": {
+                "who": "민우",
+                "text": "어서 오게. 이 추운 날 멀리서들 왔구먼.",
+                "img": null,
+                "voice": "CH10-P01-L01-acted-v3.mp3"
+              }
+            }
+          ]
         },
         {
           "id": "CH10-P02",
@@ -2750,12 +2735,7 @@
             {
               "text": "할아버지, 그 종이는 왜 상에 안 올리세요?",
               "next": "CH10-P03",
-              "reply": {
-                "who": "민우",
-                "text": "형은 아직 모르는 거니까.",
-                "img": null,
-                "voice": "CH10-P02-O01-acted-v3.mp3"
-              }
+              "reply": null
             },
             {
               "text": "누구 이름을 쓰신 거예요?",
@@ -2779,8 +2759,8 @@
           "lines": [
             {
               "who": "민우",
-              "text": "어릴 적에… 이 이름을 대신 기억해 주겠다던 아이들이 있었네. 꼭 자네들만 했지.",
-              "voice": "CH10-P03-L01-acted-v3.mp3",
+              "text": "상에는 돌아가신 분만 올리는 거라네. 우리 어머니랑 형은… 돌아가셨는지, 살아 계신지도 아직 모르니까. 형은 일흔을 훌쩍 넘었고, 어머니는 살아 계시면 아흔도 넘으셨겠지. 그래도… 혹시 모르는 거 아닌가.",
+              "voice": null,
               "offscreen": false
             }
           ],
@@ -2867,8 +2847,8 @@
         {
           "id": "CH10-P04",
           "kind": "choice",
-          "img": "CH10-P04-clinic.webp",
-          "alt": "천막 의자에서 목이 메어 입을 열지 못하는 민우. 앞에 면봉을 든 직원의 손.",
+          "img": "CH10-P04-bitter.webp",
+          "alt": "보건소 의자에서 쓸쓸하고 씁쓸한 얼굴로 말을 잇지 못하는 민우. 앞에 면봉을 든 직원의 손.",
           "caption": null,
           "narration": null,
           "lines": [],
@@ -2888,7 +2868,7 @@
         },
         {
           "id": "CH10-B09",
-          "img": "CH10-P04-clinic.webp",
+          "img": "CH10-P04-bitter.webp",
           "alt": "민우 클로즈업",
           "caption": null,
           "narration": null,
@@ -3168,7 +3148,7 @@
           "img": "CH12-B03.webp",
           "alt": "정면 대칭, 셋이 굳은 채 멈춤. 이 그림이 곧 사진이다(CH11-B06에 다시 씀)",
           "caption": null,
-          "narration": "찰칵. 사진기는 그렇게 굳은 얼굴들을 담았어요.",
+          "narration": null,
           "lines": [
             {
               "who": "민석",
@@ -3186,7 +3166,6 @@
           "effect": null,
           "direction": "번쩍",
           "kind": "story",
-          "narrationVoice": "CH12-B03-gem.mp3",
           "video": "CH12-family-laugh.mp4"
         },
         {
@@ -3194,159 +3173,41 @@
           "img": "CH12-B05.webp",
           "alt": "흰빛 속 클로즈업. 민우 입꼬리가 아주 조금 올라가고, 어머니가 민우 손을 꼭 잡는다",
           "caption": null,
-          "narration": "사진에는 남지 않은 1초. 민우는 형의 손을 느끼며, 아주 조금 웃었어요.",
+          "narration": null,
           "lines": [],
           "sfx": [],
           "soundDirection": "",
           "move": "none",
           "transition": "slow-black",
-          "dur": 12.44,
+          "dur": 5,
           "overlay": null,
           "effect": "white-veil",
           "direction": "흰 페이드",
-          "kind": "story",
-          "narrationVoice": "CH12-B05-gem.mp3"
+          "kind": "story"
         },
         {
-          "id": "CH12-E01",
-          "kind": "story",
-          "img": "CH12-E01.webp",
-          "alt": "전쟁으로 지붕과 벽이 무너진 개성 집. 흰 머릿수건을 쓴 어머니 혼자 작은 보따리를 들고 대문 안에 멈춰 선다.",
+          "id": "CH12-T01",
+          "img": null,
+          "alt": "검은 화면",
           "caption": null,
-          "narration": "그날 밤, 기차를 놓친 어머니는 끝내 다리까지 가지 못했어요. 어머니는 무너진 개성 집으로 돌아왔어요.",
-          "lines": [],
-          "sfx": [
-            "wind"
-          ],
-          "move": "none",
-          "transition": "dissolve",
-          "dur": 13.69,
-          "overlay": null,
-          "effect": null,
-          "epilogue": true,
-          "silentBgm": true,
-          "narrationVoice": "CH12-E01-gem.mp3"
-        },
-        {
-          "id": "CH12-E02",
-          "kind": "story",
-          "img": "CH12-E02.webp",
-          "alt": "봄. 어머니가 무너진 집의 잔해를 바구니에 담는다. 같은 집, 같은 구도. 다른 사람은 없다.",
-          "caption": null,
-          "narration": "봄이 오자, 어머니는 무너진 집을 치웠어요. 두 아들이 돌아올 집이니까요.",
+          "narration": "너와 마주한\n그날의 풍경",
           "lines": [],
           "sfx": [],
+          "soundDirection": "무음",
           "move": "none",
-          "transition": "dissolve",
-          "dur": 10.38,
+          "transition": "slow-black",
+          "dur": null,
           "overlay": null,
           "effect": null,
-          "epilogue": true,
-          "silentBgm": true,
-          "narrationVoice": "CH12-E02-gem.mp3"
-        },
-        {
-          "id": "CH12-E03",
-          "kind": "story",
-          "img": "CH12-E03.webp",
-          "alt": "여름. 나이가 든 어머니가 툇마루를 닦다 열린 대문 쪽을 바라본다. 집의 일부만 소박하게 수선되어 있다.",
-          "caption": null,
-          "narration": "여름이면 툇마루를 닦으며 대문을 바라보았어요.",
-          "lines": [],
-          "sfx": [],
-          "move": "none",
-          "transition": "dissolve",
-          "dur": 8.37,
-          "overlay": null,
-          "effect": null,
-          "epilogue": true,
-          "silentBgm": true,
-          "narrationVoice": "CH12-E03-gem.mp3"
-        },
-        {
-          "id": "CH12-E04",
-          "kind": "story",
-          "img": "CH12-E04.webp",
-          "alt": "가을. 더 나이 든 어머니가 대문에서 마루까지 낙엽을 쓸어 길을 비워 둔다.",
-          "caption": null,
-          "narration": "가을이면 대문에서 마루까지 낙엽을 쓸어 길을 내 두었어요.",
-          "lines": [],
-          "sfx": [],
-          "move": "none",
-          "transition": "dissolve",
-          "dur": 9.28,
-          "overlay": null,
-          "effect": null,
-          "epilogue": true,
-          "silentBgm": true,
-          "narrationVoice": "CH12-E04-gem.mp3"
-        },
-        {
-          "id": "CH12-E05",
-          "kind": "story",
-          "img": "CH12-E05.webp",
-          "alt": "겨울. 등이 굽은 노년의 어머니가 툇마루에 홀로 앉아 대문 쪽을 기다린다. 눈밭에는 좁게 쓸어 둔 길이 있다.",
-          "caption": null,
-          "narration": "눈이 오면 눈을 쓸었어요. 아이들이 집으로 오는 길을 잃지 않도록.",
-          "lines": [],
-          "sfx": [
-            "wind"
-          ],
-          "move": "none",
-          "transition": "dissolve",
-          "dur": 10.32,
-          "overlay": null,
-          "effect": null,
-          "epilogue": true,
-          "silentBgm": true,
-          "narrationVoice": "CH12-E05-gem.mp3"
-        },
-        {
-          "id": "CH12-E06",
-          "kind": "story",
-          "img": "CH12-E06.webp",
-          "alt": "다시 봄. 같은 집에 아무도 없다. 계단 틈에 풀이 돋고, 기둥에 기대어 둔 빗자루는 움직이지 않는다.",
-          "caption": null,
-          "narration": "그리고 어느 봄, 빗자루는 더 이상 움직이지 않았어요.",
-          "lines": [],
-          "sfx": [
-            "wind"
-          ],
-          "move": "none",
-          "transition": "dissolve",
-          "dur": 7.63,
-          "overlay": null,
-          "effect": null,
-          "epilogue": true,
-          "silentBgm": true,
-          "narrationVoice": "CH12-E06-gem.mp3"
-        },
-        {
-          "id": "CH12-E07",
-          "kind": "story",
-          "img": "CH12-E07.webp",
-          "alt": "쓸쓸한 가을의 빈집. 쓸지 않은 낙엽이 길을 덮었다. 문은 닫혀 있고, 아무도 돌아오지 않는다. 같은 구도에 오래 머문다.",
-          "caption": null,
-          "narration": "어머니도, 민우도, 서로를 잊은 적이 없었어요. 다만 둘 사이에 건널 수 없는 선이 있었을 뿐이에요.",
-          "lines": [],
-          "sfx": [
-            "wind"
-          ],
-          "move": "none",
-          "transition": "white",
-          "dur": 13.72,
-          "overlay": null,
-          "effect": null,
-          "epilogue": true,
-          "silentBgm": true,
-          "narrationVoice": "CH12-E07-gem.mp3"
+          "direction": "암전",
+          "kind": "story"
         },
         {
           "id": "CH12-T07",
           "img": null,
           "alt": "만든 사람들",
           "caption": null,
-          "narration": "만든 사람들\n\n굳잡맨\n\n앱 제작: OpenAI Codex\n이야기 다듬기·검수: Anthropic Claude\n그림: OpenAI 이미지 생성 (AI 생성)\n목소리: Google Gemini TTS (AI 생성)\n해설 목소리: Microsoft Edge TTS (AI 생성)\n테마곡: 한 장의 사진 · Suno (AI 생성)\n그 외 배경음악·효과음: Python 합성\n\n비상업 교육용\n\n이 작품은 역사적 사실을 바탕으로 한 가상의 이야기입니다.",
+          "narration": "만든 사람들\n\n굳잡맨\n\n앱 제작: OpenAI Codex\n이야기 다듬기·검수: Anthropic Claude\n그림: OpenAI 이미지 생성 · Google Gemini 이미지 생성 (AI 생성)\n영상: Google Veo (AI 생성)\n목소리: Google Gemini TTS (AI 생성)\n테마곡: 한 장의 사진 · Suno (AI 생성)\n그 외 배경음악·효과음: Python 합성\n\n비상업 교육용\n\n이 작품은 역사적 사실을 바탕으로 한 가상의 이야기입니다.",
           "lines": [],
           "sfx": [],
           "soundDirection": "",
@@ -3357,6 +3218,59 @@
           "effect": null,
           "direction": "끝",
           "kind": "story"
+        },
+        {
+          "id": "CH12-EP0",
+          "kind": "story",
+          "img": null,
+          "alt": "에필로그",
+          "caption": null,
+          "narration": "에필로그",
+          "lines": [],
+          "sfx": [],
+          "move": "none",
+          "transition": "black",
+          "dur": 3,
+          "overlay": null,
+          "effect": null,
+          "silentBgm": true
+        },
+        {
+          "id": "CH12-EPV",
+          "kind": "story",
+          "img": "CH12-E01.webp",
+          "alt": "전쟁으로 무너진 개성 집에서, 계절이 바뀌도록 아들들을 기다리는 어머니. 끝내 빈집만 남는다.",
+          "caption": null,
+          "narration": null,
+          "lines": [],
+          "sfx": [],
+          "move": "none",
+          "transition": "slow-black",
+          "dur": 25,
+          "overlay": null,
+          "effect": null,
+          "epilogue": true,
+          "video": "CH12-epilogue.mp4",
+          "videoDelay": 0.01,
+          "videoSound": true,
+          "videoAdvance": true,
+          "silentBgm": true
+        },
+        {
+          "id": "CH12-D01",
+          "kind": "story",
+          "img": null,
+          "alt": "헌사",
+          "caption": null,
+          "narration": "아물지 않은 상처를 품고 시대를 건너온 모든 분들의 넋과 삶에,\n그리고 더 이상 전쟁 없는 세상을 꿈꾸는 모든 아이들에게 바칩니다.",
+          "lines": [],
+          "sfx": [],
+          "move": "none",
+          "transition": "slow-black",
+          "dur": null,
+          "overlay": null,
+          "effect": null,
+          "silentBgm": true
         }
       ],
       "bgmFile": "one-photograph-suno-v1.mp3"
