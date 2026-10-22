@@ -72,7 +72,7 @@
             {
               "who": "구 작가",
               "text": "밥까지 얻어먹었으니 값은 해야지. 식구들 사진 한 장 찍어 드리리다.",
-              "voice": "CH01-L01-fix.mp3",
+              "voice": "CH01-B04-cast.mp3",
               "offscreen": false
             }
           ],
@@ -137,7 +137,7 @@
             {
               "who": "구 작가",
               "text": "어머니, 사진은 남습니다.",
-              "voice": "CH01-L03-acted-v3.mp3",
+              "voice": "CH01-B07-cast.mp3",
               "offscreen": false
             }
           ],
@@ -161,7 +161,7 @@
             {
               "who": "구 작가",
               "text": "해방되고, 이북에선 글을 마음대로 쓸 수가 없어서… 저 혼자 내려왔지요. 금방 다시 올라갈 줄 알고… 원산 식구들 사진 한 장 못 챙겼어요. 이제는… 삼팔선이 막혀서.",
-              "voice": "CH01-L04-acted-v3.mp3",
+              "voice": "CH01-B08-cast.mp3",
               "offscreen": false
             }
           ],
@@ -227,7 +227,7 @@
             {
               "who": "구 작가",
               "text": "자네가 한번 들여다보게.",
-              "voice": "CH01-L06.mp3",
+              "voice": "CH01-B11-cast.mp3",
               "offscreen": false
             }
           ],
@@ -310,7 +310,7 @@
             {
               "who": "구 작가",
               "text": "그래서 사진이 재밌는 거야.",
-              "voice": "CH01-L08-acted-v3.mp3",
+              "voice": "CH01-B14b-cast.mp3",
               "offscreen": false
             }
           ],
@@ -334,7 +334,7 @@
             {
               "who": "구 작가",
               "text": "자, 움직이지 마시고요. 하나, 둘—",
-              "voice": "CH01-L09-acted-v3.mp3",
+              "voice": "CH01-B15-cast.mp3",
               "offscreen": true
             }
           ],
@@ -688,7 +688,7 @@
             {
               "who": "구 작가",
               "text": "늦어서 미안하오. 두 장 넣소.",
-              "voice": null,
+              "voice": "CH02-B14-cast.mp3",
               "offscreen": true
             }
           ],
@@ -3084,7 +3084,7 @@
             {
               "who": "구 작가",
               "text": "자, 움직이지 마시고요. 하나, 둘—",
-              "voice": "CH12-L01-acted-v3.mp3",
+              "voice": "CH12-B01-cast.mp3",
               "offscreen": true
             }
           ],
@@ -3130,7 +3130,7 @@
             {
               "who": "구 작가",
               "text": "셋!",
-              "voice": "CH12-L02-acted-v3.mp3",
+              "voice": "CH12-P01-cast.mp3",
               "offscreen": true
             }
           ],
