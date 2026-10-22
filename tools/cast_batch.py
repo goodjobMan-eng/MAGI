@@ -22,7 +22,7 @@ CAST = {
    ('CH01-B11', 0, '자네가 한번 들여다보게.', 'kind and encouraging, handing the camera to the young man'),
    ('CH01-B14b', 0, '그래서 사진이 재밌는 거야.', 'watching the young man look into a camera for the first time, warmly amused and pleased, a soft chuckle in the voice'),
    ('CH01-B15', 0, '자, 움직이지 마시고요. 하나, 둘—', 'focused and cheerful photographer counting slowly'),
-   ('CH02-B14', 0, '늦어서 미안하오. 두 장 넣소.', 'reading his own short letter, plain and kind, slightly apologetic'),
+   ('CH02-B14', 0, '늦어서 미안하오. 두 장 넣었소.', 'reading his own short letter, plain and kind, slightly apologetic'),
    ('CH12-B01', 0, '자, 움직이지 마시고요. 하나, 둘—', 'focused and cheerful photographer counting slowly'),
    ('CH12-P01', 0, '셋!', 'bright and clear, the shutter moment')]),
  'mom': dict(voice='Achernar', name='어머니', who='어머니', base='CH01-mom', profile=

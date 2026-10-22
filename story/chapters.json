@@ -10,7 +10,7 @@
           "img": "CH01-B01.webp",
           "alt": "익스트림 와이드. 추수 끝난 논, 낮은 산 아래 초가 마을에서 연기가 오른다. 논두렁을 걸어가는 민석과 구 작가의 뒷모습이 오른쪽 아래에 작게 보인다",
           "caption": "1949년 가을, 개성",
-          "narration": "1949년 가을, 개성. 그 무렵 우리나라는 삼팔선이라는 선을 사이에 두고 남과 북으로 나뉘어 있었어요. 개성은 그 선 바로 아래 마을이었지요.",
+          "narration": "1949년 가을, 개성. 그 무렵 우리나라는 삼팔선이라는 선을 사이에 두고 남과 북으로 나뉘어 있었어요. 개성은 그 선 바로 아래에 있는 도시였지요.",
           "lines": [],
           "sfx": [
             "wind",
@@ -19,12 +19,12 @@
           "soundDirection": "바람, 까치",
           "move": "push",
           "transition": "fade-from-black",
-          "dur": 17.53,
+          "dur": 17.25,
           "overlay": null,
           "effect": null,
           "direction": "암전에서 시작, 밀기",
           "kind": "story",
-          "narrationVoice": "CH01-B01-gem.mp3"
+          "narrationVoice": "CH01-B01-gem2.mp3"
         },
         {
           "id": "CH01-B02",
@@ -552,7 +552,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 7.19,
+          "dur": 5.47,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -687,7 +687,7 @@
           "lines": [
             {
               "who": "구 작가",
-              "text": "늦어서 미안하오. 두 장 넣소.",
+              "text": "늦어서 미안하오. 두 장 넣었소.",
               "voice": "CH02-B14-cast.mp3",
               "offscreen": true
             }
@@ -696,7 +696,7 @@
           "soundDirection": "종이 소리",
           "move": "none",
           "transition": "cut",
-          "dur": 11.95,
+          "dur": 13.25,
           "overlay": [
             {
               "text": "늦어서 미안하오.\n두 장 넣소.\n\n구",
@@ -1471,15 +1471,15 @@
           "img": null,
           "alt": "",
           "caption": "기록 카드 1 · 그곳에 남은 기록",
-          "narration": "1950년 12월 31일, 군수물자를 싣고 내려오던 기관차가 장단역에서 멈췄고, 퇴각하던 연합군의 기총에 부서졌습니다. 몸에 남은 총탄 자국은 1,020여 개입니다. 이 기관차는 지금 임진각에 있습니다.",
+          "narration": "1950년 12월 31일, 군수물자를 싣고 내려오던 기관차가 장단역에서 멈췄고, 퇴각하던 연합군의 기관총 사격에 부서졌습니다. 기관차에 남은 총알 자국은 1,020여 개입니다. 이 기관차는 지금 임진각에 있습니다.",
           "lines": [],
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 24.85,
+          "dur": 26.47,
           "overlay": null,
           "effect": null,
-          "narrationVoice": "CH04-R1-gem.mp3"
+          "narrationVoice": "CH04-R1-gem2.mp3"
         }
       ]
     },
@@ -1524,7 +1524,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 4.08,
+          "dur": 3.48,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -1718,7 +1718,7 @@
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 11.63,
+          "dur": 12.23,
           "overlay": null,
           "effect": null
         },
@@ -1872,7 +1872,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 6.51,
+          "dur": 7.22,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -2070,7 +2070,7 @@
           "lines": [
             {
               "who": "민우",
-              "text": " 엄마가 다리에서 만나자고 했어.",
+              "text": "엄마가 다리에서 만나자고 했어.",
               "voice": "CH06-L01-gem.mp3",
               "offscreen": false,
               "aside": true
@@ -2267,18 +2267,18 @@
           "img": "CH07-B05-fix.webp",
           "alt": "밤. 민우가 벽에 팻말을 붙이고 돌아선다. 수천 장 가운데 한 장",
           "caption": null,
-          "narration": "그해 방송으로 만 가족 넘게 다시 만났어요. 하지만 민우의 종이는, 수천 장 가운데 한 장으로 남았어요.",
+          "narration": "그해 방송으로 만 가족 넘게 다시 만났어요. 하지만 민우의 종이는, 수많은 종이 가운데 한 장으로 남았어요.",
           "lines": [],
           "sfx": [],
           "soundDirection": "멀어지는 발소리",
           "move": "none",
           "transition": "slow-black",
-          "dur": 13.25,
+          "dur": 13.62,
           "overlay": null,
           "effect": null,
           "direction": "느린 암전",
           "kind": "story",
-          "narrationVoice": "CH07-B05-gem.mp3"
+          "narrationVoice": "CH07-B05-gem2.mp3"
         }
       ]
     },
@@ -3071,7 +3071,7 @@
           "soundDirection": "늙은 목소리에 아홉 살 목소리가 겹친다",
           "move": "none",
           "transition": "cut",
-          "dur": 3.61,
+          "dur": 6.54,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -3171,7 +3171,7 @@
           "soundDirection": "팍(플래시 전구)",
           "move": "none",
           "transition": "cut",
-          "dur": 3.0,
+          "dur": 3.3,
           "overlay": null,
           "effect": null,
           "direction": "번쩍",
