@@ -364,7 +364,8 @@
           "overlay": null,
           "effect": null,
           "direction": "암전",
-          "kind": "story"
+          "kind": "story",
+          "titleCard": "title"
         }
       ],
       "bgmFile": "one-photograph-suno-v1.mp3"
@@ -454,7 +455,7 @@
         },
         {
           "id": "CH02-B05",
-          "img": "CH02-B05-shoe.webp",
+          "img": "CH02-B05-barefoot.webp",
           "alt": "투숏. 형이 민우를 번쩍 안아 올린다",
           "caption": null,
           "narration": null,
@@ -1100,7 +1101,7 @@
         },
         {
           "id": "CH03-B11",
-          "img": "CH03-B11-open.webp",
+          "img": "CH03-B11-ride.webp",
           "alt": "민우 바스트. 손을 그쪽으로 뻗는다. 품의 보따리 아래쪽이 찢어져 있다",
           "caption": null,
           "narration": "민우는 몰랐어요. 품에 안은 보따리 밑이 찢어져 있다는 것을.",
@@ -1145,7 +1146,7 @@
       "cuts": [
         {
           "id": "CH04-B01",
-          "img": "CH04-B01-continuity-v3.webp",
+          "img": "CH04-B01-jangdan.webp",
           "alt": "와이드. 둑 위 목조 역사 앞에 검은 기관차가 등불 아래 김을 가늘게 뿜으며 멈춰 있다. 손전등 불빛이 화차 위 얼굴들을 훑는다",
           "caption": "장단역",
           "narration": "기차는 임진강을 앞두고 장단역에서 멈춰 섰어요.",
@@ -1752,7 +1753,7 @@
           "img": "CH05-B05.webp",
           "alt": "인서트. 펼친 신문(세로쓰기 지면, 글자 자리만 회색 줄)",
           "caption": null,
-          "narration": "'김민석'을 모두 찾아 눌러 보자.",
+          "narration": "'김민석'을 찾아 눌러 보자.",
           "lines": [],
           "sfx": [],
           "move": "none",
@@ -1821,7 +1822,7 @@
             "김석민": "어? 뒤의 두 글자 순서가 바뀌었어요. 형은 민석이에요."
           },
           "doneDelay": 10,
-          "narrationVoice": "CH05-P03-gem.mp3"
+          "narrationVoice": "CH05-P03-gem2.mp3"
         },
         {
           "id": "CH05-P04",
@@ -2452,7 +2453,7 @@
           "img": "CH09-B01.webp",
           "alt": "관광버스 안. 예순일곱 살 민우가 목에 관광증을 걸고 창가에 앉았다. 맨 앞에서 북측 안내원이 마이크를 든다",
           "caption": "2008년 가을, 개성",
-          "narration": "2008년, 남쪽 사람들도 버스를 타고 개성에 관광을 갈 수 있게 되었어요. 예순일곱 살 민우는 쉰여덟 해 만에 고향 땅을 밟았어요.",
+          "narration": "2008년, 남쪽 사람들도 버스를 타고 개성에 관광을 갈 수 있게 되었어요. 예순일곱 살 민우는 오십팔 년 만에 고향 땅을 밟았어요.",
           "lines": [
             {
               "who": "안내원",
@@ -2469,8 +2470,7 @@
           "overlay": null,
           "effect": null,
           "direction": "페이드 인",
-          "kind": "story",
-          "narrationVoice": "CH09-B01-gem.mp3"
+          "kind": "story"
         },
         {
           "id": "CH09-B02",
@@ -2492,7 +2492,7 @@
         },
         {
           "id": "CH09-B03",
-          "img": "CH09-B03.webp",
+          "img": "CH09-B03-autumn.webp",
           "alt": "인서트. 창에 댄 손바닥. 손가락이 산 아래 어딘가를 가리키다 멈춘다",
           "caption": null,
           "narration": null,
@@ -2527,7 +2527,7 @@
         },
         {
           "id": "CH09-B05",
-          "img": "CH09-B05.webp",
+          "img": "CH09-B05-autumn.webp",
           "alt": "선죽교 옆 돌다리. 관광객이 줄지어 건너는데 민우만 한가운데 멈췄다",
           "caption": null,
           "narration": null,
@@ -2552,7 +2552,7 @@
         },
         {
           "id": "CH09-B06",
-          "img": "CH09-B06-continuity-v3.webp",
+          "img": "CH09-B06-autumn.webp",
           "alt": "안내원이 손짓하고, 민우가 다시 걷는다",
           "caption": null,
           "narration": null,
@@ -3200,7 +3200,8 @@
           "overlay": null,
           "effect": null,
           "direction": "암전",
-          "kind": "story"
+          "kind": "story",
+          "titleCard": "title"
         },
         {
           "id": "CH12-T07",
@@ -3217,7 +3218,8 @@
           "overlay": null,
           "effect": null,
           "direction": "끝",
-          "kind": "story"
+          "kind": "story",
+          "titleCard": "credits"
         },
         {
           "id": "CH12-EP0",
@@ -3234,7 +3236,8 @@
           "overlay": null,
           "effect": null,
           "silentBgm": false,
-          "bgmOverride": "one-photograph-suno-v1.mp3"
+          "bgmOverride": "one-photograph-suno-v1.mp3",
+          "titleCard": "title"
         },
         {
           "id": "CH12-EPV",
@@ -3254,10 +3257,26 @@
           "video": "CH12-epilogue.mp4",
           "videoDelay": 0.01,
           "videoSound": false,
-          "videoAdvance": false,
+          "videoAdvance": true,
           "silentBgm": false,
-          "bgmOverride": "one-photograph-suno-v1.mp3",
-          "endText": "아물지 않은 상처를 품고 시대를 건너온 모든 분들의 넋과 삶에,\n그리고 더 이상 전쟁 없는 세상을 꿈꾸는 모든 아이들에게 바칩니다."
+          "bgmOverride": "one-photograph-suno-v1.mp3"
+        },
+        {
+          "id": "CH12-D01",
+          "kind": "story",
+          "img": null,
+          "alt": "헌사",
+          "caption": null,
+          "narration": "아물지 않은 상처를 품고 시대를 건너온 모든 분들의 넋과 삶에,\n그리고 더 이상 전쟁 없는 세상을 꿈꾸는 모든 아이들에게 바칩니다.",
+          "lines": [],
+          "sfx": [],
+          "move": "none",
+          "transition": "slow-black",
+          "dur": null,
+          "overlay": null,
+          "effect": null,
+          "titleCard": "dedication",
+          "bgmOverride": "one-photograph-suno-v1.mp3"
         }
       ],
       "bgmFile": "one-photograph-suno-v1.mp3"

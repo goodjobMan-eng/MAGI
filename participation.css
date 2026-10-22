@@ -9,3 +9,6 @@
 .rhythm{text-align:center}.rhythm-count{font-size:44px;letter-spacing:.1em;min-height:64px;color:#f1e6c8;margin:4px 0}.rhythm-count.go{color:#ffd77a;transform:scale(1.15);transition:transform .15s}
 
 .end-text{position:absolute;left:0;right:0;bottom:12%;z-index:3;text-align:center;color:#fff8ea;font-size:clamp(14px,2.2vw,24px);line-height:1.9;white-space:pre-line;padding:0 6%;text-shadow:0 2px 10px #000,0 0 3px #000;opacity:0;transition:opacity 4s ease}.end-text.on{opacity:1}
+
+#reader.title-card #art{display:none!important}#reader.title-card #words{position:absolute!important;inset:0!important;height:auto!important;background:#000!important;display:grid!important;place-items:center;padding:0 8%!important}#reader.title-card #caption{display:none}#reader.title-card #dialogue{margin:0!important;width:100%}.card-text{color:#fff;text-align:center;white-space:pre-line;opacity:0;transition:opacity 2.5s ease}.card-text.on{opacity:1}#reader[data-card=title] .card-text{font-size:clamp(28px,6vw,56px);line-height:1.6;letter-spacing:-.02em}#reader[data-card=dedication] .card-text{font-size:clamp(15px,2.6vw,24px);line-height:2.1;transition-duration:4s}#reader.title-card #page{position:relative;background:#000}
+#reader[data-card=credits] .card-text{font-size:clamp(13px,2vw,18px);line-height:1.9}
