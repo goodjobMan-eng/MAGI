@@ -1516,7 +1516,7 @@
             {
               "who": "민우",
               "text": "구두 닦아요! 구두!",
-              "voice": "CH05-B02-cast.mp3",
+              "voice": "CH05-B02-boy.mp3",
               "offscreen": false
             }
           ],
@@ -1711,7 +1711,7 @@
             {
               "who": "민우",
               "text": "어… 또 왔네요? 이거… 우리 형 이름 맞아요? 저는 글을 몰라서, 모양만 맞춰 보거든요.",
-              "voice": "CH05-P01-L01-gem.mp3",
+              "voice": "CH05-P01-boy.mp3",
               "offscreen": false
             }
           ],
@@ -1744,7 +1744,7 @@
                 "who": "민우",
                 "text": "그럼… 다른 데 있을지도 몰라요. 같이 봐 줄래요?",
                 "img": null,
-                "voice": "CH05-P02-O01-gem.mp3"
+                "voice": "CH05-P02R-boy.mp3"
               }
             },
             {
@@ -1863,7 +1863,7 @@
             {
               "who": "민우",
               "text": "오늘은 없네. 내일 신문에는 있을지도 몰라.",
-              "voice": "CH05-B08-cast.mp3",
+              "voice": "CH05-B08-boy.mp3",
               "offscreen": false,
               "aside": true
             }
