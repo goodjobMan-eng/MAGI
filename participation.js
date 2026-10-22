@@ -79,18 +79,17 @@ export function mountParticipation(c,ctx){
   document.fonts.load('220px "Nanum Pen Script"',c.text).catch(()=>[]).then(()=>document.fonts.ready).then(()=>{if(disposed)return;g.font='220px "Nanum Pen Script", "Gowun Batang", serif';g.textAlign='center';g.textBaseline='middle';[...c.text].forEach((ch,i)=>g.fillText(ch,150+i*300,157));mask=g.getImageData(0,0,900,300).data;for(let i=0;i<900*300;i++)if(mask[i*4+3]>80)totals[Math.floor((i%900)/300)]++;ready=true;paint();say('각 글자의 흐린 획을 60% 이상 따라 쓰면 진해집니다.');});
  }
  if(c.kind==='mission'&&c.mission==='shutter'){
-  let fired=false,stream=null;const video=el('video',null,'selfie-view');video.muted=true;video.playsInline=true;video.autoplay=true;
-  const stopCam=()=>{stream?.getTracks().forEach(t=>t.stop());stream=null;};handles.push({remove:stopCam});
-  const fire=()=>{if(fired||disposed)return;fired=true;
-   if(stream&&video.videoWidth){try{const vw=video.videoWidth,vh=video.videoHeight,r=1/1.15,sw=vw/vh>r?vh*r:vw,sh=vw/vh>r?vh:vw/r,cv=document.createElement('canvas');cv.width=360;cv.height=414;const g=cv.getContext('2d');g.translate(360,0);g.scale(-1,1);g.drawImage(video,(vw-sw)/2,(vh-sh)/2,sw,sh,0,0,360,414);sessionStorage.setItem(SELFIE_KEY,cv.toDataURL('image/jpeg',.82));}catch{}}
-   stopCam();reply({who:'구 작가',text:'셋!'});go(c.next,true);};
-  if(c.selfie&&navigator.mediaDevices?.getUserMedia&&window.isSecureContext){
-   const frame=el('div',null,'selfie-frame');frame.append(video,el('span','너의 자리','selfie-label'));art.append(frame);handles.push(frame);
-   navigator.mediaDevices.getUserMedia({video:{facingMode:'user',width:{ideal:640}},audio:false}).then(s=>{if(disposed||fired){s.getTracks().forEach(t=>t.stop());return;}stream=s;video.srcObject=s;video.play().catch(()=>{});}).catch(()=>{frame.remove();say('카메라 없이도 셔터를 눌러 함께할 수 있어요.');});
-   root.append(el('p','사진은 이 휴대폰 안에만 잠깐 남고, 어디에도 보내지 않아요.','selfie-privacy'));
-  }
-  const b=button('●',fire);b.className='shutter-button';b.setAttribute('aria-label','셔터 누르기');root.append(feedback);
-  if(auto)later(fire,(c.selfie?8:(c.autoAfter||3))*1000);
+  // 구 작가의 '하나, 둘, 셋!'에 맞춰 셔터 누르기
+  let fired=false,start=0,run=0;const box=el('div',null,'rhythm'),count=el('p','','rhythm-count');box.append(el('p','구 작가가 "셋!" 할 때 셔터를 눌러요.'),count);root.append(box);
+  let ac=null;const tick=hi=>{try{ac=ac||new (window.AudioContext||window.webkitAudioContext)();const o=ac.createOscillator(),g=ac.createGain();o.frequency.value=hi?1320:880;g.gain.setValueAtTime(.18,ac.currentTime);g.gain.exponentialRampToValueAtTime(.001,ac.currentTime+.12);o.connect(g).connect(ac.destination);o.start();o.stop(ac.currentTime+.13);}catch{}};
+  const fire=()=>{if(fired||disposed)return;fired=true;const k=new Audio('assets/audio/sfx/shutter.wav');k.volume=.9;k.play().catch(()=>{});count.textContent='찰칵!';go(c.next,true);};
+  const round=()=>{if(disposed||fired)return;const id=++run;start=performance.now()+800;count.textContent='';count.classList.remove('go');say('');
+   [['하나',800],['둘',1800],['셋!',2800]].forEach(([w,t],i)=>later(()=>{if(id!==run||fired)return;count.textContent=w;count.classList.toggle('go',i===2);tick(i===2);},t));
+   later(()=>{if(id!==run||fired)return;if(auto){fire();return;}say('앗, 놓쳤어요. 다시 한 번!');later(()=>{if(id===run)round();},1200);},3900);};
+  const press=()=>{if(fired)return;const t=performance.now()-start;
+   if(t>=1850&&t<=3050){fire();return;}
+   run++;say(t<1850?'조금 빨랐어요! "셋"에 맞춰 다시 눌러 봐요.':'앗, 놓쳤어요. 다시 한 번!');count.textContent='';later(round,1300);};
+  const b=button('●',press);b.className='shutter-button';b.setAttribute('aria-label','셔터 누르기');root.append(feedback);later(round,600);
  }
  if(c.effect==='with-selfie'){
   let src=null;try{src=sessionStorage.getItem(SELFIE_KEY);}catch{}

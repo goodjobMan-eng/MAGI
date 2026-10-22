@@ -3159,7 +3159,6 @@
           "overlay": null,
           "effect": null,
           "mission": "shutter",
-          "autoAfter": 3,
           "next": "CH12-B03"
         },
         {
@@ -3168,7 +3167,14 @@
           "alt": "정면 대칭, 셋이 굳은 채 멈춤. 이 그림이 곧 사진이다(CH11-B06에 다시 씀)",
           "caption": null,
           "narration": "찰칵. 사진기는 그렇게 굳은 얼굴들을 담았어요.",
-          "lines": [],
+          "lines": [
+            {
+              "who": "민석",
+              "text": "웃어, 민우야.",
+              "voice": "CH12-L03-acted-v3.mp3",
+              "offscreen": false
+            }
+          ],
           "sfx": [],
           "soundDirection": "팍(플래시 전구)",
           "move": "none",
@@ -3179,31 +3185,7 @@
           "direction": "번쩍",
           "kind": "story",
           "narrationVoice": "CH12-B03-gem.mp3",
-          "voiceDelay": 1.2
-        },
-        {
-          "id": "CH12-B04",
-          "img": "CH12-B04.webp",
-          "alt": "흰빛 속(그림 위에 흰 막 60%). 민석이 민우 어깨를 살짝 누르며 속삭인다",
-          "caption": null,
-          "narration": null,
-          "lines": [
-            {
-              "who": "민석",
-              "text": "웃어, 민우야.",
-              "voice": "CH12-L03-acted-v3.mp3",
-              "offscreen": false
-            }
-          ],
-          "sfx": [],
-          "soundDirection": "음악이 3초 비었다가 들어온다",
-          "move": "none",
-          "transition": "white",
-          "dur": 4.31,
-          "overlay": null,
-          "effect": "white-veil",
-          "direction": "흰 막 유지",
-          "kind": "story"
+          "video": "CH12-family-laugh.mp4"
         },
         {
           "id": "CH12-B05",
