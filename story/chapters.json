@@ -967,6 +967,28 @@
           "videoDelay": 0.1
         },
         {
+          "id": "CH03-B06m",
+          "kind": "story",
+          "img": "CH03-B08-mom.webp",
+          "alt": "인파에 밀려나며 민우 쪽으로 팔을 뻗고 이름을 부르는 어머니",
+          "caption": null,
+          "narration": null,
+          "lines": [
+            {
+              "who": "어머니",
+              "text": "민우야!",
+              "voice": null,
+              "offscreen": false
+            }
+          ],
+          "sfx": [],
+          "move": "none",
+          "transition": "cut",
+          "dur": 2.5,
+          "overlay": null,
+          "effect": null
+        },
+        {
           "id": "CH03-B07",
           "img": "CH03-B07.webp",
           "alt": "클로즈업. 빈손",
