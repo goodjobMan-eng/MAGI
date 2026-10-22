@@ -62,6 +62,7 @@ async function jump(id,flash=false){const n=cuts.findIndex(c=>c.id===id);if(n<0)
 async function advance(delta,forced=false,flash=false){
  if(busy)return;if(!forced&&delta>0&&!full){show.finish();schedule();return;}if(!forced&&delta>0&&!participation?.canAdvance)return;const next=index+delta;if(next<0||next>=cuts.length)return;
  busy=true;if(!await ensurePlace(next)){busy=false;return;}await prepareImage(cuts[next].img);stop();const c=cuts[index],type=flash?'flash':delta<=0?'cut':c.transition,curtain=$('#curtain');
+ if(type==='shutter-white'){if(c.exitSfx){const k=new Audio(`assets/audio/sfx/${c.exitSfx}.wav`);k.volume=.9;k.play().catch(()=>{});}curtain.style.background='white';await curtain.animate([{opacity:0},{opacity:1}],{duration:260,fill:'forwards'}).finished;await new Promise(r=>setTimeout(r,700));index=next;show();await curtain.animate([{opacity:1},{opacity:0}],{duration:2600,easing:'ease-in',fill:'forwards'}).finished;curtain.getAnimations().forEach(a=>a.cancel());curtain.style.opacity=0;busy=false;return;}
  const ms=type==='flash'?150:type==='slow-black'||type==='white'?1500:type==='black'?600:type==='dissolve'?800:0;
  const fade=async(from,to,d)=>{if(d)await curtain.animate([{opacity:from},{opacity:to}],{duration:d,fill:'forwards'}).finished;else curtain.style.opacity=to;};
  let oldPicture=null;

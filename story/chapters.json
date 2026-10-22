@@ -19,12 +19,12 @@
           "soundDirection": "바람, 까치",
           "move": "push",
           "transition": "fade-from-black",
-          "dur": 16.36,
+          "dur": 18.14,
           "overlay": null,
           "effect": null,
           "direction": "암전에서 시작, 밀기",
           "kind": "story",
-          "narrationVoice": "CH01-B01.mp3"
+          "narrationVoice": "CH01-B01-gem.mp3"
         },
         {
           "id": "CH01-B02",
@@ -37,12 +37,12 @@
           "soundDirection": "사립문 삐걱",
           "move": "none",
           "transition": "cut",
-          "dur": 9.4,
+          "dur": 11.0,
           "overlay": null,
           "effect": null,
           "direction": "컷",
           "kind": "story",
-          "narrationVoice": "CH01-B02.mp3"
+          "narrationVoice": "CH01-B02-gem.mp3"
         },
         {
           "id": "CH01-B03",
@@ -55,12 +55,12 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 7.07,
+          "dur": 8.57,
           "overlay": null,
           "effect": null,
           "direction": "고정",
           "kind": "story",
-          "narrationVoice": "CH01-B03.mp3"
+          "narrationVoice": "CH01-B03-gem.mp3"
         },
         {
           "id": "CH01-B04",
@@ -210,12 +210,12 @@
           "soundDirection": "닭 소리",
           "move": "none",
           "transition": "dissolve",
-          "dur": 11.27,
+          "dur": 12.36,
           "overlay": null,
           "effect": null,
           "direction": "디졸브",
           "kind": "story",
-          "narrationVoice": "CH01-B10.mp3"
+          "narrationVoice": "CH01-B10-gem.mp3"
         },
         {
           "id": "CH01-B11",
@@ -269,12 +269,12 @@
           "soundDirection": "",
           "move": "push",
           "transition": "cut",
-          "dur": 6.76,
+          "dur": 8.52,
           "overlay": null,
           "effect": null,
           "direction": "밀기",
           "kind": "story",
-          "narrationVoice": "CH01-B13.mp3"
+          "narrationVoice": "CH01-B13-gem.mp3"
         },
         {
           "id": "CH01-B14",
@@ -323,12 +323,13 @@
           "sfx": [],
           "soundDirection": "",
           "move": "none",
-          "transition": "black-hard",
+          "transition": "shutter-white",
           "dur": 6.88,
           "overlay": null,
           "effect": null,
           "direction": "암전(뚝)",
-          "kind": "story"
+          "kind": "story",
+          "exitSfx": "shutter"
         },
         {
           "id": "CH01-T16",
@@ -368,12 +369,12 @@
           "soundDirection": "종달새, 바람",
           "move": "pan-left",
           "transition": "fade-from-black",
-          "dur": 6.81,
+          "dur": 8.21,
           "overlay": null,
           "effect": null,
           "direction": "페이드 인, 패닝",
           "kind": "story",
-          "narrationVoice": "CH02-B01.mp3"
+          "narrationVoice": "CH02-B01-gem.mp3"
         },
         {
           "id": "CH02-B02",
@@ -419,7 +420,7 @@
             {
               "who": "민우",
               "text": "형아!",
-              "voice": "CH02-L01-kid.mp3",
+              "voice": "CH02-L01-gem.mp3",
               "offscreen": false
             }
           ],
@@ -427,7 +428,7 @@
           "soundDirection": "발소리",
           "move": "none",
           "transition": "cut",
-          "dur": 3.0,
+          "dur": 3.32,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -480,7 +481,7 @@
           "soundDirection": "연필 사각",
           "move": "none",
           "transition": "cut",
-          "dur": 10.22,
+          "dur": 11.21,
           "overlay": [
             {
               "text": "김민우\n김민석\n金敏錫",
@@ -512,7 +513,7 @@
           "effect": null,
           "direction": "고정. overlay: 공책",
           "kind": "story",
-          "narrationVoice": "CH02-B07.mp3"
+          "narrationVoice": "CH02-B07-gem.mp3"
         },
         {
           "id": "CH02-B08",
@@ -548,7 +549,7 @@
             {
               "who": "민우",
               "text": "그림 같다.",
-              "voice": "CH02-L03-kid.mp3",
+              "voice": "CH02-L03-gem.mp3",
               "offscreen": false
             }
           ],
@@ -556,7 +557,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 3.04,
+          "dur": 3.98,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -596,7 +597,7 @@
             {
               "who": "민우",
               "text": "형은 군대 끝나면 뭐 할 거야?",
-              "voice": "CH02-L05-kid.mp3",
+              "voice": "CH02-L05-gem.mp3",
               "offscreen": false
             }
           ],
@@ -604,7 +605,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 4.94,
+          "dur": 5.05,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -669,7 +670,7 @@
           "soundDirection": "종이 소리",
           "move": "none",
           "transition": "cut",
-          "dur": 7.77,
+          "dur": 10.19,
           "overlay": [
             {
               "text": "늦어서 미안하오.\n두 장 넣소.\n\n구",
@@ -727,7 +728,7 @@
           "effect": null,
           "direction": "고정. overlay: 쪽지, 사진 뒷면",
           "kind": "story",
-          "narrationVoice": "CH02-B14.mp3"
+          "narrationVoice": "CH02-B14-gem.mp3"
         },
         {
           "id": "CH02-B15",
@@ -739,7 +740,7 @@
             {
               "who": "민우",
               "text": "나 왜 이렇게 굳었어?",
-              "voice": "CH02-L08-kid.mp3",
+              "voice": "CH02-L08-gem.mp3",
               "offscreen": false
             }
           ],
@@ -747,7 +748,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 3.32,
+          "dur": 8.57,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -807,12 +808,12 @@
           "soundDirection": "딸깍",
           "move": "none",
           "transition": "cut",
-          "dur": 10.84,
+          "dur": 13.25,
           "overlay": null,
           "effect": null,
           "direction": "고정",
           "kind": "story",
-          "narrationVoice": "CH02-B18.mp3"
+          "narrationVoice": "CH02-B18-gem.mp3"
         },
         {
           "id": "CH02-B19",
@@ -827,12 +828,12 @@
           "soundDirection": "바람",
           "move": "none",
           "transition": "slow-black",
-          "dur": 5.78,
+          "dur": 7.16,
           "overlay": null,
           "effect": null,
           "direction": "느린 암전",
           "kind": "story",
-          "narrationVoice": "CH02-B19.mp3"
+          "narrationVoice": "CH02-B19-gem.mp3"
         }
       ]
     },
@@ -854,12 +855,12 @@
           "soundDirection": "먼 포성",
           "move": "none",
           "transition": "black",
-          "dur": 8.9,
+          "dur": 10.56,
           "overlay": null,
           "effect": null,
           "direction": "암전",
           "kind": "story",
-          "narrationVoice": "CH03-T01.mp3"
+          "narrationVoice": "CH03-T01-gem.mp3"
         },
         {
           "id": "CH03-B02",
@@ -874,12 +875,12 @@
           "soundDirection": "바람, 문풍지",
           "move": "none",
           "transition": "dissolve",
-          "dur": 11.97,
+          "dur": 15.6,
           "overlay": null,
           "effect": null,
           "direction": "디졸브",
           "kind": "story",
-          "narrationVoice": "CH03-B02.mp3"
+          "narrationVoice": "CH03-B02-gem.mp3"
         },
         {
           "id": "CH03-B03",
@@ -894,12 +895,12 @@
           "soundDirection": "쿵… 쿵… 포성, 웅성거림",
           "move": "push",
           "transition": "cut",
-          "dur": 10.12,
+          "dur": 11.92,
           "overlay": null,
           "effect": null,
           "direction": "밀기",
           "kind": "story",
-          "narrationVoice": "CH03-B03.mp3"
+          "narrationVoice": "CH03-B03-gem.mp3"
         },
         {
           "id": "CH03-B04",
@@ -938,12 +939,12 @@
           "soundDirection": "기적, 함성",
           "move": "none",
           "transition": "cut",
-          "dur": 6.98,
+          "dur": 8.21,
           "overlay": null,
           "effect": null,
           "direction": "컷",
           "kind": "story",
-          "narrationVoice": "CH03-B05.mp3"
+          "narrationVoice": "CH03-B05-gem.mp3"
         },
         {
           "id": "CH03-B06",
@@ -956,12 +957,12 @@
           "soundDirection": "소리가 멀어진다",
           "move": "none",
           "transition": "cut",
-          "dur": 5.9,
+          "dur": 6.56,
           "overlay": null,
           "effect": null,
           "direction": "고정",
           "kind": "story",
-          "narrationVoice": "CH03-B06.mp3"
+          "narrationVoice": "CH03-B06-gem.mp3"
         },
         {
           "id": "CH03-B07",
@@ -990,7 +991,7 @@
             {
               "who": "민우",
               "text": "엄마!",
-              "voice": "CH03-L02-kid.mp3",
+              "voice": "CH03-L02-gem.mp3",
               "offscreen": false
             }
           ],
@@ -998,7 +999,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 3.69,
+          "dur": 3.56,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -1015,12 +1016,12 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 7.67,
+          "dur": 9.57,
           "overlay": null,
           "effect": null,
           "direction": "컷",
           "kind": "story",
-          "narrationVoice": "CH03-B09.mp3"
+          "narrationVoice": "CH03-B09-gem.mp3"
         },
         {
           "id": "CH03-B10",
@@ -1059,12 +1060,12 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 8.15,
+          "dur": 9.12,
           "overlay": null,
           "effect": null,
           "direction": "컷",
           "kind": "story",
-          "narrationVoice": "CH03-B11.mp3"
+          "narrationVoice": "CH03-B11-gem.mp3"
         },
         {
           "id": "CH03-B12",
@@ -1079,12 +1080,12 @@
           "soundDirection": "바람",
           "move": "none",
           "transition": "black",
-          "dur": 6.88,
+          "dur": 8.91,
           "overlay": null,
           "effect": null,
           "direction": "디졸브, 암전",
           "kind": "story",
-          "narrationVoice": "CH03-B12.mp3"
+          "narrationVoice": "CH03-B12-gem.mp3"
         }
       ]
     },
@@ -1104,12 +1105,12 @@
           "soundDirection": "쇳소리 끼익, 멈춤",
           "move": "none",
           "transition": "fade-from-black",
-          "dur": 6.47,
+          "dur": 7.84,
           "overlay": null,
           "effect": null,
           "direction": "페이드 인",
           "kind": "story",
-          "narrationVoice": "CH04-B01.mp3"
+          "narrationVoice": "CH04-B01-gem.mp3"
         },
         {
           "id": "CH04-B02",
@@ -1152,12 +1153,12 @@
           "soundDirection": "웅성거림",
           "move": "none",
           "transition": "cut",
-          "dur": 10.29,
+          "dur": 10.93,
           "overlay": null,
           "effect": null,
           "direction": "컷",
           "kind": "story",
-          "narrationVoice": "CH04-B03.mp3"
+          "narrationVoice": "CH04-B03-gem.mp3"
         },
         {
           "id": "CH04-P01",
@@ -1170,14 +1171,14 @@
             {
               "who": "민우",
               "text": "저기… 안녕하세요. 저 민우예요. 엄마를 잃어버렸어요. 같이 찾아 줄 수 있어요?",
-              "voice": "CH04-P01-L01-kid.mp3",
+              "voice": "CH04-P01-L01-gem.mp3",
               "offscreen": false
             }
           ],
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 14.5,
+          "dur": 12.41,
           "overlay": null,
           "effect": null
         },
@@ -1209,7 +1210,7 @@
                 "text": "…네.",
                 "img": "CH04-P02x.webp",
                 "narration": "이 기억 속에는 민우를 도와준 사람이 있었어요. 다시 말을 걸어 볼까요?",
-                "voice": "CH04-P02-O02-v2-kid.mp3",
+                "voice": "CH04-P02-O02-v2-gem.mp3",
                 "narrationVoice": "CH04-P02x.mp3"
               }
             }
@@ -1226,14 +1227,14 @@
             {
               "who": "민우",
               "text": "머리에 흰 수건 쓰셨고요, 검정 치마 입으셨어요. 얼굴은… 얼굴은… …아, 맞다! 사진! 보따리에 사진 있어요!",
-              "voice": "CH04-P03-L01-kid.mp3",
+              "voice": "CH04-P03-L01-gem.mp3",
               "offscreen": false
             }
           ],
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 16.96,
+          "dur": 14.14,
           "overlay": null,
           "effect": null
         },
@@ -1248,10 +1249,10 @@
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 13.0,
+          "dur": 14.48,
           "overlay": null,
           "effect": null,
-          "narrationVoice": "CH04-P04.mp3"
+          "narrationVoice": "CH04-P04-gem.mp3"
         },
         {
           "id": "CH04-B05",
@@ -1263,7 +1264,7 @@
             {
               "who": "민우",
               "text": "사진이… 없어요.",
-              "voice": "CH04-L03-kid.mp3",
+              "voice": "CH04-L03-gem.mp3",
               "offscreen": false
             }
           ],
@@ -1271,7 +1272,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 4.47,
+          "dur": 6.72,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -1314,7 +1315,7 @@
             {
               "who": "민우",
               "text": "엄마가… 다리에서 만나자고 했어요.",
-              "voice": "CH04-L05-kid.mp3",
+              "voice": "CH04-L05-gem.mp3",
               "offscreen": false
             }
           ],
@@ -1322,7 +1323,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 4.94,
+          "dur": 6.96,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -1374,7 +1375,7 @@
                 "who": "민우",
                 "text": "고맙습니다!",
                 "img": null,
-                "voice": "CH04-P06-O01-kid.mp3"
+                "voice": "CH04-P06-O01-gem.mp3"
               }
             },
             {
@@ -1384,7 +1385,7 @@
                 "who": "민우",
                 "text": "고맙습니다!",
                 "img": null,
-                "voice": "CH04-P06-O02-kid.mp3"
+                "voice": "CH04-P06-O02-gem.mp3"
               }
             }
           ]
@@ -1400,12 +1401,12 @@
           "soundDirection": "등 뒤에서 기관총 소리가 길게",
           "move": "none",
           "transition": "cut",
-          "dur": 10.12,
+          "dur": 12.49,
           "overlay": null,
           "effect": null,
           "direction": "고정",
           "kind": "story",
-          "narrationVoice": "CH04-B08.mp3"
+          "narrationVoice": "CH04-B08-gem.mp3"
         },
         {
           "id": "CH04-B09",
@@ -1418,12 +1419,12 @@
           "soundDirection": "총소리가 그친 정적",
           "move": "none",
           "transition": "slow-black",
-          "dur": 9.62,
+          "dur": 11.13,
           "overlay": null,
           "effect": null,
           "direction": "느린 암전",
           "kind": "story",
-          "narrationVoice": "CH04-B09.mp3"
+          "narrationVoice": "CH04-B09-gem.mp3"
         },
         {
           "id": "CH04-R1",
@@ -1436,10 +1437,10 @@
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 20.58,
+          "dur": 25.82,
           "overlay": null,
           "effect": null,
-          "narrationVoice": "CH04-R1.mp3"
+          "narrationVoice": "CH04-R1-gem.mp3"
         }
       ]
     },
@@ -1459,12 +1460,12 @@
           "soundDirection": "트럭, 장터 소리",
           "move": "none",
           "transition": "fade-from-black",
-          "dur": 10.55,
+          "dur": 21.69,
           "overlay": null,
           "effect": null,
           "direction": "페이드 인",
           "kind": "story",
-          "narrationVoice": "CH05-B01.mp3"
+          "narrationVoice": "CH05-B01-gem.mp3"
         },
         {
           "id": "CH05-B02",
@@ -1476,7 +1477,7 @@
             {
               "who": "민우",
               "text": "구두 닦아요! 구두!",
-              "voice": "CH05-L01-kid.mp3",
+              "voice": "CH05-L01-gem.mp3",
               "offscreen": false
             }
           ],
@@ -1484,7 +1485,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 4.4,
+          "dur": 4.53,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -1501,12 +1502,12 @@
           "soundDirection": "",
           "move": "none",
           "transition": "dissolve",
-          "dur": 6.62,
+          "dur": 7.63,
           "overlay": null,
           "effect": null,
           "direction": "디졸브",
           "kind": "story",
-          "narrationVoice": "CH05-B03.mp3"
+          "narrationVoice": "CH05-B03-gem.mp3"
         },
         {
           "id": "CH05-B04",
@@ -1521,12 +1522,12 @@
           "soundDirection": "찬 바람",
           "move": "none",
           "transition": "cut",
-          "dur": 11.44,
+          "dur": 12.44,
           "overlay": null,
           "effect": null,
           "direction": "컷",
           "kind": "story",
-          "narrationVoice": "CH05-B04.mp3"
+          "narrationVoice": "CH05-B04-gem.mp3"
         },
         {
           "id": "CH05-B05",
@@ -1609,7 +1610,7 @@
           "soundDirection": "",
           "move": "pan-left",
           "transition": "cut",
-          "dur": 11.18,
+          "dur": 13.72,
           "overlay": [
             {
               "text": "김민석",
@@ -1641,7 +1642,7 @@
           "effect": null,
           "direction": "패닝. overlay: 공책·신문",
           "kind": "story",
-          "narrationVoice": "CH05-B06.mp3"
+          "narrationVoice": "CH05-B06-gem.mp3"
         },
         {
           "id": "CH05-B07",
@@ -1698,14 +1699,14 @@
             {
               "who": "민우",
               "text": "어… 또 왔네요? 이거… 우리 형 이름 맞아요? 저는 글을 몰라서, 모양만 맞춰 보거든요.",
-              "voice": "CH05-P01-L01-kid.mp3",
+              "voice": "CH05-P01-L01-gem.mp3",
               "offscreen": false
             }
           ],
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 12.15,
+          "dur": 12.36,
           "overlay": null,
           "effect": null
         },
@@ -1731,7 +1732,7 @@
                 "who": "민우",
                 "text": "그럼… 다른 데 있을지도 몰라요. 같이 봐 줄래요?",
                 "img": null,
-                "voice": "CH05-P02-O01-kid.mp3"
+                "voice": "CH05-P02-O01-gem.mp3"
               }
             },
             {
@@ -1752,7 +1753,7 @@
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 5.01,
+          "dur": 8.05,
           "overlay": null,
           "effect": null,
           "mission": "find-name",
@@ -1816,7 +1817,7 @@
             "김석민": "어? 뒤의 두 글자 순서가 바뀌었어요. 형은 민석이에요."
           },
           "doneDelay": 10,
-          "narrationVoice": "CH05-P03.mp3"
+          "narrationVoice": "CH05-P03-gem.mp3"
         },
         {
           "id": "CH05-P04",
@@ -1851,12 +1852,12 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 10.26,
+          "dur": 10.69,
           "overlay": null,
           "effect": null,
           "direction": "컷",
           "kind": "story",
-          "narrationVoice": "CH05-B08.mp3"
+          "narrationVoice": "CH05-B08-gem.mp3"
         },
         {
           "id": "CH05-B09",
@@ -1869,12 +1870,12 @@
           "soundDirection": "",
           "move": "none",
           "transition": "slow-black",
-          "dur": 6.45,
+          "dur": 8.16,
           "overlay": null,
           "effect": null,
           "direction": "느린 암전",
           "kind": "story",
-          "narrationVoice": "CH05-B09.mp3"
+          "narrationVoice": "CH05-B09-gem.mp3"
         },
         {
           "id": "CH05-R2",
@@ -1887,10 +1888,10 @@
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 20.82,
+          "dur": 25.37,
           "overlay": null,
           "effect": null,
-          "narrationVoice": "CH05-R2.mp3"
+          "narrationVoice": "CH05-R2-gem.mp3"
         }
       ]
     },
@@ -1910,12 +1911,12 @@
           "soundDirection": "멀리 군가, 박수",
           "move": "pan-left",
           "transition": "fade-from-black",
-          "dur": 13.0,
+          "dur": 15.97,
           "overlay": null,
           "effect": null,
           "direction": "페이드 인, 패닝",
           "kind": "story",
-          "narrationVoice": "CH06-B01.mp3"
+          "narrationVoice": "CH06-B01-gem.mp3"
         },
         {
           "id": "CH06-B02",
@@ -1928,7 +1929,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 6.74,
+          "dur": 8.52,
           "overlay": [
             {
               "text": "김민석 (개성)",
@@ -1960,7 +1961,7 @@
           "effect": null,
           "direction": "컷. overlay: 판자",
           "kind": "story",
-          "narrationVoice": "CH06-B02.mp3"
+          "narrationVoice": "CH06-B02-gem.mp3"
         },
         {
           "id": "CH06-B03",
@@ -1990,12 +1991,12 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 5.68,
+          "dur": 6.93,
           "overlay": null,
           "effect": null,
           "direction": "컷",
           "kind": "story",
-          "narrationVoice": "CH06-B04.mp3"
+          "narrationVoice": "CH06-B04-gem.mp3"
         },
         {
           "id": "CH06-P01",
@@ -2008,14 +2009,14 @@
             {
               "who": "민우",
               "text": "또 왔네요. …오늘도 없어요. 형이 써 준 글씨, 저는 못 읽어도 모양은 다 외웠어요. 근데 자꾸 흐려져요.",
-              "voice": "CH06-P01-L01-kid.mp3",
+              "voice": "CH06-P01-L01-gem.mp3",
               "offscreen": false
             }
           ],
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 12.34,
+          "dur": 15.42,
           "overlay": null,
           "effect": null
         },
@@ -2030,14 +2031,14 @@
             {
               "who": "민우",
               "text": "…대신 기억해 줄래요?",
-              "voice": "CH06-P03-L01-kid.mp3",
+              "voice": "CH06-P03-L01-gem.mp3",
               "offscreen": false
             }
           ],
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 4.03,
+          "dur": 6.93,
           "overlay": null,
           "effect": null
         },
@@ -2063,7 +2064,7 @@
                 "who": "민우",
                 "text": "고마워요. 내일 또 올 거예요.",
                 "img": null,
-                "voice": "CH06-P04-O01-kid.mp3"
+                "voice": "CH06-P04-O01-gem.mp3"
               }
             }
           ]
@@ -2078,7 +2079,7 @@
             {
               "who": "민우",
               "text": " 엄마가 다리에서 만나자고 했어.",
-              "voice": "CH06-L01-kid.mp3",
+              "voice": "CH06-L01-gem.mp3",
               "offscreen": false,
               "aside": true
             }
@@ -2089,7 +2090,7 @@
           "soundDirection": "강물",
           "move": "none",
           "transition": "dissolve",
-          "dur": 4.29,
+          "dur": 5.52,
           "overlay": null,
           "effect": null,
           "direction": "디졸브",
@@ -2108,12 +2109,12 @@
           "soundDirection": "강물",
           "move": "none",
           "transition": "slow-black",
-          "dur": 6.42,
+          "dur": 7.16,
           "overlay": null,
           "effect": null,
           "direction": "느린 암전",
           "kind": "story",
-          "narrationVoice": "CH06-B06.mp3"
+          "narrationVoice": "CH06-B06-gem.mp3"
         },
         {
           "id": "CH06-R3",
@@ -2126,10 +2127,10 @@
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 12.81,
+          "dur": 16.36,
           "overlay": null,
           "effect": null,
-          "narrationVoice": "CH06-R3.mp3"
+          "narrationVoice": "CH06-R3-gem.mp3"
         }
       ]
     },
@@ -2149,10 +2150,10 @@
           "sfx": [],
           "move": "none",
           "transition": "dissolve",
-          "dur": 11.73,
+          "dur": 14.53,
           "overlay": null,
           "effect": null,
-          "narrationVoice": "CH07-Y01.mp3"
+          "narrationVoice": "CH07-Y01-gem.mp3"
         },
         {
           "id": "CH07-Y02",
@@ -2165,10 +2166,10 @@
           "sfx": [],
           "move": "none",
           "transition": "dissolve",
-          "dur": 9.71,
+          "dur": 11.47,
           "overlay": null,
           "effect": null,
-          "narrationVoice": "CH07-Y02.mp3"
+          "narrationVoice": "CH07-Y02-gem.mp3"
         },
         {
           "id": "CH07-B01",
@@ -2181,12 +2182,12 @@
           "soundDirection": "웅성거림, 확성기",
           "move": "pan-left",
           "transition": "fade-from-black",
-          "dur": 13.24,
+          "dur": 14.56,
           "overlay": null,
           "effect": null,
           "direction": "페이드 인, 패닝",
           "kind": "story",
-          "narrationVoice": "CH07-B01.mp3"
+          "narrationVoice": "CH07-B01-gem.mp3"
         },
         {
           "id": "CH07-B02",
@@ -2199,7 +2200,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 12.33,
+          "dur": 15.42,
           "overlay": [
             {
               "text": "어머니 이복순\n형 김민석\n1950년 12월 31일 개성역\n동생 김민우",
@@ -2231,7 +2232,7 @@
           "effect": null,
           "direction": "컷. overlay: 팻말",
           "kind": "story",
-          "narrationVoice": "CH07-B02.mp3"
+          "narrationVoice": "CH07-B02-gem.mp3"
         },
         {
           "id": "CH07-B03",
@@ -2244,12 +2245,12 @@
           "soundDirection": "울음, 박수",
           "move": "none",
           "transition": "cut",
-          "dur": 7.84,
+          "dur": 9.25,
           "overlay": null,
           "effect": null,
           "direction": "컷",
           "kind": "story",
-          "narrationVoice": "CH07-B03.mp3"
+          "narrationVoice": "CH07-B03-gem.mp3"
         },
         {
           "id": "CH07-B04",
@@ -2262,12 +2263,12 @@
           "soundDirection": "",
           "move": "push",
           "transition": "cut",
-          "dur": 7.38,
+          "dur": 8.13,
           "overlay": null,
           "effect": null,
           "direction": "밀기",
           "kind": "story",
-          "narrationVoice": "CH07-B04.mp3"
+          "narrationVoice": "CH07-B04-gem.mp3"
         },
         {
           "id": "CH07-B05",
@@ -2280,12 +2281,12 @@
           "soundDirection": "멀어지는 발소리",
           "move": "none",
           "transition": "slow-black",
-          "dur": 11.27,
+          "dur": 14.03,
           "overlay": null,
           "effect": null,
           "direction": "느린 암전",
           "kind": "story",
-          "narrationVoice": "CH07-B05.mp3"
+          "narrationVoice": "CH07-B05-gem.mp3"
         }
       ]
     },
@@ -2305,7 +2306,7 @@
           "soundDirection": "펜 소리, 매미",
           "move": "none",
           "transition": "fade-from-black",
-          "dur": 6.83,
+          "dur": 10.48,
           "overlay": [
             {
               "text": "찾는 사람: 이복순, 김민석\n고향: 개성\n신청자: 김민우",
@@ -2337,7 +2338,7 @@
           "effect": null,
           "direction": "페이드 인. overlay: 신청서",
           "kind": "story",
-          "narrationVoice": "CH08-B01.mp3"
+          "narrationVoice": "CH08-B01-gem.mp3"
         },
         {
           "id": "CH08-B02",
@@ -2374,12 +2375,12 @@
           "soundDirection": "매미",
           "move": "none",
           "transition": "dissolve",
-          "dur": 4.5,
+          "dur": 5.41,
           "overlay": null,
           "effect": null,
           "direction": "디졸브",
           "kind": "story",
-          "narrationVoice": "CH08-B03.mp3"
+          "narrationVoice": "CH08-B03-gem.mp3"
         },
         {
           "id": "CH08-B04",
@@ -2394,12 +2395,12 @@
           "soundDirection": "바람",
           "move": "none",
           "transition": "dissolve",
-          "dur": 3.64,
+          "dur": 4.21,
           "overlay": null,
           "effect": null,
           "direction": "디졸브",
           "kind": "story",
-          "narrationVoice": "CH08-B04.mp3"
+          "narrationVoice": "CH08-B04-gem.mp3"
         },
         {
           "id": "CH08-B05",
@@ -2412,12 +2413,12 @@
           "soundDirection": "",
           "move": "none",
           "transition": "dissolve",
-          "dur": 3.76,
+          "dur": 4.6,
           "overlay": null,
           "effect": null,
           "direction": "디졸브",
           "kind": "story",
-          "narrationVoice": "CH08-B05.mp3"
+          "narrationVoice": "CH08-B05-gem.mp3"
         },
         {
           "id": "CH08-B06",
@@ -2430,12 +2431,12 @@
           "soundDirection": "텔레비전 속 울음",
           "move": "none",
           "transition": "cut",
-          "dur": 12.28,
+          "dur": 15.37,
           "overlay": null,
           "effect": null,
           "direction": "컷",
           "kind": "story",
-          "narrationVoice": "CH08-B06.mp3"
+          "narrationVoice": "CH08-B06-gem.mp3"
         },
         {
           "id": "CH08-B07",
@@ -2448,12 +2449,12 @@
           "soundDirection": "",
           "move": "none",
           "transition": "slow-black",
-          "dur": 6.47,
+          "dur": 8.21,
           "overlay": null,
           "effect": null,
           "direction": "느린 암전",
           "kind": "story",
-          "narrationVoice": "CH08-B07.mp3"
+          "narrationVoice": "CH08-B07-gem.mp3"
         }
       ]
     },
@@ -2480,12 +2481,12 @@
           "soundDirection": "버스 엔진",
           "move": "none",
           "transition": "fade-from-black",
-          "dur": 19.31,
+          "dur": 21.3,
           "overlay": null,
           "effect": null,
           "direction": "페이드 인",
           "kind": "story",
-          "narrationVoice": "CH09-B01.mp3"
+          "narrationVoice": "CH09-B01-gem.mp3"
         },
         {
           "id": "CH09-B02",
@@ -2498,12 +2499,12 @@
           "soundDirection": "",
           "move": "pan-left",
           "transition": "cut",
-          "dur": 10.38,
+          "dur": 12.86,
           "overlay": null,
           "effect": null,
           "direction": "패닝",
           "kind": "story",
-          "narrationVoice": "CH09-B02.mp3"
+          "narrationVoice": "CH09-B02-gem.mp3"
         },
         {
           "id": "CH09-B03",
@@ -2533,12 +2534,12 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 6.42,
+          "dur": 8.0,
           "overlay": null,
           "effect": null,
           "direction": "컷",
           "kind": "story",
-          "narrationVoice": "CH09-B04.mp3"
+          "narrationVoice": "CH09-B04-gem.mp3"
         },
         {
           "id": "CH09-B05",
@@ -2602,12 +2603,12 @@
           "soundDirection": "바람, 웅성거림",
           "move": "none",
           "transition": "fade-from-black",
-          "dur": 12.9,
+          "dur": 13.41,
           "overlay": null,
           "effect": null,
           "direction": "페이드 인",
           "kind": "story",
-          "narrationVoice": "CH10-B01.mp3"
+          "narrationVoice": "CH10-B01-gem.mp3"
         },
         {
           "id": "CH10-B02",
@@ -2620,12 +2621,12 @@
           "soundDirection": "붓 소리",
           "move": "none",
           "transition": "cut",
-          "dur": 9.16,
+          "dur": 11.08,
           "overlay": null,
           "effect": null,
           "direction": "컷",
           "kind": "story",
-          "narrationVoice": "CH10-B02.mp3"
+          "narrationVoice": "CH10-B02-gem.mp3"
         },
         {
           "id": "CH10-B03",
@@ -2655,7 +2656,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 9.21,
+          "dur": 10.69,
           "overlay": [
             {
               "text": "金敏錫",
@@ -2687,7 +2688,7 @@
           "effect": null,
           "direction": "고정. overlay: 이름",
           "kind": "story",
-          "narrationVoice": "CH10-B04.mp3"
+          "narrationVoice": "CH10-B04-gem.mp3"
         },
         {
           "id": "CH10-B05",
@@ -2700,12 +2701,12 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 5.8,
+          "dur": 6.69,
           "overlay": null,
           "effect": null,
           "direction": "컷",
           "kind": "story",
-          "narrationVoice": "CH10-B05.mp3"
+          "narrationVoice": "CH10-B05-gem.mp3"
         },
         {
           "id": "CH10-P01",
@@ -2854,12 +2855,12 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 18.18,
+          "dur": 20.36,
           "overlay": [],
           "effect": null,
           "direction": "컷. overlay: 천막 글씨",
           "kind": "story",
-          "narrationVoice": "CH10-B08.mp3"
+          "narrationVoice": "CH10-B08-gem.mp3"
         },
         {
           "id": "CH10-P04",
@@ -2918,10 +2919,10 @@
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 22.89,
+          "dur": 30.65,
           "overlay": null,
           "effect": null,
-          "narrationVoice": "CH10-R4.mp3"
+          "narrationVoice": "CH10-R4-gem.mp3"
         }
       ]
     },
@@ -2941,12 +2942,12 @@
           "soundDirection": "붓 소리, 새",
           "move": "none",
           "transition": "fade-from-black",
-          "dur": 11.97,
+          "dur": 16.65,
           "overlay": null,
           "effect": null,
           "direction": "페이드 인",
           "kind": "story",
-          "narrationVoice": "CH11-B01.mp3"
+          "narrationVoice": "CH11-B01-gem.mp3"
         },
         {
           "id": "CH11-B02",
@@ -2959,12 +2960,12 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 7.38,
+          "dur": 9.04,
           "overlay": null,
           "effect": null,
           "direction": "고정",
           "kind": "story",
-          "narrationVoice": "CH11-B02.mp3"
+          "narrationVoice": "CH11-B02-gem.mp3"
         },
         {
           "id": "CH11-B03",
@@ -2977,12 +2978,12 @@
           "soundDirection": "녹슨 뚜껑 끼익",
           "move": "push",
           "transition": "cut",
-          "dur": 6.66,
+          "dur": 7.45,
           "overlay": null,
           "effect": null,
           "direction": "밀기",
           "kind": "story",
-          "narrationVoice": "CH11-B03.mp3"
+          "narrationVoice": "CH11-B03-gem.mp3"
         },
         {
           "id": "CH11-F01",
@@ -2995,10 +2996,10 @@
           "sfx": [],
           "move": "none",
           "transition": "dissolve",
-          "dur": 14.34,
+          "dur": 17.25,
           "overlay": null,
           "effect": null,
-          "narrationVoice": "CH11-F01.mp3"
+          "narrationVoice": "CH11-F01-gem.mp3"
         },
         {
           "id": "CH11-B04",
@@ -3011,12 +3012,12 @@
           "soundDirection": "시계 소리",
           "move": "none",
           "transition": "dissolve",
-          "dur": 6.33,
+          "dur": 12.86,
           "overlay": null,
           "effect": null,
           "direction": "디졸브",
           "kind": "story",
-          "narrationVoice": "CH11-B04.mp3"
+          "narrationVoice": "CH11-B04-gem.mp3"
         },
         {
           "id": "CH11-B05",
@@ -3053,12 +3054,12 @@
           "soundDirection": "무음",
           "move": "push",
           "transition": "cut",
-          "dur": 10.1,
+          "dur": 11.21,
           "overlay": null,
           "effect": "photo",
           "direction": "밀기",
           "kind": "story",
-          "narrationVoice": "CH11-B06.mp3"
+          "narrationVoice": "CH11-B06-gem.mp3"
         },
         {
           "id": "CH11-B07",
@@ -3112,12 +3113,12 @@
           "soundDirection": "가을바람, 까치",
           "move": "none",
           "transition": "dissolve",
-          "dur": 10.72,
+          "dur": 11.82,
           "overlay": null,
           "effect": "vivid",
           "direction": "CH11-B06에서 디졸브(바랜 색 → 온전한 색)",
           "kind": "story",
-          "narrationVoice": "CH12-B01.mp3"
+          "narrationVoice": "CH12-B01-gem.mp3"
         },
         {
           "id": "CH12-B02",
@@ -3154,7 +3155,7 @@
           "sfx": [],
           "move": "none",
           "transition": "flash",
-          "dur": 3.0,
+          "dur": 3,
           "overlay": null,
           "effect": null,
           "mission": "shutter",
@@ -3172,12 +3173,12 @@
           "soundDirection": "팍(플래시 전구)",
           "move": "none",
           "transition": "cut",
-          "dur": 7.38,
+          "dur": 9.93,
           "overlay": null,
           "effect": null,
           "direction": "번쩍",
           "kind": "story",
-          "narrationVoice": "CH12-B03.mp3",
+          "narrationVoice": "CH12-B03-gem.mp3",
           "voiceDelay": 1.2
         },
         {
@@ -3215,12 +3216,12 @@
           "soundDirection": "",
           "move": "none",
           "transition": "slow-black",
-          "dur": 9.52,
+          "dur": 12.44,
           "overlay": null,
           "effect": "white-veil",
           "direction": "흰 페이드",
           "kind": "story",
-          "narrationVoice": "CH12-B05.mp3"
+          "narrationVoice": "CH12-B05-gem.mp3"
         },
         {
           "id": "CH12-E01",
@@ -3235,12 +3236,12 @@
           ],
           "move": "none",
           "transition": "dissolve",
-          "dur": 11.39,
+          "dur": 13.69,
           "overlay": null,
           "effect": null,
           "epilogue": true,
           "silentBgm": true,
-          "narrationVoice": "CH12-E01.mp3"
+          "narrationVoice": "CH12-E01-gem.mp3"
         },
         {
           "id": "CH12-E02",
@@ -3253,12 +3254,12 @@
           "sfx": [],
           "move": "none",
           "transition": "dissolve",
-          "dur": 8.99,
+          "dur": 10.38,
           "overlay": null,
           "effect": null,
           "epilogue": true,
           "silentBgm": true,
-          "narrationVoice": "CH12-E02.mp3"
+          "narrationVoice": "CH12-E02-gem.mp3"
         },
         {
           "id": "CH12-E03",
@@ -3271,12 +3272,12 @@
           "sfx": [],
           "move": "none",
           "transition": "dissolve",
-          "dur": 6.26,
+          "dur": 8.37,
           "overlay": null,
           "effect": null,
           "epilogue": true,
           "silentBgm": true,
-          "narrationVoice": "CH12-E03.mp3"
+          "narrationVoice": "CH12-E03-gem.mp3"
         },
         {
           "id": "CH12-E04",
@@ -3289,12 +3290,12 @@
           "sfx": [],
           "move": "none",
           "transition": "dissolve",
-          "dur": 6.93,
+          "dur": 9.28,
           "overlay": null,
           "effect": null,
           "epilogue": true,
           "silentBgm": true,
-          "narrationVoice": "CH12-E04.mp3"
+          "narrationVoice": "CH12-E04-gem.mp3"
         },
         {
           "id": "CH12-E05",
@@ -3309,12 +3310,12 @@
           ],
           "move": "none",
           "transition": "dissolve",
-          "dur": 8.46,
+          "dur": 10.32,
           "overlay": null,
           "effect": null,
           "epilogue": true,
           "silentBgm": true,
-          "narrationVoice": "CH12-E05.mp3"
+          "narrationVoice": "CH12-E05-gem.mp3"
         },
         {
           "id": "CH12-E06",
@@ -3329,12 +3330,12 @@
           ],
           "move": "none",
           "transition": "dissolve",
-          "dur": 6.98,
+          "dur": 7.63,
           "overlay": null,
           "effect": null,
           "epilogue": true,
           "silentBgm": true,
-          "narrationVoice": "CH12-E06.mp3"
+          "narrationVoice": "CH12-E06-gem.mp3"
         },
         {
           "id": "CH12-E07",
@@ -3349,45 +3350,12 @@
           ],
           "move": "none",
           "transition": "white",
-          "dur": 11.46,
+          "dur": 13.72,
           "overlay": null,
           "effect": null,
           "epilogue": true,
           "silentBgm": true,
-          "narrationVoice": "CH12-E07.mp3"
-        },
-        {
-          "id": "CH12-T06a",
-          "kind": "story",
-          "img": null,
-          "alt": "흰 화면에 내가 따라 쓴 김민석의 획이 다시 나타난다.",
-          "caption": null,
-          "narration": "기억해 줘서 고마워요. — 민우",
-          "lines": [],
-          "sfx": [],
-          "move": "none",
-          "transition": "white",
-          "dur": null,
-          "overlay": null,
-          "effect": "memory-trace"
-        },
-        {
-          "id": "CH12-T06",
-          "img": null,
-          "alt": "흰 화면",
-          "caption": null,
-          "narration": "6·25전쟁 국군 전사자 가운데, 아직 가족 품으로 돌아오지 못한 분이 12만여 명입니다.\n\n그리고 지금도, 헤어진 가족을 기다리는 분들이 계십니다.",
-          "lines": [],
-          "sfx": [],
-          "soundDirection": "음악 끝",
-          "move": "none",
-          "transition": "white",
-          "dur": 14.25,
-          "overlay": null,
-          "effect": null,
-          "direction": "흰",
-          "kind": "story",
-          "narrationVoice": "CH12-T06.mp3"
+          "narrationVoice": "CH12-E07-gem.mp3"
         },
         {
           "id": "CH12-T07",
@@ -3422,14 +3390,14 @@
         {
           "who": "민우",
           "text": "…네.",
-          "voice": "CH04-P02-O02-v2-kid.mp3",
+          "voice": "CH04-P02-O02-v2-gem.mp3",
           "offscreen": false
         }
       ],
       "sfx": [],
       "move": "none",
       "transition": "cut",
-      "dur": 10.43,
+      "dur": 13.17,
       "overlay": null,
       "effect": null,
       "branchOnly": true,

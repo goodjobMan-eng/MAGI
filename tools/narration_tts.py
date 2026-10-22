@@ -58,7 +58,7 @@ def main():
                 asyncio.run(make(text, path))
                 made[name] = text
                 print('made', name)
-            c['narrationVoice'] = name
+            if not str(c.get('narrationVoice','')).endswith('-gem.mp3'): c['narrationVoice'] = name
         # 자동 넘김 시간: 해설 + 대사 + 숨 고르기
         voices = [os.path.join(OUT, c['narrationVoice'])] if c.get('narrationVoice') else []
         voices += [os.path.join(ROOT, 'assets', 'audio', 'voices', l['voice'])
