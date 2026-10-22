@@ -132,7 +132,11 @@ def record_char(key):
             good &= ok; outs.append((cid, slot, text, out))
         if good: break
     else:
-        print('실패', key); return False
+        print('일괄 실패, 한 줄씩 녹음', key, flush=True); outs = []
+        for cid, slot, text, act in items:
+            out = os.path.join(NDIR if slot == 'nar' else VDIR, f"{cid}-{'nar' if slot=='nar' else 'cast'}.mp3")
+            if not g.record(text, C['profile'] + '. Scene: ' + act, C['voice'], out, 4): print('실패', cid); continue
+            trim(out); outs.append((cid, slot, text, out))
     d = load()
     for cid, slot, text, out in outs:
         c = find(d, cid); name = os.path.basename(out)
