@@ -789,8 +789,8 @@
           "lines": [
             {
               "who": "민석",
-              "text": "하하하! 하하, 민우야, 니 얼굴 좀 봐라. 하하하!",
-              "voice": "CH02-B16-cast.mp3",
+              "text": "하하하하! 하하하!",
+              "voice": "CH02-B16-laugh.mp3",
               "offscreen": false
             }
           ],
@@ -798,7 +798,7 @@
           "soundDirection": "웃음",
           "move": "none",
           "transition": "cut",
-          "dur": 6.28,
+          "dur": 5.23,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -1022,23 +1022,6 @@
           "effect": null
         },
         {
-          "id": "CH03-B07",
-          "img": "CH03-B07.webp",
-          "alt": "클로즈업. 빈손",
-          "caption": null,
-          "narration": null,
-          "lines": [],
-          "sfx": [],
-          "soundDirection": "무음 1초",
-          "move": "none",
-          "transition": "cut",
-          "dur": null,
-          "overlay": null,
-          "effect": null,
-          "direction": "컷",
-          "kind": "story"
-        },
-        {
           "id": "CH03-B08",
           "img": "CH03-B08-continuity-v3.webp",
           "alt": "민우 바스트, 인파 속",
@@ -1185,7 +1168,7 @@
             {
               "who": "순경",
               "text": "내려요! 군용열차요, 다들 내려!",
-              "voice": "CH04-B02-cast.mp3",
+              "voice": "CH04-B02-pol.mp3",
               "offscreen": false
             }
           ],
@@ -1193,7 +1176,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 6.28,
+          "dur": 7.14,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -1404,7 +1387,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 5.18,
+          "dur": 4.66,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -1458,7 +1441,7 @@
           "soundDirection": "등 뒤에서 기관총 소리가 길게",
           "move": "none",
           "transition": "slow-black",
-          "dur": 12.49,
+          "dur": 11.97,
           "overlay": null,
           "effect": null,
           "direction": "고정",
@@ -1553,7 +1536,7 @@
           "img": "CH05-B04.webp",
           "alt": "겨울 신문 가판. 민우가 지폐 한 장을 내고 신문 한 장을 받는다",
           "caption": "1952년 1월",
-          "narration": "신문에 포로로 잡힌 국군의 이름이 실린다는 말을 들었거든요. 형이 살아 있다면, 그 이름이 있을지도 몰라요.",
+          "narration": "신문에 포로로 잡힌 국군의 이름이 실린다는 말을 들었거든요.",
           "lines": [],
           "sfx": [
             "wind"
@@ -1561,12 +1544,12 @@
           "soundDirection": "찬 바람",
           "move": "none",
           "transition": "cut",
-          "dur": 11.84,
+          "dur": 6.93,
           "overlay": null,
           "effect": null,
           "direction": "컷",
           "kind": "story",
-          "narrationVoice": "CH05-B04-gem.mp3"
+          "narrationVoice": "CH05-B04-gem2.mp3"
         },
         {
           "id": "CH05-B05",
@@ -2298,7 +2281,7 @@
           "soundDirection": "펜 소리, 매미",
           "move": "none",
           "transition": "fade-from-black",
-          "dur": 10.48,
+          "dur": 9.96,
           "overlay": [
             {
               "text": "찾는 사람: 이복순, 김민석\n고향: 개성\n신청자: 김민우",
