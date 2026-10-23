@@ -18,12 +18,12 @@ def load(path):
     return np.frombuffer(raw, np.int16).astype(float)
 
 
-def find_tail_noise(a):
+def find_tail_noise(a, margin=35):
     n = len(a) // W
     fr = a[:n * W].reshape(n, W)
     e = 20 * np.log10(np.sqrt((fr ** 2).mean(1)) + 1)
     zcr = (np.abs(np.diff(np.sign(fr), axis=1)) > 0).mean(1)
-    loud = e > e.max() - 35
+    loud = e > e.max() - margin
     segs, i = [], 0
     while i < n:
         if loud[i]:
@@ -47,6 +47,7 @@ def find_tail_noise(a):
 def hard_trim(path, dry=False):
     a = load(path)
     end = find_tail_noise(a)
+    if end is None: end = find_tail_noise(a, 15)  # 말 뒤 숨소리 위에 붙은 큰 잡음
     if end is None: return None
     end += 0.06
     if not dry:
