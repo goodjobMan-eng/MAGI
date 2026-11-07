@@ -36,7 +36,7 @@ function audioFor(c,e){
  else if(c.id==='CH12-B04'){bgm.pause();musicGap=setTimeout(()=>{if(e===epoch)bgm?.play().catch(()=>{});},3000);}
  else bgm.play().catch(()=>{});
  const both=hasPhases(c),queue=[...(c.narrationVoice?[`assets/audio/narration/${c.narrationVoice}`]:[]),...(both||c.mission==='shutter'?[]:lineSrcs(c))];
- playQueue(queue,e,both?()=>{phaseTimer=setTimeout(()=>{if(e===epoch&&phase===1)toPhase2();},600);}:null,c.voiceDelay);
+ playQueue(queue,e,both?()=>{phaseTimer=setTimeout(()=>{if(e===epoch&&phase===1)toPhase2();},600);}:c.autoNext?()=>{phaseTimer=setTimeout(()=>{if(e===epoch)advance(1,true);},c.autoNext*1000);}:null,c.voiceDelay);
  for(const name of c.sfx){const s=new Audio(`assets/audio/sfx/${name}.wav`);voices.push(s);s.volume=.35;s.play().catch(()=>{});}
 }
 function show(){

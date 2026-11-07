@@ -2,7 +2,7 @@
   "chapters": [
     {
       "id": "CH01",
-      "title": "사진을 찍던 날",
+      "title": "사진 찍던 날",
       "bgm": "M-ch01",
       "cuts": [
         {
@@ -31,18 +31,18 @@
           "img": "CH01-B02.webp",
           "alt": "와이드. 싸리 사립문을 민석이 열고 구 작가가 따라 들어온다. 마당 오른쪽에 주황 감이 달린 감나무",
           "caption": null,
-          "narration": "열여덟 살 민석이 손님 한 분을 집으로 모셔 왔어요. 사진을 찍는 구 작가였어요.",
+          "narration": "열여덟 살 민석이가 손님 한 분을 집으로 모셔 왔어요. 사진을 찍는 구 작가였어요.",
           "lines": [],
           "sfx": [],
           "soundDirection": "사립문 삐걱",
           "move": "none",
           "transition": "cut",
-          "dur": 10.01,
+          "dur": 11.19,
           "overlay": null,
           "effect": null,
           "direction": "컷",
           "kind": "story",
-          "narrationVoice": "CH01-B02-gem.mp3"
+          "narrationVoice": "CH01-B02-r1105.mp3"
         },
         {
           "id": "CH01-B03",
@@ -136,8 +136,8 @@
           "lines": [
             {
               "who": "구 작가",
-              "text": "어머니, 사진은 남습니다.",
-              "voice": "CH01-B07-cast.mp3",
+              "text": "어머님, 사진은 남습니다.",
+              "voice": "CH01-B07-l0-r1105.mp3",
               "offscreen": false
             }
           ],
@@ -145,7 +145,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 4.21,
+          "dur": 4.45,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -160,8 +160,8 @@
           "lines": [
             {
               "who": "구 작가",
-              "text": "해방되고, 이북에선 글을 마음대로 쓸 수가 없어서… 저 혼자 내려왔지요. 금방 다시 올라갈 줄 알고… 원산 식구들 사진 한 장 못 챙겼어요. 이제는… 삼팔선이 막혀서.",
-              "voice": "CH01-B08-cast.mp3",
+              "text": "제가 원래 원산에서 식구들과 함께 살았어요. 해방되고 나서, 이북에선 글을 마음껏 쓸 수가 없게 되어서… 저 혼자 글 쓰겠다고 내려왔지요. 언제든 다시 올라갈 수 있을 거라 여겨서, 원산 식구들 사진 한 장을 못 챙겼어요. 그런데 이제는… 삼팔선이 막혀서.",
+              "voice": "CH01-B08-l0-r1105.mp3",
               "offscreen": false
             }
           ],
@@ -169,7 +169,7 @@
           "soundDirection": "",
           "move": "push",
           "transition": "cut",
-          "dur": 17.04,
+          "dur": 25.11,
           "overlay": null,
           "effect": null,
           "direction": "밀기",
@@ -185,7 +185,7 @@
             {
               "who": "어머니",
               "text": "…그럼, 잠깐만 기다리세요.",
-              "voice": "CH01-B09-cast.mp3",
+              "voice": "CH01-B09-l0-r1105.mp3",
               "offscreen": false
             }
           ],
@@ -193,7 +193,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 4.58,
+          "dur": 6.56,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -347,7 +347,8 @@
           "effect": null,
           "direction": "암전(뚝)",
           "kind": "story",
-          "exitSfx": "shutter"
+          "exitSfx": "shutter",
+          "autoNext": 0.7
         },
         {
           "id": "CH01-T16",
@@ -380,7 +381,7 @@
           "img": "CH02-B01-era-v4.webp",
           "alt": "익스트림 와이드. 보리가 푸르게 오른 들길을 군복 차림의 민석이 봇짐을 메고 걸어온다. 오른쪽 3등분선에 작게",
           "caption": "1950년 봄",
-          "narration": "이듬해 봄, 군대에 간 형이 처음으로 휴가를 나왔어요.",
+          "narration": "이듬해 봄, 군인 간 형이 처음으로 휴가를 나왔어요.",
           "lines": [],
           "sfx": [
             "wind"
@@ -388,12 +389,12 @@
           "soundDirection": "종달새, 바람",
           "move": "pan-left",
           "transition": "fade-from-black",
-          "dur": 7.14,
+          "dur": 7.45,
           "overlay": null,
           "effect": null,
           "direction": "페이드 인, 패닝",
           "kind": "story",
-          "narrationVoice": "CH02-B01-gem.mp3"
+          "narrationVoice": "CH02-B01-r1105.mp3"
         },
         {
           "id": "CH02-B02",
@@ -439,7 +440,7 @@
             {
               "who": "민우",
               "text": "형아!",
-              "voice": "CH02-L01-gem2.mp3",
+              "voice": "CH02-B04-l0-r1105.mp3",
               "offscreen": false
             }
           ],
@@ -663,8 +664,8 @@
           "lines": [
             {
               "who": "우체부",
-              "text": "김민석이 집이오? 서울서 편지 왔소!",
-              "voice": "CH02-L07-acted-v3.mp3",
+              "text": "민석이 휴가 나왔구먼? 마침 서울서 편지 왔소!",
+              "voice": "CH02-B13-l0-r1105.mp3",
               "offscreen": false
             }
           ],
@@ -672,7 +673,7 @@
           "soundDirection": "자전거 종 따르릉(화면 밖)",
           "move": "none",
           "transition": "cut",
-          "dur": 5.32,
+          "dur": 6.54,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -768,25 +769,7 @@
               "text": "나 왜 이렇게 굳었어?",
               "voice": "CH02-L08-gem.mp3",
               "offscreen": false
-            }
-          ],
-          "sfx": [],
-          "soundDirection": "",
-          "move": "none",
-          "transition": "cut",
-          "dur": 7.69,
-          "overlay": null,
-          "effect": null,
-          "direction": "컷",
-          "kind": "story"
-        },
-        {
-          "id": "CH02-B16",
-          "img": "CH02-B16-era-v4.webp",
-          "alt": "민석 바스트. 소리 내어 웃는다",
-          "caption": null,
-          "narration": null,
-          "lines": [
+            },
             {
               "who": "민석",
               "text": "하하하하! 하하하!",
@@ -795,10 +778,10 @@
             }
           ],
           "sfx": [],
-          "soundDirection": "웃음",
+          "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 5.13,
+          "dur": 11.71,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -880,7 +863,7 @@
           "img": null,
           "alt": "검은 화면",
           "caption": null,
-          "narration": "그해 6월, 전쟁이 일어났어요. 형의 편지는 더 오지 않았어요.",
+          "narration": "그해 6월, 전쟁이 일어났어요. 형의 편지는 더는 오지 않았어요.",
           "lines": [],
           "sfx": [
             "distant-artillery"
@@ -888,12 +871,12 @@
           "soundDirection": "먼 포성",
           "move": "none",
           "transition": "black",
-          "dur": 9.91,
+          "dur": 9.83,
           "overlay": null,
           "effect": null,
           "direction": "암전",
           "kind": "story",
-          "narrationVoice": "CH03-T01-gem.mp3"
+          "narrationVoice": "CH03-T01-r1105.mp3"
         },
         {
           "id": "CH03-B02",
@@ -908,12 +891,12 @@
           "soundDirection": "바람, 문풍지",
           "move": "none",
           "transition": "dissolve",
-          "dur": 14.77,
+          "dur": 15.55,
           "overlay": null,
           "effect": null,
           "direction": "디졸브",
           "kind": "story",
-          "narrationVoice": "CH03-B02-gem.mp3"
+          "narrationVoice": "CH03-B02-r1105.mp3"
         },
         {
           "id": "CH03-B03",
@@ -984,18 +967,18 @@
           "img": "CH03-B06.webp",
           "alt": "클로즈업. 맞잡은 두 손. 어머니 손가락이 한 마디씩 미끄러진다",
           "caption": null,
-          "narration": "꼭 잡았던 손이… 미끄러졌어요.",
+          "narration": "꼭 잡았던 손을… 놓치고 말았어요.",
           "lines": [],
           "sfx": [],
           "soundDirection": "소리가 멀어진다",
           "move": "none",
           "transition": "cut",
-          "dur": 5.88,
+          "dur": 5.39,
           "overlay": null,
           "effect": null,
           "direction": "고정",
           "kind": "story",
-          "narrationVoice": "CH03-B06-gem.mp3",
+          "narrationVoice": "CH03-B06-r1105.mp3",
           "video": "CH03-hands-slip.mp4",
           "videoDelay": 0.1
         },
@@ -1031,7 +1014,7 @@
             {
               "who": "민우",
               "text": "엄마!",
-              "voice": "CH03-L02-gem.mp3",
+              "voice": "CH03-B08-l0-r1105.mp3",
               "offscreen": false
             }
           ],
@@ -1039,7 +1022,7 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 3.01,
+          "dur": 3.27,
           "overlay": null,
           "effect": null,
           "direction": "컷",
@@ -1187,18 +1170,18 @@
           "img": "CH04-B03-continuity-v3.webp",
           "alt": "와이드. 사람들이 눈밭으로 쏟아진다. 성구 어머니가 성구와 민우의 손을 양쪽에 쥐었다",
           "caption": null,
-          "narration": "사람들은 눈 덮인 들판으로 내려야 했어요. 성구 어머니는 두 아이의 손을 놓지 않았어요.",
+          "narration": "사람들은 모두 기차에서 내려야 했어요. 민우는 성구 어머니를 따라 눈 덮인 들판으로 내렸어요. 그래도 민우는 엄마를 찾고 싶었어요.",
           "lines": [],
           "sfx": [],
           "soundDirection": "웅성거림",
           "move": "none",
           "transition": "cut",
-          "dur": 10.17,
+          "dur": 15.97,
           "overlay": null,
           "effect": null,
           "direction": "컷",
           "kind": "story",
-          "narrationVoice": "CH04-B03-gem.mp3"
+          "narrationVoice": "CH04-B03-r1105.mp3"
         },
         {
           "id": "CH04-P01",
@@ -1453,16 +1436,16 @@
           "kind": "record",
           "img": null,
           "alt": "",
-          "caption": "기록 카드 1 · 그곳에 남은 기록",
-          "narration": "1950년 12월 31일, 군수물자를 싣고 내려오던 기관차가 장단역에서 멈췄고, 퇴각하던 연합군의 기관총 사격에 부서졌습니다. 기관차에 남은 총알 자국은 1,020여 개입니다. 이 기관차는 지금 임진각에 있습니다.",
+          "caption": "기록 카드 1 · 실제로 있었던 일",
+          "narration": "1950년 12월 31일, 군수물자를 싣고 내려오던 기관차가 장단역에서 멈췄습니다. 퇴각하던 연합군이 기관총을 쏴서 기관차가 부서졌습니다. 기관차에 남은 총알 자국은 1,020여 개입니다. 이 기관차는 지금 임진각에 있습니다.",
           "lines": [],
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 26.47,
+          "dur": 26.13,
           "overlay": null,
           "effect": null,
-          "narrationVoice": "CH04-R1-gem2.mp3"
+          "narrationVoice": "CH04-R1-r1105.mp3"
         }
       ]
     },
@@ -1693,15 +1676,15 @@
           "lines": [
             {
               "who": "민우",
-              "text": "어… 또 왔네요? 이거… 우리 형 이름 맞아요? 저는 글을 몰라서, 모양만 맞춰 보거든요.",
-              "voice": "CH05-P01-boy.mp3",
+              "text": "저기요. 혹시 글자 알아요? 우리 형 이름 맞는지 봐 줄 수 있어요? 저는 글을 몰라서, 모양만 맞춰 보거든요.",
+              "voice": "CH05-P01-l0-r1105.mp3",
               "offscreen": false
             }
           ],
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 12.23,
+          "dur": 12.13,
           "overlay": null,
           "effect": null
         },
@@ -1884,7 +1867,7 @@
           "kind": "record",
           "img": null,
           "alt": "",
-          "caption": "기록 카드 2 · 그곳에 남은 기록",
+          "caption": "기록 카드 2 · 실제로 있었던 일",
           "narration": "1951년 12월, 휴전 회담에서 양쪽이 포로 명단을 주고받았고, 신문은 국군포로 이름을 여러 날에 걸쳐 실었습니다. 가족들은 그 지면에서 이름을 찾았습니다. 전쟁 통에 학교를 못 가 글을 모르는 아이도 많았습니다.",
           "lines": [],
           "sfx": [],
@@ -1983,66 +1966,17 @@
           "lines": [
             {
               "who": "민우",
-              "text": "또 왔네요. …오늘도 없어요. 형이 써 준 글씨, 저는 못 읽어도 모양은 다 외웠어요. 근데 자꾸 흐려져요.",
-              "voice": "CH06-P01-L01-gem.mp3",
+              "text": "어? 저번에 글자 알려 준 분이시죠? 여기서 또 뵙네요. …오늘도 형은 없어요. 형이 써 준 글씨, 저는 못 읽어도 모양은 다 외웠어요.",
+              "voice": "CH06-P01-l0-r1105.mp3",
               "offscreen": false
             }
           ],
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 14.61,
+          "dur": 16.46,
           "overlay": null,
           "effect": null
-        },
-        {
-          "id": "CH06-P03",
-          "kind": "talk",
-          "img": "CH06-P01.webp",
-          "alt": "판자를 내리고 눈높이의 렌즈를 바라보는 열두 살 민우. 이마에 땀, 한여름 빛.",
-          "caption": null,
-          "narration": null,
-          "lines": [
-            {
-              "who": "민우",
-              "text": "…대신 기억해 줄래요?",
-              "voice": "CH06-P03-L01-gem.mp3",
-              "offscreen": false
-            }
-          ],
-          "sfx": [],
-          "move": "none",
-          "transition": "cut",
-          "dur": 6.15,
-          "overlay": null,
-          "effect": null
-        },
-        {
-          "id": "CH06-P04",
-          "kind": "choice",
-          "img": "CH06-P04-v2.webp",
-          "alt": "같은 다리에서 처음으로 작게 웃는 열두 살 민우.",
-          "caption": null,
-          "narration": null,
-          "lines": [],
-          "sfx": [],
-          "move": "none",
-          "transition": "cut",
-          "dur": null,
-          "overlay": null,
-          "effect": null,
-          "options": [
-            {
-              "text": "응, 기억할게. 약속해.",
-              "next": "CH06-B05",
-              "reply": {
-                "who": "민우",
-                "text": "고마워요. 내일 또 올 거예요.",
-                "img": null,
-                "voice": "CH06-P04-O01-gem.mp3"
-              }
-            }
-          ]
         },
         {
           "id": "CH06-B05",
@@ -2053,8 +1987,8 @@
           "lines": [
             {
               "who": "민우",
-              "text": "엄마가 다리에서 만나자고 했어.",
-              "voice": "CH06-L01-gem.mp3",
+              "text": "엄마가 다리에서 만나자고 했는데…",
+              "voice": "CH06-B05-l0-r1105.mp3",
               "offscreen": false,
               "aside": true
             }
@@ -2065,7 +1999,7 @@
           "soundDirection": "강물",
           "move": "none",
           "transition": "dissolve",
-          "dur": 4.84,
+          "dur": 4.73,
           "overlay": null,
           "effect": null,
           "direction": "디졸브",
@@ -2076,7 +2010,7 @@
           "img": "CH06-B06.webp",
           "alt": "강물만",
           "caption": null,
-          "narration": "엄마도, 형도, 그 다리로 오지 않았어요.",
+          "narration": "엄마도, 형도, 이 다리로 오지 않았어요.",
           "lines": [],
           "sfx": [
             "river"
@@ -2084,19 +2018,19 @@
           "soundDirection": "강물",
           "move": "none",
           "transition": "slow-black",
-          "dur": 6.33,
+          "dur": 6.3,
           "overlay": null,
           "effect": null,
           "direction": "느린 암전",
           "kind": "story",
-          "narrationVoice": "CH06-B06-gem.mp3"
+          "narrationVoice": "CH06-B06-r1105.mp3"
         },
         {
           "id": "CH06-R3",
           "kind": "record",
           "img": null,
           "alt": "",
-          "caption": "기록 카드 3 · 그곳에 남은 기록",
+          "caption": "기록 카드 3 · 실제로 있었던 일",
           "narration": "1953년, 포로로 잡혔던 국군과 유엔군이 이 다리를 걸어서 돌아왔습니다. '자유의 다리'라는 이름은 그때 붙었습니다.",
           "lines": [],
           "sfx": [],
@@ -2120,15 +2054,15 @@
           "img": "CH07-Y01-young.webp",
           "alt": "스물두 살 민우가 작은 셋방에서 일을 마친 뒤 공책에 글씨를 익힌다. 혼자다.",
           "caption": "1963년 · 스물두 살",
-          "narration": "세월이 흘러 민우는 어른이 되었어요. 이제는 형의 이름을 읽을 수 있었지만, 그 이름을 불러 줄 사람이 없었어요.",
+          "narration": "세월이 흘러 민우는 어른이 되었어요. 이제는 형의 이름을 읽을 수 있었지만, 그 이름을 불렀을 때 대답해 줄 사람이 없었어요.",
           "lines": [],
           "sfx": [],
           "move": "none",
           "transition": "dissolve",
-          "dur": 13.25,
+          "dur": 13.67,
           "overlay": null,
           "effect": null,
-          "narrationVoice": "CH07-Y01-gem.mp3"
+          "narrationVoice": "CH07-Y01-r1105.mp3"
         },
         {
           "id": "CH07-Y02",
@@ -2250,18 +2184,18 @@
           "img": "CH07-B05-fix.webp",
           "alt": "밤. 민우가 벽에 팻말을 붙이고 돌아선다. 수천 장 가운데 한 장",
           "caption": null,
-          "narration": "그해 방송으로 만 가족 넘게 다시 만났어요. 하지만 민우의 종이는, 수많은 종이 가운데 한 장으로 남았어요.",
+          "narration": "그해 방송으로 만 가족 넘게 다시 만났어요. 하지만 민우의 팻말은, 수많은 팻말 가운데 하나로 남았어요.",
           "lines": [],
           "sfx": [],
           "soundDirection": "멀어지는 발소리",
           "move": "none",
           "transition": "slow-black",
-          "dur": 13.62,
+          "dur": 12.75,
           "overlay": null,
           "effect": null,
           "direction": "느린 암전",
           "kind": "story",
-          "narrationVoice": "CH07-B05-gem2.mp3"
+          "narrationVoice": "CH07-B05-r1105.mp3"
         }
       ]
     },
@@ -2344,18 +2278,18 @@
           "img": "CH08-B03-continuity-v3.webp",
           "alt": "대문 앞 빈 우편함, 여름",
           "caption": null,
-          "narration": "답장은 오지 않았어요.",
+          "narration": "그 뒤로도 민우는 신청서를 거듭 냈지만, 기다리던 소식은 오지 않았어요.",
           "lines": [],
           "sfx": [],
           "soundDirection": "매미",
           "move": "none",
           "transition": "dissolve",
-          "dur": 4.45,
+          "dur": 8.94,
           "overlay": null,
           "effect": null,
           "direction": "디졸브",
           "kind": "story",
-          "narrationVoice": "CH08-B03-gem.mp3"
+          "narrationVoice": "CH08-B03-r1105.mp3"
         },
         {
           "id": "CH08-B04",
@@ -2400,36 +2334,36 @@
           "img": "CH08-B06-era-v4.webp",
           "alt": "거실. 쉰아홉 살 민우가 찻잔을 들고 텔레비전을 본다. 화면 속에서 백발 노인들이 끌어안는다",
           "caption": "2000년 8월 · 쉰아홉 살",
-          "narration": "2000년 여름, 남과 북의 이산가족이 서울과 평양에서 서로 만났어요. 그러나 그 명단에 민우의 이름은 없었어요.",
+          "narration": "2000년 여름, 남과 북의 이산가족이 서울과 평양에서 서로 만났어요. 그러나 그 명단에도 민우의 이름은 없었어요.",
           "lines": [],
           "sfx": [],
           "soundDirection": "텔레비전 속 울음",
           "move": "none",
           "transition": "cut",
-          "dur": 14.53,
+          "dur": 15.11,
           "overlay": null,
           "effect": null,
           "direction": "컷",
           "kind": "story",
-          "narrationVoice": "CH08-B06-gem.mp3"
+          "narrationVoice": "CH08-B06-r1105.mp3"
         },
         {
           "id": "CH08-B07",
           "img": "CH08-B07.webp",
           "alt": "인서트. 김이 오르지 않는 식은 찻잔",
           "caption": null,
-          "narration": "찻잔이 다 식도록, 민우는 화면만 바라보았어요.",
+          "narration": "방송이 끝날 때까지, 민우는 차를 한 모금도 마시지 못했어요.",
           "lines": [],
           "sfx": [],
           "soundDirection": "",
           "move": "none",
           "transition": "slow-black",
-          "dur": 7.5,
+          "dur": 7.87,
           "overlay": null,
           "effect": null,
           "direction": "느린 암전",
           "kind": "story",
-          "narrationVoice": "CH08-B07-gem.mp3"
+          "narrationVoice": "CH08-B07-r1105.mp3"
         }
       ]
     },
@@ -2526,7 +2460,7 @@
             {
               "who": "민우",
               "text": "엄마, 나 개성 왔어요. …엄마는 그날 임진강 다리까지 오셨어요?",
-              "voice": "CH09-B05-cast.mp3",
+              "voice": "CH09-B05-l0-r1105.mp3",
               "offscreen": false,
               "aside": true
             }
@@ -2535,7 +2469,7 @@
           "soundDirection": "인파 소리",
           "move": "push",
           "transition": "cut",
-          "dur": 12.44,
+          "dur": 9.7,
           "overlay": null,
           "effect": null,
           "direction": "밀기",
@@ -2625,13 +2559,13 @@
           "img": "CH10-B04-brush.webp",
           "alt": "인서트. 그 종이에 천천히 쓴다. 지방 격식이 아니라 공책 겉장 그대로의 이름",
           "caption": null,
-          "narration": "다음 종이에는 형의 이름을 썼어요. 어릴 적 형이 공책에 써 준 모양 그대로.",
+          "narration": "다음 종이에는 형의 이름을 썼어요. 어릴 적 형이 공책에 써 준 글씨 그대로, 수없이 따라 써 온 그 모양으로.",
           "lines": [],
           "sfx": [],
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 10.09,
+          "dur": 13.15,
           "overlay": [
             {
               "text": "金敏錫",
@@ -2663,7 +2597,7 @@
           "effect": null,
           "direction": "고정. overlay: 이름",
           "kind": "story",
-          "narrationVoice": "CH10-B04-gem.mp3"
+          "narrationVoice": "CH10-B04-r1105.mp3"
         },
         {
           "id": "CH10-B05",
@@ -2703,9 +2637,9 @@
               "next": "CH10-P02",
               "reply": {
                 "who": "민우",
-                "text": "어서 오게. 이 추운 날 멀리서들 왔구먼.",
+                "text": "어서 오렴. 이 추운 날 멀리서 왔구나.",
                 "img": null,
-                "voice": "CH10-P01-cast.mp3"
+                "voice": "CH10-P01-o0-r1105.mp3"
               }
             }
           ]
@@ -2735,9 +2669,9 @@
               "next": "CH10-P03",
               "reply": {
                 "who": "민우",
-                "text": "우리 형 이름이네. 어릴 적엔 이 글자를 못 읽었지.",
+                "text": "우리 형 이름이란다. 어릴 적엔 이 글자를 못 읽었지.",
                 "img": null,
-                "voice": "CH10-P02-cast.mp3"
+                "voice": "CH10-P02-o1-r1105.mp3"
               }
             }
           ]
@@ -2752,15 +2686,15 @@
           "lines": [
             {
               "who": "민우",
-              "text": "상에는 돌아가신 분만 올리는 거라네. 우리 어머니랑 형은… 돌아가셨는지, 살아 계신지도 아직 모르니까. 형은 일흔을 훌쩍 넘었고, 어머니는 살아 계시면 아흔도 넘으셨겠지. 그래도… 혹시 모르는 거 아닌가.",
-              "voice": "CH10-P03-cast.mp3",
+              "text": "이 종이는 상에 올리지 않을 거란다. 상에는 돌아가신 분만 올리거든. 우리 어머니랑 형은… 돌아가셨는지, 살아 계신지도 아직 모르니까. 형은 일흔을 훌쩍 넘었고, 어머니는 살아 계시면 아흔도 넘으셨겠지. 그래도… 혹시 모르잖니.",
+              "voice": "CH10-P03-l0-r1105.mp3",
               "offscreen": false
             }
           ],
           "sfx": [],
           "move": "none",
           "transition": "cut",
-          "dur": 22.42,
+          "dur": 27.02,
           "overlay": null,
           "effect": null
         },
@@ -2769,7 +2703,7 @@
           "img": "CH10-B06.webp",
           "alt": "망배단 앞. 강 건너 북쪽 산이 흐리다. 옆자리 실향민 노인이 말을 건다",
           "caption": null,
-          "narration": null,
+          "narration": "그때 옆에서 차례를 지내던 다른 할아버지가 다가와 말을 건넸어요.",
           "lines": [
             {
               "who": "노인",
@@ -2782,11 +2716,12 @@
           "soundDirection": "",
           "move": "none",
           "transition": "cut",
-          "dur": 8.58,
+          "dur": 15.88,
           "overlay": null,
           "effect": null,
           "direction": "컷",
-          "kind": "story"
+          "kind": "story",
+          "narrationVoice": "CH10-B06-r1105.mp3"
         },
         {
           "id": "CH10-B07",
@@ -2869,7 +2804,7 @@
             {
               "who": "민우",
               "text": "김민석. 쇠 김, 민첩할 민, 주석 석.",
-              "voice": "CH10-B09-cast.mp3",
+              "voice": "CH10-B09-l0-r1105.mp3",
               "offscreen": false
             }
           ],
@@ -2877,7 +2812,7 @@
           "soundDirection": "",
           "move": "push",
           "transition": "slow-black",
-          "dur": 7.63,
+          "dur": 10.53,
           "overlay": null,
           "effect": null,
           "direction": "느린 암전",
@@ -2888,7 +2823,7 @@
           "kind": "record",
           "img": null,
           "alt": "",
-          "caption": "기록 카드 4 · 그곳에 남은 기록",
+          "caption": "기록 카드 4 · 실제로 있었던 일",
           "narration": "실향민들은 설날과 추석이면 임진각 망배단에 모여 고향 쪽으로 차례를 지냅니다. 6·25 전사자 유가족은 가까운 보건소에서 유전자 시료를 남길 수 있고, 나라는 이를 발굴한 유해와 맞춰 보며 가족을 찾아 주고 있습니다(2025년 말 약 11만 9천 개).",
           "lines": [],
           "sfx": [],
@@ -2911,18 +2846,18 @@
           "img": "CH11-B01-era-v4.webp",
           "alt": "2016년 파주의 옛 전투지역. 마스크와 장갑을 착용한 전문 발굴요원이 조심스럽게 흙을 걷고 발견 위치를 기록한다. 민우는 없다.",
           "caption": "2016년, 파주",
-          "narration": "그로부터 여섯 해 뒤, 파주의 옛 싸움터. 유해발굴감식단이 땅을 한 숟가락씩 조심스럽게 걷어 내고 있었어요.",
+          "narration": "그로부터 여섯 해 뒤, 파주의 옛 싸움터. 유해발굴감식단이 붓으로 흙을 조심조심 털어 내고 있었어요.",
           "lines": [],
           "sfx": [],
           "soundDirection": "붓 소리, 새",
           "move": "none",
           "transition": "fade-from-black",
-          "dur": 15.71,
+          "dur": 14.45,
           "overlay": null,
           "effect": null,
           "direction": "페이드 인",
           "kind": "story",
-          "narrationVoice": "CH11-B01-gem.mp3"
+          "narrationVoice": "CH11-B01-r1105.mp3"
         },
         {
           "id": "CH11-B02",
@@ -3201,7 +3136,7 @@
           "img": null,
           "alt": "만든 사람들",
           "caption": null,
-          "narration": "만든 사람들\n\n굳잡맨\n\n앱 제작: OpenAI Codex\n이야기 다듬기·검수: Anthropic Claude\n그림: OpenAI 이미지 생성 · Google Gemini 이미지 생성 (AI 생성)\n영상: Google Veo (AI 생성)\n목소리: Google Gemini TTS (AI 생성)\n테마곡: 한 장의 사진 · Suno (AI 생성)\n그 외 배경음악·효과음: Python 합성\n\n비상업 교육용\n\n이 작품은 역사적 사실을 바탕으로 한 가상의 이야기입니다.",
+          "narration": "만든 사람들\n\n굳잡맨\n\n앱 제작: OpenAI Codex\n이야기 다듬기·검수: Anthropic Claude\n검수: 착용반\n그림: OpenAI 이미지 생성 · Google Gemini · Google Flow (AI 생성)\n영상: Google Veo · Google Flow (AI 생성)\n목소리: Google Gemini TTS (AI 생성)\n테마곡: 한 장의 사진 · Suno (AI 생성)\n그 외 배경음악·효과음: Python 합성\n\n비상업 교육용\n\n이 작품은 역사적 사실을 바탕으로 한 가상의 이야기입니다.",
           "lines": [],
           "sfx": [],
           "soundDirection": "",
@@ -3260,7 +3195,7 @@
           "img": null,
           "alt": "헌사",
           "caption": null,
-          "narration": "아물지 않은 상처를 품고 시대를 건너온 모든 분들의 넋과 삶에,\n그리고 더 이상 전쟁 없는 세상을 꿈꾸는 모든 아이들에게 바칩니다.",
+          "narration": "아물지 않은 상처를 품고 시대를 건너온 모든 분들의 삶과 넋에,\n그리고 더 이상 전쟁 없는 세상을 꿈꾸는 모든 아이들에게 바칩니다.",
           "lines": [],
           "sfx": [],
           "move": "none",
@@ -3282,7 +3217,7 @@
       "img": "CH04-P02x.webp",
       "alt": "장단역의 같은 자리에서 고개를 떨군 민우.",
       "caption": null,
-      "narration": "이 기억 속에는 민우를 도와준 사람이 있었어요. 다시 말을 걸어 볼까요?",
+      "narration": "그날, 민우를 도와준 사람이 있었어요. 다시 말을 걸어 볼까요?",
       "lines": [
         {
           "who": "민우",
@@ -3294,12 +3229,12 @@
       "sfx": [],
       "move": "none",
       "transition": "cut",
-      "dur": 11.9,
+      "dur": 11.56,
       "overlay": null,
       "effect": null,
       "branchOnly": true,
       "next": "CH04-P02",
-      "narrationVoice": "CH04-P02x-nar.mp3"
+      "narrationVoice": "CH04-P02x-r1105.mp3"
     }
   ],
   "version": 4,

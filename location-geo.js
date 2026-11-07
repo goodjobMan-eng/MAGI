@@ -1,6 +1,6 @@
 // Coordinates refer to the exhibits at Imjingak, not the former Jangdan station.
 export const PLACES={
- train:{name:'장단역 증기기관차',lat:37.8902667,lon:126.7387167,radius:100,chapter:'CH04',hint:'기관차의 둥근 윗부분이 보이는 정면에서 윤곽에 맞춰 주세요. 안전 난간 밖에서 촬영해 주세요.'},
+ train:{name:'장단역 증기기관차',lat:37.8902667,lon:126.7387167,radius:100,chapter:'CH04',hint:'기관차의 둥근 윗부분을 바로 보고 서서 윤곽에 맞춰 주세요. 안전 난간 밖에서 촬영해 주세요.'},
  bridge:{name:'독개다리',lat:37.8902667,lon:126.7387167,radius:120,chapter:'CH06',hint:'독개다리 입구의 아치와 양쪽 문기둥을 정면으로 담아 주세요.'},
  altar:{name:'망배단',lat:37.8894573,lon:126.7405547,radius:100,chapter:'CH10',hint:'계단 아래에서 가운데 비석과 양옆 석판을 정면으로 담아 주세요.'}
 };
