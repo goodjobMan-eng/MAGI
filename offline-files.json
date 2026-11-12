@@ -1,6 +1,6 @@
 {
-"version": "33961176fbc9",
-"bytes": 73666515,
+"version": "19179b8e6d9b",
+"bytes": 78896461,
 "files": [
 "./",
 "app.js",
@@ -266,7 +266,7 @@
 "assets/images/CH12-B05.webp",
 "assets/images/CH12-E01.webp",
 "assets/video/CH03-hands-slip.mp4",
-"assets/video/CH12-epilogue.mp4",
+"assets/video/CH12-epilogue-v2.mp4",
 "assets/video/CH12-family-laugh.mp4",
 "index.html",
 "landmark-guide.js",
