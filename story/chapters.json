@@ -2459,8 +2459,8 @@
           "lines": [
             {
               "who": "민우",
-              "text": "엄마, 나… 개성 왔어요. …엄마는… 그날… 임진강 다리까지… 오셨나요…",
-              "voice": "CH09-B05-l0-r1113c.mp3",
+              "text": "엄마… 나… 개성 왔어요. …엄마는 그날… 그 다리까지… 오셨을까요…",
+              "voice": "CH09-B05-l0-r1113d.mp3",
               "offscreen": false,
               "aside": true
             }
@@ -2469,7 +2469,7 @@
           "soundDirection": "인파 소리",
           "move": "push",
           "transition": "cut",
-          "dur": 16.46,
+          "dur": 13.59,
           "overlay": null,
           "effect": null,
           "direction": "밀기",
