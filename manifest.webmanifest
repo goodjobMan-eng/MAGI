@@ -1,2 +1,2 @@
-{"name":"너와 마주한 그날의 풍경","short_name":"그날의 풍경","start_url":"./","scope":"./","display":"fullscreen","orientation":"any","background_color":"#181b19","theme_color":"#181b19","lang":"ko",
+{"name":"눈부시던 그 가을","short_name":"눈부시던 그 가을","start_url":"./","scope":"./","display":"fullscreen","orientation":"any","background_color":"#181b19","theme_color":"#181b19","lang":"ko",
 "icons":[{"src":"assets/icon-192.png","sizes":"192x192","type":"image/png"},{"src":"assets/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]}

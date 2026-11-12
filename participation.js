@@ -93,7 +93,7 @@ export function mountParticipation(c,ctx){
  }
  if(c.effect==='with-selfie'){
   let src=null;try{src=sessionStorage.getItem(SELFIE_KEY);}catch{}
-  if(src){const card=el('figure',null,'selfie-print');const im=el('img');im.src=src;im.alt='함께 찍은 내 얼굴';card.append(im,el('figcaption','그날의 풍경 속의 나'));art.append(card);handles.push(card);}
+  if(src){const card=el('figure',null,'selfie-print');const im=el('img');im.src=src;im.alt='함께 찍은 내 얼굴';card.append(im,el('figcaption','그 가을 속의 나'));art.append(card);handles.push(card);}
  }
  if(c.kind==='record'&&onsite&&c.question){
   allowed=false;const words=ctx.dialogue;words.hidden=true;ctx.caption.textContent='현장 질문';const q=c.question;root.append(el('p',q.prompt));const list=el('div',null,'choices');root.append(list,feedback);
