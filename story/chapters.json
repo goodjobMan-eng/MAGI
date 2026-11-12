@@ -7,7 +7,7 @@
       "cuts": [
         {
           "id": "CH01-B01",
-          "img": "CH01-B01.webp",
+          "img": "CH01-B01-r1112.webp",
           "alt": "익스트림 와이드. 추수 끝난 논, 낮은 산 아래 초가 마을에서 연기가 오른다. 논두렁을 걸어가는 민석과 구 작가의 뒷모습이 오른쪽 아래에 작게 보인다",
           "caption": "1949년 가을, 개성",
           "narration": "1949년 가을, 개성. 그 무렵 우리나라는 삼팔선이라는 선을 사이에 두고 남과 북으로 나뉘어 있었어요. 개성은 그 선 바로 아래에 있는 도시였지요.",
@@ -456,7 +456,7 @@
         },
         {
           "id": "CH02-B05",
-          "img": "CH02-B05-barefoot.webp",
+          "img": "CH02-B05-hug.webp",
           "alt": "투숏. 형이 민우를 번쩍 안아 올린다",
           "caption": null,
           "narration": null,
@@ -1030,7 +1030,7 @@
         },
         {
           "id": "CH03-B09",
-          "img": "CH03-B09-fix.webp",
+          "img": "CH03-B09-sg.webp",
           "alt": "미디엄. 성구 어머니가 민우 허리를 번쩍 안아 올리고, 화차 위의 성구가 손을 내민다",
           "caption": null,
           "narration": "그때 옆집 성구 어머니가 민우를 번쩍 들어 기차 위로 올려 주었어요.",
@@ -1186,7 +1186,7 @@
         {
           "id": "CH04-P01",
           "kind": "talk",
-          "img": "CH04-P01.webp",
+          "img": "CH04-P01-worn.webp",
           "alt": "장단역 밤 눈발, 볼과 코가 붉은 아홉 살 민우가 눈높이의 렌즈를 바라본다.",
           "caption": null,
           "narration": null,
@@ -1208,7 +1208,7 @@
         {
           "id": "CH04-P02",
           "kind": "choice",
-          "img": "CH04-P01.webp",
+          "img": "CH04-P01-worn.webp",
           "alt": "장단역 밤 눈발, 볼과 코가 붉은 아홉 살 민우가 눈높이의 렌즈를 바라본다.",
           "caption": null,
           "narration": null,
@@ -1231,7 +1231,7 @@
               "reply": {
                 "who": "민우",
                 "text": "…네.",
-                "img": "CH04-P02x.webp",
+                "img": "CH04-P02x-worn.webp",
                 "narration": "이 기억 속에는 민우를 도와준 사람이 있었어요. 다시 말을 걸어 볼까요?",
                 "voice": "CH04-P02-O02-v2-gem.mp3",
                 "narrationVoice": "CH04-P02x-nar.mp3"
@@ -1242,7 +1242,7 @@
         {
           "id": "CH04-P03",
           "kind": "talk",
-          "img": "CH04-P03.webp",
+          "img": "CH04-P03-worn.webp",
           "alt": "두 손으로 머리 위에 수건 모양을 그려 보이는 민우.",
           "caption": null,
           "narration": null,
@@ -1279,7 +1279,7 @@
         },
         {
           "id": "CH04-B05",
-          "img": "CH04-B05.webp",
+          "img": "CH04-B05-worn.webp",
           "alt": "민우 클로즈업",
           "caption": null,
           "narration": null,
@@ -1304,7 +1304,7 @@
         {
           "id": "CH04-P05",
           "kind": "choice",
-          "img": "CH04-B05.webp",
+          "img": "CH04-B05-worn.webp",
           "alt": "민우 클로즈업",
           "caption": null,
           "narration": null,
@@ -1330,7 +1330,7 @@
         },
         {
           "id": "CH04-B07",
-          "img": "CH04-B07.webp",
+          "img": "CH04-B07-worn.webp",
           "alt": "민우 바스트",
           "caption": null,
           "narration": null,
@@ -1415,7 +1415,7 @@
         },
         {
           "id": "CH04-B08",
-          "img": "CH04-B08-continuity-v3.webp",
+          "img": "CH04-B08-moon.webp",
           "alt": "와이드 뒷모습. 셋이 어둠 속 강 쪽으로 걸어간다",
           "caption": null,
           "narration": "셋은 어둠 속에서 임진강 쪽으로 걸었어요. 엄마가 만나자고 한, 그 다리를 향해서.",
@@ -3214,7 +3214,7 @@
     {
       "id": "CH04-P02x",
       "kind": "talk",
-      "img": "CH04-P02x.webp",
+      "img": "CH04-P02x-worn.webp",
       "alt": "장단역의 같은 자리에서 고개를 떨군 민우.",
       "caption": null,
       "narration": "그날, 민우를 도와준 사람이 있었어요. 다시 말을 걸어 볼까요?",
