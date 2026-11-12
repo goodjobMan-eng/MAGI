@@ -21,10 +21,16 @@
 #rotate-guide{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:32px;background:rgba(24,27,25,.94);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
 #rotate-guide[hidden]{display:none}
 .rg-card{display:flex;flex-direction:column;align-items:center;text-align:center;color:var(--paper)}
-.rg-photo{margin:0 0 30px;padding:7px 7px 9px;background:#e9e1cf;box-shadow:0 10px 30px rgba(0,0,0,.45);transform:rotate(90deg);animation:rg-turn 1.4s cubic-bezier(.6,0,.2,1) .5s forwards}
+.rg-photo{margin:0 0 28px;padding:7px 7px 9px;background:#e9e1cf;box-shadow:0 10px 30px rgba(0,0,0,.45);transform:rotate(-2deg)}
 .rg-photo img{display:block;width:168px;aspect-ratio:16/9;object-fit:cover;filter:sepia(.55) saturate(.8) contrast(.95)}
-@keyframes rg-turn{to{transform:rotate(-2deg)}}
-.rg-title{font-family:'Nanum Pen Script',cursive;font-size:30px;line-height:1.25;margin:0 0 26px;letter-spacing:.01em}
-#rotate-guide .rg-keep{background:transparent;box-shadow:none;min-height:0;width:auto;border:0;border-bottom:1px solid rgba(235,228,213,.35);border-radius:0;color:var(--muted);font:inherit;font-size:14px;padding:4px 2px;cursor:pointer}
-#rotate-guide .rg-keep:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
-@media (prefers-reduced-motion:reduce){.rg-photo{animation:none;transform:rotate(-2deg)}}
+#rotate-guide.waiting .rg-photo{transform:rotate(88deg);animation:rg-turn 1.6s cubic-bezier(.6,0,.2,1) .3s infinite}
+@keyframes rg-turn{0%,15%{transform:rotate(88deg)}55%,100%{transform:rotate(-2deg)}}
+.rg-title{font-family:'Nanum Pen Script',cursive;font-size:32px;line-height:1.25;margin:0 0 8px}
+.rg-text,.rg-wait{font-size:15px;line-height:1.7;color:var(--muted);margin:0 0 26px;word-break:keep-all}
+.rg-choices{display:flex;flex-direction:column;gap:10px;width:min(260px,80vw)}
+#rotate-guide .rg-choices button{font:inherit;font-size:16px;padding:14px 18px;border-radius:2px;cursor:pointer;min-height:0;width:100%}
+#rotate-guide .rg-land{background:var(--paper);color:#181b19;border:1px solid var(--paper)}
+#rotate-guide .rg-port{background:transparent;color:var(--paper);border:1px solid rgba(235,228,213,.35)}
+#rotate-guide .rg-choices button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){#rotate-guide .rg-photo{animation:none;transform:rotate(-2deg)}}
+#rotate-guide.waiting .rg-photo{margin:64px 0 84px}
