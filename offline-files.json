@@ -1,6 +1,6 @@
 {
-"version": "c51dd8e7748a",
-"bytes": 78926249,
+"version": "489f93a0ad3c",
+"bytes": 78928668,
 "files": [
 "./",
 "app.js",
@@ -277,6 +277,7 @@
 "paper-ink.js",
 "participation.css",
 "participation.js",
+"rotate.js",
 "story/chapters.json",
 "style.css"
 ]

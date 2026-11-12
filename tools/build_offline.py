@@ -11,7 +11,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 d = json.load(open('story/chapters.json'))
 files = {'./', 'index.html', 'app.js', 'participation.js', 'participation.css', 'style.css', 'location-gate.js',
-         'location-geo.js', 'landmark-guide.js', 'paper-ink.js', 'story/chapters.json', 'manifest.webmanifest', 'offline.js',
+         'location-geo.js', 'landmark-guide.js', 'paper-ink.js', 'story/chapters.json', 'manifest.webmanifest', 'offline.js', 'rotate.js',
          'assets/icon-192.png', 'assets/icon-512.png'}
 files |= set(glob.glob('assets/audio/bgm/*')) | set(glob.glob('assets/audio/sfx/*'))
 for c in [c for ch in d['chapters'] for c in ch['cuts']] + d.get('branches', []):
