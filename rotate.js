@@ -14,7 +14,8 @@
     '<button type="button" class="rg-land">가로로 볼게요</button>' +
     '<button type="button" class="rg-port">세로로 볼게요</button>' +
     '</div>' +
-    '<p class="rg-wait" hidden>휴대폰을 옆으로 돌리면 바로 시작해요.</p>' +
+    '<p class="rg-wait" hidden>휴대폰을 옆으로 돌리면 바로 시작해요.<br>화면이 돌아가지 않으면 휴대폰의 화면 회전 잠금을 풀어 주세요.</p>' +
+    '<button type="button" class="rg-back" hidden>그냥 세로로 볼게요</button>' +
     '</div>';
   document.body.appendChild(box);
 
@@ -26,6 +27,7 @@
     waiting = false;
     box.classList.remove('waiting');
     box.querySelector('.rg-wait').hidden = true;
+    box.querySelector('.rg-back').hidden = true;
     box.querySelector('.rg-choices').hidden = false;
     box.querySelector('.rg-text').hidden = false;
     box.querySelector('.rg-title').textContent = '어떻게 볼까요?';
@@ -53,6 +55,7 @@
   }, true);
 
   box.querySelector('.rg-port').onclick = begin;
+  box.querySelector('.rg-back').onclick = begin;
   box.querySelector('.rg-land').onclick = async () => {
     try {
       if (!document.fullscreenElement && document.documentElement.requestFullscreen)
@@ -66,6 +69,7 @@
     box.querySelector('.rg-text').hidden = true;
     box.querySelector('.rg-title').textContent = '옆으로 돌려 주세요';
     box.querySelector('.rg-wait').hidden = false;
+    box.querySelector('.rg-back').hidden = false;
   };
   const onTurn = () => { if (waiting && !portrait.matches) setTimeout(begin, 350); };
   portrait.addEventListener?.('change', onTurn);

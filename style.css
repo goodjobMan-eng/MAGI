@@ -34,3 +34,4 @@
 #rotate-guide .rg-choices button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 @media (prefers-reduced-motion:reduce){#rotate-guide .rg-photo{animation:none;transform:rotate(-2deg)}}
 #rotate-guide.waiting .rg-photo{margin:64px 0 84px}
+#rotate-guide .rg-back{background:transparent;border:0;border-bottom:1px solid rgba(235,228,213,.35);border-radius:0;color:var(--muted);font:inherit;font-size:14px;padding:4px 2px;min-height:0;width:auto;cursor:pointer}
