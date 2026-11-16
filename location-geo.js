@@ -1,8 +1,8 @@
 // Coordinates refer to the exhibits at Imjingak, not the former Jangdan station.
 export const PLACES={
  train:{name:'장단역 증기기관차',lat:37.8902667,lon:126.7387167,radius:100,chapter:'CH04',hint:'기관차의 둥근 윗부분을 바로 보고 서서 윤곽에 맞춰 주세요. 안전 난간 밖에서 촬영해 주세요.'},
- bridge:{name:'독개다리',lat:37.8902667,lon:126.7387167,radius:120,chapter:'CH06',hint:'독개다리 입구의 아치와 양쪽 문기둥을 정면으로 담아 주세요.'},
- altar:{name:'망배단',lat:37.8894573,lon:126.7405547,radius:100,chapter:'CH10',hint:'계단 아래에서 가운데 비석과 양옆 석판을 정면으로 담아 주세요.'}
+ bridge:{name:'자유의 다리',lat:37.88991,lon:126.73879,radius:100,chapter:'CH06',hint:'다리 입구에서 나무 바닥 한가운데에 서서, 양쪽 난간과 흰 줄이 윤곽에 겹치도록 휴대폰 높이를 맞춰 주세요. 다리 위에서 뛰지 마세요.'},
+ altar:{name:'망배단',lat:37.8894573,lon:126.7405547,radius:100,chapter:'CH10',hint:'계단 바로 아래 돌마당에서 가운데 비석을 화면 가운데 두고 윤곽에 맞춰 주세요. 양 끝 석판까지 다 담지 않아도 됩니다. 뒤로 물러나 주차장으로 내려가지 마세요.'}
 };
 export const placeForChapter=id=>Number(id.slice(2))<4?null:Number(id.slice(2))>=10?'altar':Number(id.slice(2))>=6?'bridge':'train';
 export function distanceMeters(a,b){

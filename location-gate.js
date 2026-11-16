@@ -11,7 +11,7 @@ const KEY='landscape-linear-visits-v2';
 export const PHOTO_TEST_MODE=true;
 const STORY_INTRO={
  train:'민우가 탄 기차가 멈춘 곳, 장단역. 그날, 그 기관차가 지금 임진각에 와 있어요. 총알 자국이 가득한 기관차를 찾아 사진으로 담아 볼까요?',
- bridge:'엄마는 "임진강 다리에서 만나자"고 했어요. 임진강을 건너던 옛 철길 다리, 독개다리를 찾아 사진으로 담아 봐요.',
+ bridge:'엄마는 "임진강 다리에서 만나자"고 했어요. 1953년 여름, 포로로 잡혀갔던 군인들이 이 다리를 걸어서 돌아왔어요. 열두 살 민우가 형을 기다리던 자유의 다리를 찾아 사진으로 담아 봐요.',
  altar:'고향에 갈 수 없는 사람들이 북쪽을 향해 절을 올리는 곳, 망배단이에요. 망배단을 찾아 사진으로 담아 봐요.'
 };
 export function createLocationGate({onPause,storageKey=KEY,testMode=PHOTO_TEST_MODE}){
