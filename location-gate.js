@@ -7,7 +7,7 @@ export function validVisits(raw){
 }
 export function requiredStop(visits,requested){return ROUTE.slice(0,ROUTE.indexOf(requested)+1).find(k=>!visits[k])||requested;}
 const KEY='landscape-linear-visits-v2';
-// 연습 모드: 위치 확인 없이 카메라만 쓰고, '건너뛰기'를 허용한다. 현장 배포 때 false.
+// 연습 모드: 위치 확인 없이 카메라만 쓴다(윤곽은 맞춰야 넘어감). 현장 배포 때 false.
 export const PHOTO_TEST_MODE=true;
 const STORY_INTRO={
  train:'민우가 탄 기차가 멈춘 곳, 장단역. 그날, 그 기관차가 지금 임진각에 와 있어요. 총알 자국이 가득한 기관차를 찾아 사진으로 담아 볼까요?',
@@ -18,7 +18,7 @@ export function createLocationGate({onPause,storageKey=KEY,testMode=PHOTO_TEST_M
  // 연습 기록은 실제 현장 방문 기록에 쓰지 않는다(메모리에만).
  let visits={};if(!testMode)try{visits=validVisits(JSON.parse(localStorage.getItem(storageKey)||'{}'));}catch{}
  const dialog=document.createElement('dialog');dialog.className='location-dialog';
- dialog.innerHTML='<button class="gate-close" aria-label="닫기">×</button><p class="eyebrow gate-step"></p><h2></h2><p class="gate-story"></p><p class="gate-hint"></p><div class="gate-view"><video autoplay muted playsinline hidden></video><img class="gate-photo" alt="촬영한 현장 사진" hidden><div class="gate-outline"></div><span class="gate-guide-label">이 윤곽에 맞춰 주세요</span></div><p class="gate-status" role="status" aria-live="polite"></p><meter class="gate-meter" min="0" max="100" value="0" aria-label="실루엣 맞춤 정도"></meter><button class="gate-locate">위치 확인하고 카메라 열기</button><button class="gate-shutter" hidden disabled>윤곽을 맞춰 주세요</button><button class="gate-retake" hidden>다시 촬영하기</button><p class="gate-skiphint">사진이 잘 인식되지 않으면 아래 <b>건너뛰기</b>를 눌러 다음 이야기로 넘어가세요.</p><button class="gate-skip" hidden>인식이 안 돼요 · 건너뛰기</button><p class="gate-privacy">사진은 휴대폰 안에서 윤곽을 비교한 뒤 폐기합니다. 사진·좌표를 서버로 보내지 않으며, 통과한 지점만 이 기기에 기억합니다.</p>';
+ dialog.innerHTML='<button class="gate-close" aria-label="닫기">×</button><p class="eyebrow gate-step"></p><h2></h2><p class="gate-story"></p><p class="gate-hint"></p><div class="gate-view"><video autoplay muted playsinline hidden></video><img class="gate-photo" alt="촬영한 현장 사진" hidden><div class="gate-outline"></div><span class="gate-guide-label">이 윤곽에 맞춰 주세요</span></div><p class="gate-status" role="status" aria-live="polite"></p><meter class="gate-meter" min="0" max="100" value="0" aria-label="실루엣 맞춤 정도"></meter><button class="gate-locate">위치 확인하고 카메라 열기</button><button class="gate-shutter" hidden disabled>윤곽을 맞춰 주세요</button><button class="gate-retake" hidden>다시 촬영하기</button><p class="gate-privacy">사진은 휴대폰 안에서 윤곽을 비교한 뒤 폐기합니다. 사진·좌표를 서버로 보내지 않으며, 통과한 지점만 이 기기에 기억합니다.</p>';
  document.body.append(dialog);
  const $=s=>dialog.querySelector(s),video=$('video'),photo=$('img'),status=$('.gate-status'),view=$('.gate-view'),shutter=$('.gate-shutter');
  const canvas=document.createElement('canvas');canvas.width=320;canvas.height=240;
@@ -69,7 +69,6 @@ export function createLocationGate({onPause,storageKey=KEY,testMode=PHOTO_TEST_M
   }catch(e){if(token===serial){showError(e);stopCamera();video.hidden=true;shutter.hidden=true;$('.gate-retake').hidden=false;}}
   finally{if(token===serial)capturing=false;}
  };
- $('.gate-skip').onclick=()=>{visits[key]={capturedAt:Date.now(),guideVersion:GUIDE_VERSION,method:'skip'};finish(true);};
  $('.gate-close').onclick=()=>finish(false);dialog.addEventListener('cancel',e=>{e.preventDefault();finish(false);});
  document.addEventListener('visibilitychange',()=>{if(document.hidden&&dialog.open)finish(false);});
  return {
@@ -81,7 +80,7 @@ export function createLocationGate({onPause,storageKey=KEY,testMode=PHOTO_TEST_M
    onPause();key=requested;place=PLACES[key];$('h2').textContent=place.name;
    const titles={train:'내려야 했던 곳',bridge:'비어가는 다리',altar:'형은 아직 모르니까'};
    $('.gate-step').textContent=`${ROUTE.indexOf(key)+1} / 3 · ${titles[key]}`;
-   $('.gate-story').textContent=STORY_INTRO[key]||'';$('.gate-hint').textContent=place.hint;$('.gate-skip').hidden=false;status.textContent='현장에 도착하면 카메라를 열어 실루엣에 맞춰 주세요.';
+   $('.gate-story').textContent=STORY_INTRO[key]||'';$('.gate-hint').textContent=place.hint;status.textContent='현장에 도착하면 카메라를 열어 실루엣에 맞춰 주세요.';
    $('.gate-outline').innerHTML=guideMarkup(key);view.classList.remove('aligned');$('.gate-meter').value=0;
    for(const s of ['video','img','.gate-shutter','.gate-retake'])$(s).hidden=true;
    $('.gate-locate').hidden=false;$('.gate-locate').disabled=false;$('.gate-locate').textContent=testMode?'카메라 열기':'위치 확인하고 카메라 열기';
